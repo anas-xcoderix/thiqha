@@ -1,0 +1,47 @@
+#r1:checked ~ div .step-nav label[for="r1"],
+#r2:checked ~ div .step-nav label[for="r2"],
+#r3:checked ~ div .step-nav label[for="r3"] {
+    background-color: #20395d;
+    color: white;
+}
+
+#r1:checked ~ div .step-content-1 { display: block; }
+#r2:checked ~ div .step-content-2 { display: block; }
+#r3:checked ~ div .step-content-3 { display: block; }
+
+#t1:checked ~ .subtab-nav label[for="t1"],
+#t2:checked ~ .subtab-nav label[for="t2"],
+#t3:checked ~ .subtab-nav label[for="t3"] {
+    color: #1e2d5a;
+    font-weight: 600;
+}
+
+#t1:checked ~ .subtab-content-1 { display: block; }
+#t2:checked ~ .subtab-content-2 { display: block; }
+#t3:checked ~ .subtab-content-3 { display: block; }
+
+#t1:checked ~ .subtab-nav .bar-1,
+#t2:checked ~ .subtab-nav .bar-2,
+#t3:checked ~ .subtab-nav .bar-3 {
+    background-color: #20395d;
+}
+
+#t1:checked ~ .subtab-nav .bar-2,
+#t1:checked ~ .subtab-nav .bar-3,
+#t2:checked ~ .subtab-nav .bar-1,
+#t2:checked ~ .subtab-nav .bar-3,
+#t3:checked ~ .subtab-nav .bar-1,
+#t3:checked ~ .subtab-nav .bar-2 {
+    background-color: #e5e7eb;
+}
+
+#t1:checked ~ .subtab-nav label[for="t1"] p,
+#t2:checked ~ .subtab-nav label[for="t2"] p,
+#t3:checked ~ .subtab-nav label[for="t3"] p {
+    color: #20395d;
+    font-weight: 600;
+}
+
+#r3:checked ~ div .hide-on-step3 {
+    display: none;
+}
