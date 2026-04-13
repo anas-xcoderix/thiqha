@@ -171,6 +171,8 @@
                     @csrf
                     <input type="hidden" name="_form" value="partner">
 
+
+
                     <input type="radio" name="subtab" id="t1" class="hidden" checked/>
                     <input type="radio" name="subtab" id="t2" class="hidden"/>
                     <input type="radio" name="subtab" id="t3" class="hidden"/>
@@ -197,42 +199,6 @@
                     </div>
 
                     <div class="subtab-content-1 hidden">
-                        <div class="flex flex-col md:flex-row gap-5 mb-5">
-                            <div class="flex-1">
-                                <label class="block text-sm font-bold mb-1" for="p_name">Full Name <span class="text-red-500">*</span></label>
-                                <input id="p_name" type="text" name="name" value="{{ old('name') }}" required placeholder="Enter Name"
-                                       class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#1e2d5a] placeholder-gray-400"/>
-                            </div>
-                            <div class="flex-1">
-                                <label class="block text-sm font-bold mb-1" for="p_email">Email <span class="text-red-500">*</span></label>
-                                <input id="p_email" type="email" name="email" value="{{ old('email') }}" required placeholder="Enter Mail"
-                                       class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#1e2d5a] placeholder-gray-400"/>
-                            </div>
-                        </div>
-                        <div class="flex flex-col md:flex-row gap-5 mb-5">
-                            <div class="flex-1">
-                                <label class="block text-sm font-bold mb-1" for="p_phone">Phone Number <span class="text-red-500">*</span></label>
-                                <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden">
-                                    <div class="flex items-center gap-2 px-3 py-3 border-r border-gray-300 bg-white">
-                                        <img src="{{ asset('images/auth/flag.png') }}" alt="KW" class="w-5 h-4 object-cover"/>
-                                        <span class="text-xs text-gray-700 font-medium">+965</span>
-                                    </div>
-                                    <input id="p_phone" type="tel" name="phone" value="{{ old('phone') }}" required placeholder="Enter Phone"
-                                           class="flex-1 px-4 py-3 text-sm outline-none placeholder-gray-400"/>
-                                </div>
-                            </div>
-                            <div class="flex-1">
-                                <label class="block text-sm font-bold mb-1" for="p_password">Password <span class="text-red-500">*</span></label>
-                                <input id="p_password" type="password" name="password" required autocomplete="new-password" placeholder="Enter Password"
-                                       class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#1e2d5a] placeholder-gray-400"/>
-                            </div>
-                        </div>
-                        <div class="mb-5 w-full md:w-[calc(50%-10px)]">
-                            <label class="block text-sm font-bold mb-1" for="p_password_confirmation">Confirm Password <span class="text-red-500">*</span></label>
-                            <input id="p_password_confirmation" type="password" name="password_confirmation" required autocomplete="new-password" placeholder="Confirm Password"
-                                   class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#1e2d5a] placeholder-gray-400"/>
-                        </div>
-
                         <div class="flex flex-col md:flex-row gap-5 mb-5">
                             <div class="flex-1">
                                 <label class="block text-sm font-bold mb-1">Official Company Trade Name <span class="text-red-500">*</span></label>
