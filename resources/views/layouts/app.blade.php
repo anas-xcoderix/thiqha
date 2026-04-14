@@ -7,6 +7,29 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { poppins: ['Poppins', 'sans-serif'] },
+                    colors: { primary: '#1a3a5c', accent: '#2563eb', gold: '#d4a843' },
+                    borderRadius: {
+                        'leaf-tl': '2.5rem 0 0 0',
+                        'leaf-br': '0 0 2.5rem 0',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media (min-width: 1537px) {
+            .cards {
+                display: grid !important;
+                grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+            }
+        }
+
+    </style>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 

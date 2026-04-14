@@ -11,7 +11,7 @@
 @section('content')
 <div class="lg:flex lg:gap-8">
 
-    <div class="hidden lg:block w-[60%] h-screen">
+    <div class="hidden lg:block w-[60%]">
         <img src="{{ asset('images/auth/sidebar.png') }}" alt="" class="w-full h-full object-cover">
     </div>
 
