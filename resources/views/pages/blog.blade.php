@@ -1,5 +1,15 @@
 @extends('layouts.app')
+
+@section('body-class', 'm-0 p-0 font-sans')
+
+@section('title', 'THIQAH – Blog')
+
+@push('head-scripts')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+@endpush
+
 @section('content')
+    <div id="app">
     <div id="page-list" class="block">
 
         <section class="p-6 w-full box-border">
@@ -56,7 +66,7 @@
 
                 <article class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100 max-h-[518px] max-w-[445px] cursor-pointer" onclick="showDetail(1)">
                     <div class="overflow-hidden h-[292px]">
-                        <img src="{{ asset('images/blog/img.png') }}" alt="Construction workers" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='img/img.png'"/>
+                        <img src="{{ asset('images/blog/img.png') }}" alt="Construction workers" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='{{ asset('images/blog/img.png') }}'"/>
                     </div>
                     <div class="p-5">
                         <h3 class="text-base font-bold text-gray-900 text-center mb-1">The Future of Smart Construction</h3>
@@ -133,7 +143,7 @@
 
                 <article class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100 max-h-[518px] max-w-[445px] cursor-pointer" onclick="showDetail(8)">
                     <div class="overflow-hidden h-[292px]">
-                        <img src="{{ asset('images/blog/img_1.png') }}" alt="Construction site aerial" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src={{ asset('images/blog/img_1.png') }}''"/>
+                        <img src="{{ asset('images/blog/img_1.png') }}" alt="Construction site aerial" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='{{ asset('images/blog/img_1.png') }}'"/>
                     </div>
                     <div class="p-5">
                         <h3 class="text-base font-bold text-gray-900 text-center mb-1">Urban Planning & Smart Cities</h3>
@@ -172,4 +182,9 @@
             </div>
         </section>
     </div>
+    </div>
 @endsection
+
+@push('scripts')
+    <script src="{{ asset('js/blog.js') }}"></script>
+@endpush

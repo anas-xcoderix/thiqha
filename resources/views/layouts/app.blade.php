@@ -70,6 +70,10 @@
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
+
+        ::-webkit-scrollbar{
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -92,8 +96,11 @@
             });
         }
     });
-</script>
 
+
+
+</script>
+<script src="{{ asset('js/blog.js') }}"></script>
 
 </body>
 </html>
