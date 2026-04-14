@@ -1,5 +1,15 @@
 
 @extends('layouts.app')
+
+@section('body-class', 'm-0 p-0 font-sans')
+
+@section('title', 'THIQAH – Vendor')
+
+@push('head-scripts')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+@endpush
+
+
 @section('content')
 
     <section class="px-2 md:px-6 pt-4 pb-2 w-full">

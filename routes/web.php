@@ -4,6 +4,8 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\VendorController;
+use App\Http\Controllers\ServicesController;
+use App\Http\Controllers\PolicyController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -25,3 +27,8 @@ Route::get('/blog', [BlogController::class, 'index'])->name('blog');
 Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 
 Route::get('/vendor', [VendorController::class, 'index'])->name('vendor');
+
+Route::get('/services', [ServicesController::class, 'index'])->name('services');
+
+Route::get('/policy', [PolicyController::class, 'index'])->name('policy');
+

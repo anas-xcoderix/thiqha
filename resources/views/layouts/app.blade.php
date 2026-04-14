@@ -29,6 +29,11 @@
             }
         }
 
+        @media (min-width: 1537px) {
+            .services {
+                max-width: 100%;
+            }
+        }
     </style>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
@@ -101,6 +106,7 @@
 
 </script>
 <script src="{{ asset('js/blog.js') }}"></script>
+<script src="{{ asset('js/thiqah-services.js') }}"></script>
 
 </body>
 </html>
