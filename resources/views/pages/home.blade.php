@@ -1,4 +1,4 @@
-@extends('frontend.layouts.main')
+@extends('layouts.app')
 
 @section('content')
 
@@ -10,7 +10,7 @@
                      class="w-full h-full object-cover" alt="Construction">
             </div>
 
-            @include('Frontend.partials.header')
+            @include('partials.header')
 
 
             <div class="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-6">
