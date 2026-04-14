@@ -6,11 +6,9 @@
         <main class="relative min-h-[800px] w-full rounded-[40px] overflow-hidden shadow-2xl flex flex-col">
 
             <div class="absolute inset-0 z-0">
-                <img src="images/hero.png"
+                <img src="{{ asset('img/images/home/hero.png') }}"
                      class="w-full h-full object-cover" alt="Construction">
             </div>
-
-            @include('partials.header')
 
 
             <div class="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-6">
@@ -40,7 +38,7 @@
     </section>
 
     <div class="pt-20 bg-[#FAF8F4]">
-        <div class="relative mb-16 h-[9rem]" style="background-image: url('images/thiqah-services-bg.png');">
+        <div class="relative mb-16 h-[9rem]" style="background-image: url('{{ asset ('img/images/home/thiqah-services-bg.png')}}');">
 
             <div class="main-container mx-auto relative z-10">
                 <h2 class="absolute top-[55px] text-3xl md:text-[48px] font-bold text-black">
@@ -62,7 +60,7 @@
                 <div
                     class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-[#816EA2] rotate-45 flex items-center justify-center rounded-[22px] mb-8 md:mb-10 shadow-lg shadow-[#9381BB]/20 flex-shrink-0">
                     <div class="-rotate-45">
-                        <img src="images/water-tank.png" alt="Water Tanker"
+                        <img src="{{ asset('img/images/home/water-tank.png') }}" alt="Water Tanker"
                              class="w-10 h-10 md:w-12 md:h-12 object-contain brightness-0 invert">
                     </div>
                 </div>
@@ -81,7 +79,7 @@
                 <div
                     class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-[#816EA2] rotate-45 flex items-center justify-center rounded-[22px] mb-8 md:mb-10 shadow-lg shadow-[#9381BB]/20 flex-shrink-0">
                     <div class="-rotate-45">
-                        <img src="images/soil.png" alt="Water Tanker"
+                        <img src="{{ asset('img/images/home/soil.png') }}" alt="Water Tanker"
                              class="w-10 h-10 md:w-12 md:h-12 object-contain brightness-0 invert">
                     </div>
                 </div>
@@ -100,7 +98,7 @@
                 <div
                     class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-[#816EA2] rotate-45 flex items-center justify-center rounded-[22px] mb-8 md:mb-10 shadow-lg shadow-[#9381BB]/20 flex-shrink-0">
                     <div class="-rotate-45">
-                        <img src="images/bricks.png" alt="Water Tanker"
+                        <img src="{{ asset('img/images/home/bricks.png') }}" alt="Water Tanker"
                              class="w-10 h-10 md:w-12 md:h-12 object-contain brightness-0 invert">
                     </div>
                 </div>
@@ -119,7 +117,7 @@
                 <div
                     class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-[#816EA2] rotate-45 flex items-center justify-center rounded-[22px] mb-8 md:mb-10 shadow-lg shadow-[#9381BB]/20 flex-shrink-0">
                     <div class="-rotate-45">
-                        <img src="images/contracts.png" alt="Water Tanker"
+                        <img src="{{ asset('img/images/home/contracts.png') }}" alt="Water Tanker"
                              class="w-10 h-10 md:w-12 md:h-12 object-contain brightness-0 invert">
                     </div>
                 </div>
@@ -139,7 +137,7 @@
                 <div
                     class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-[#816EA2] rotate-45 flex items-center justify-center rounded-[22px] mb-8 md:mb-10 shadow-lg shadow-[#9381BB]/20 flex-shrink-0">
                     <div class="-rotate-45">
-                        <img src="images/insurance.png" alt="Water Tanker"
+                        <img src="{{ asset('img/images/home/insurance.png') }}" alt="Water Tanker"
                              class="w-10 h-10 md:w-12 md:h-12 object-contain brightness-0 invert">
                     </div>
                 </div>
@@ -170,7 +168,7 @@
 
 
     <div class="pt-20 bg-[#FAF8F4]">
-        <div class="relative mb-16 h-[9rem]" style="background-image: url('images/thiqah-services-bg.png');">
+        <div class="relative mb-16 h-[9rem]" style="background-image: url('{{ asset ('img/images/home/thiqah-services-bg.png')}}');">
 
             <div class="main-container mx-auto relative z-10">
                 <h2 class="absolute top-[55px] text-3xl md:text-[48px] font-bold text-black">
@@ -189,7 +187,7 @@
             <button
                 class="flex flex-col items-center justify-center flex-shrink-0 min-w-[120px] h-[120px] md:w-[151px] md:h-[156px] bg-[#223862] rounded-[25px] shadow-sm hover:shadow-md transition-all">
                 <div class="mb-2">
-                    <img src="images/all.png" alt="All"
+                    <img src="{{ asset('img/images/home/all.png') }}" alt="All"
                          class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain invert brightness-0">
                 </div>
                 <span class="text-white font-bold text-[18px] lg:text-[24px]">All</span>
@@ -198,7 +196,7 @@
             <button
                 class="flex flex-col items-center justify-center flex-shrink-0 min-w-[180px] h-[120px] md:w-[252px] md:h-[156px] bg-white rounded-[25px] shadow-sm border border-gray-50 hover:shadow-md transition-all">
                 <div class="mb-2">
-                    <img src="images/construction.png" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
+                    <img src="{{ asset('img/images/home/construction.png') }}" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
                          alt="Construction">
                 </div>
                 <span class="text-gray-500 font-semibold text-[18px] lg:text-[24px]">Construction</span>
@@ -207,7 +205,7 @@
             <button
                 class="flex flex-col items-center justify-center flex-shrink-0 min-w-[180px] h-[120px] md:w-[251px] md:h-[156px] bg-white rounded-[25px] shadow-sm border border-gray-50 hover:shadow-md transition-all">
                 <div class="mb-2">
-                    <img src="images/electricity.png" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
+                    <img src="{{ asset('img/images/home/electricity.png') }}" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
                          alt="Electricity">
                 </div>
                 <span class="text-gray-500 font-semibold text-[18px] lg:text-[24px]">Electricity</span>
@@ -216,7 +214,7 @@
             <button
                 class="flex flex-col items-center justify-center flex-shrink-0 min-w-[180px] h-[120px] md:w-[251px] md:h-[156px] bg-white rounded-[25px] shadow-sm border border-gray-50 hover:shadow-md transition-all">
                 <div class="mb-2">
-                    <img src="images/plumbing.png" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
+                    <img src="{{ asset('img/images/home/plumbing.png') }}" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
                          alt="Plumbing">
                 </div>
                 <span class="text-gray-500 font-semibold text-[18px] lg:text-[24px]">Plumbing</span>
@@ -225,7 +223,7 @@
             <button
                 class="flex flex-col items-center justify-center flex-shrink-0 min-w-[180px] h-[120px] md:w-[251px] md:h-[156px] bg-white rounded-[25px] shadow-sm border border-gray-50 hover:shadow-md transition-all">
                 <div class="mb-2">
-                    <img src="images/carpentry.png" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
+                    <img src="{{ asset('img/images/home/carpentry.png') }}" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
                          alt="Carpentry">
                 </div>
                 <span class="text-gray-500 font-semibold text-[18px] lg:text-[24px]">Carpentry</span>
@@ -243,7 +241,7 @@
             <!-- Card 1 -->
             <div
                 class="relative group mx-auto w-full xl:rounded-[20px] lg:rounded-[30px] rounded-[25px] overflow-hidden shadow-md bg-white">
-                <img src="images/SP-card1.png" alt="Construction"
+                <img src="{{ asset('img/images/home/SP-card1.png') }}" alt="Construction"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
 
                 <div
@@ -252,7 +250,7 @@
                         <div class="flex items-center gap-1.5">
                             <span
                                 class="xl:text-[17px] lg:text-[15px] text-[14px] font-bold text-black tracking-tight truncate">Provider Name</span>
-                            <img src="images/tick.png" alt="Tick"
+                            <img src="{{ asset('img/images/home/tick.png') }}" alt="Tick"
                                  class="xl:w-[20px] xl:h-[20px] lg:w-[16px] lg:h-[16px] w-[15px] h-[15px]">
                         </div>
                         <span
@@ -279,7 +277,7 @@
             <!-- Card 2 -->
             <div
                 class="relative group mx-auto w-full xl:rounded-[20px] lg:rounded-[30px] rounded-[25px] overflow-hidden shadow-md bg-white">
-                <img src="images/SP-card2.png" alt="Construction"
+                <img src="{{ asset('img/images/home/SP-card2.png') }}" alt="Construction"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
 
                 <div
@@ -288,7 +286,7 @@
                         <div class="flex items-center gap-1.5">
                             <span
                                 class="xl:text-[17px] lg:text-[15px] text-[14px] font-bold text-black tracking-tight truncate">Provider Name</span>
-                            <img src="images/tick.png" alt="Tick"
+                            <img src="{{ asset('img/images/home/tick.png') }}" alt="Tick"
                                  class="xl:w-[20px] xl:h-[20px] lg:w-[16px] lg:h-[16px] w-[15px] h-[15px]">
                         </div>
                         <span
@@ -315,7 +313,7 @@
             <!-- Card 3 -->
             <div
                 class="relative group mx-auto w-full xl:rounded-[20px] lg:rounded-[30px] rounded-[25px] overflow-hidden shadow-md bg-white">
-                <img src="images/SP-card3.png" alt="Construction"
+                <img src="{{ asset('img/images/home/SP-card3.png') }}" alt="Construction"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
 
                 <div
@@ -324,7 +322,7 @@
                         <div class="flex items-center gap-1.5">
                             <span
                                 class="xl:text-[17px] lg:text-[15px] text-[14px] font-bold text-black tracking-tight truncate">Provider Name</span>
-                            <img src="images/tick.png" alt="Tick"
+                            <img src="{{ asset('img/images/home/tick.png') }}" alt="Tick"
                                  class="xl:w-[20px] xl:h-[20px] lg:w-[16px] lg:h-[16px] w-[15px] h-[15px]">
                         </div>
                         <span
@@ -351,7 +349,7 @@
             <!-- Card 4 -->
             <div
                 class="relative group mx-auto w-full xl:rounded-[20px] lg:rounded-[30px] rounded-[25px] overflow-hidden shadow-md bg-white">
-                <img src="images/SP-card4.png" alt="Construction"
+                <img src="{{ asset('img/images/home/SP-card4.png') }}" alt="Construction"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
 
                 <div
@@ -360,7 +358,7 @@
                         <div class="flex items-center gap-1.5">
                             <span
                                 class="xl:text-[17px] lg:text-[15px] text-[14px] font-bold text-black tracking-tight truncate">Provider Name</span>
-                            <img src="images/tick.png" alt="Tick"
+                            <img src="{{ asset('img/images/home/tick.png') }}" alt="Tick"
                                  class="xl:w-[20px] xl:h-[20px] lg:w-[16px] lg:h-[16px] w-[15px] h-[15px]">
                         </div>
                         <span
@@ -387,7 +385,7 @@
             <!-- Card 5 -->
             <div
                 class="relative group mx-auto w-full xl:rounded-[20px] lg:rounded-[30px] rounded-[25px] overflow-hidden shadow-md bg-white">
-                <img src="images/SP-card5.png" alt="Construction"
+                <img src="{{ asset('img/images/home/SP-card5.png') }}" alt="Construction"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
 
                 <div
@@ -396,7 +394,7 @@
                         <div class="flex items-center gap-1.5">
                             <span
                                 class="xl:text-[17px] lg:text-[15px] text-[14px] font-bold text-black tracking-tight truncate">Provider Name</span>
-                            <img src="images/tick.png" alt="Tick"
+                            <img src="{{ asset('img/images/home/tick.png') }}" alt="Tick"
                                  class="xl:w-[20px] xl:h-[20px] lg:w-[16px] lg:h-[16px] w-[15px] h-[15px]">
                         </div>
                         <span
@@ -423,7 +421,7 @@
             <!-- Card 6 -->
             <div
                 class="relative group mx-auto w-full xl:rounded-[20px] lg:rounded-[30px] rounded-[25px] overflow-hidden shadow-md bg-white">
-                <img src="images/SP-card6.png" alt="Construction"
+                <img src="{{ asset('img/images/home/SP-card6.png') }}" alt="Construction"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
 
                 <div
@@ -432,7 +430,7 @@
                         <div class="flex items-center gap-1.5">
                             <span
                                 class="xl:text-[17px] lg:text-[15px] text-[14px] font-bold text-black tracking-tight truncate">Provider Name</span>
-                            <img src="images/tick.png" alt="Tick"
+                            <img src="{{ asset('img/images/home/tick.png') }}" alt="Tick"
                                  class="xl:w-[20px] xl:h-[20px] lg:w-[16px] lg:h-[16px] w-[15px] h-[15px]">
                         </div>
                         <span
@@ -472,13 +470,13 @@
 
         <div
             class="w-full xl:w-[1228px] 2xl:w-[2480px] justify-center rounded-[30px] md:rounded-[45px] p-6 md:p-12 xl:p-10 flex flex-col xl:flex-row items-center gap-10 xl:gap-[86px] 2xl:gap-[350px] overflow-visible bg-center bg-cover"
-            style="background-image: url('images/Frame 1321315233.png');">
+            style="background-image: url('{{ asset ('img/images/About Us/Frame 1321315233.png')}}');">
 
             <div
                 class="w-full xl:w-[610px] flex flex-col items-center xl:items-start text-center xl:text-left text-white">
 
                 <div class="flex items-center gap-3 mb-4 md:mb-6">
-                    <img src="images/decor.png" alt="decor" class="w-[12px] h-[18px] xl:w-[14px] xl:h-[22px]">
+                    <img src="{{ asset('img/images/home/decor.png') }}" alt="decor" class="w-[12px] h-[18px] xl:w-[14px] xl:h-[22px]">
                     <span class="text-[12px] md:text-[16px] text-[#AAAAAA] uppercase font-medium tracking-wider">Send Requests</span>
                 </div>
 
@@ -509,12 +507,12 @@
 
                 <div
                     class="w-[260px] md:w-[320px] xl:w-[380px] h-[160px] md:h-[200px] xl:h-[231px] rounded-[100px] xl:mr-56 overflow-hidden shadow-2xl z-10 flex items-center justify-center">
-                    <img src="images/banner1.png" alt="Road Roller" class="w-full h-full object-cover">
+                    <img src="{{ asset('img/images/home/banner1.png') }}" alt="Road Roller" class="w-full h-full object-cover">
                 </div>
 
                 <div
                     class="w-[300px] md:w-[450px] xl:w-[550px] h-[180px] md:h-[220px] xl:h-[200px] rounded-full overflow-hidden shadow-2xl z-20 xl:mr-14 -mt-10 md:-mt-5 xl:mt-[20px] flex items-center justify-center">
-                    <img src="images/banner2.png" alt="Construction Site" class="w-full h-full object-cover">
+                    <img src="{{ asset('img/images/home/banner2.png') }}" alt="Construction Site" class="w-full h-full object-cover">
                 </div>
 
             </div>
@@ -523,7 +521,7 @@
 
 
     <div class="bg-[#FAF8F4]">
-        <div class="relative mb-16 h-[9rem]" style="background-image: url('images/thiqah-services-bg.png');">
+        <div class="relative mb-16 h-[9rem]" style="background-image: url('{{ asset ('img/images/home/thiqah-services-bg.png')}}');">
 
             <div class="main-container mx-auto relative z-10">
                 <h2 class="absolute top-[55px] text-3xl md:text-[48px] font-bold text-black">
@@ -542,7 +540,7 @@
             <button
                 class="flex flex-col items-center justify-center flex-shrink-0 min-w-[120px] h-[120px] md:w-[151px] md:h-[156px] bg-[#223862] rounded-[25px] shadow-sm hover:shadow-md transition-all">
                 <div class="mb-2">
-                    <img src="images/all.png" alt="All"
+                    <img src="{{ asset('img/images/home/all.png') }}" alt="All"
                          class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain invert brightness-0">
                 </div>
                 <span class="text-white font-bold text-[18px] lg:text-[24px]">All</span>
@@ -551,7 +549,7 @@
             <button
                 class="flex flex-col items-center justify-center flex-shrink-0 min-w-[180px] h-[120px] md:w-[252px] md:h-[156px] bg-white rounded-[25px] shadow-sm border border-gray-50 hover:shadow-md transition-all">
                 <div class="mb-2">
-                    <img src="images/building.png" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
+                    <img src="{{ asset('img/images/home/building.png') }}" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
                          alt="Construction">
                 </div>
                 <span class="text-gray-500 font-semibold text-[18px] lg:text-[24px]">Building</span>
@@ -560,7 +558,7 @@
             <button
                 class="flex flex-col items-center justify-center flex-shrink-0 min-w-[180px] h-[120px] md:w-[251px] md:h-[156px] bg-white rounded-[25px] shadow-sm border border-gray-50 hover:shadow-md transition-all">
                 <div class="mb-2">
-                    <img src="images/electric.png" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
+                    <img src="{{ asset('img/images/home/electric.png') }}" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
                          alt="Electricity">
                 </div>
                 <span class="text-gray-500 font-semibold text-[18px] lg:text-[24px]">Electrical</span>
@@ -569,7 +567,7 @@
             <button
                 class="flex flex-col items-center justify-center flex-shrink-0 min-w-[180px] h-[120px] md:w-[251px] md:h-[156px] bg-white rounded-[25px] shadow-sm border border-gray-50 hover:shadow-md transition-all">
                 <div class="mb-2">
-                    <img src="images/Lighting.png" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
+                    <img src="{{ asset('img/images/home/lighting.png') }}" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
                          alt="Plumbing">
                 </div>
                 <span class="text-gray-500 font-semibold text-[18px] lg:text-[24px]">Lighting</span>
@@ -578,7 +576,7 @@
             <button
                 class="flex flex-col items-center justify-center flex-shrink-0 min-w-[180px] h-[120px] md:w-[251px] md:h-[156px] bg-white rounded-[25px] shadow-sm border border-gray-50 hover:shadow-md transition-all">
                 <div class="mb-2">
-                    <img src="images/plumbing.png" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
+                    <img src="{{ asset('img/images/home/plumbing.png') }}" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
                          alt="Plumbing">
                 </div>
                 <span class="text-gray-500 font-semibold text-[18px] lg:text-[24px]">Plumbing</span>
@@ -598,7 +596,7 @@
                 class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
 
                 <div class="relative w-full h-[200px] xl:h-[220px] overflow-hidden">
-                    <img src="images/product1.png" alt="Product"
+                    <img src="{{ asset('img/images/home/product1.png') }}" alt="Product"
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
 
                     <button
@@ -637,7 +635,7 @@
                 class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
 
                 <div class="relative w-full h-[200px] xl:h-[220px] overflow-hidden">
-                    <img src="images/product2.png" alt="Product"
+                    <img src="{{ asset('img/images/home/product2.png') }}" alt="Product"
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
 
                     <button
@@ -676,7 +674,7 @@
                 class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
 
                 <div class="relative w-full h-[200px] xl:h-[220px] overflow-hidden">
-                    <img src="images/product3.png" alt="Product"
+                    <img src="{{ asset('img/images/home/product3.png') }}" alt="Product"
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
 
                     <button
@@ -715,7 +713,7 @@
                 class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
 
                 <div class="relative w-full h-[200px] xl:h-[220px] overflow-hidden">
-                    <img src="images/product4.png" alt="Product"
+                    <img src="{{ asset('img/images/home/product4.png') }}" alt="Product"
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
 
                     <button
@@ -754,7 +752,7 @@
                 class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
 
                 <div class="relative w-full h-[200px] xl:h-[220px] overflow-hidden">
-                    <img src="images/product5.png" alt="Product"
+                    <img src="{{ asset('img/images/home/product5.png') }}" alt="Product"
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
 
                     <button
@@ -792,7 +790,7 @@
                 class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
 
                 <div class="relative w-full h-[200px] xl:h-[220px] overflow-hidden">
-                    <img src="images/product6.png" alt="Product"
+                    <img src="{{ asset('img/images/home/product6.png') }}" alt="Product"
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
 
                     <button
@@ -831,7 +829,7 @@
                 class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
 
                 <div class="relative w-full h-[200px] xl:h-[220px] overflow-hidden">
-                    <img src="images/product7.png" alt="Product"
+                    <img src="{{ asset('img/images/home/product7.png') }}" alt="Product"
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
 
                     <button
@@ -869,7 +867,7 @@
                 class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
 
                 <div class="relative w-full h-[200px] xl:h-[220px] overflow-hidden">
-                    <img src="images/product1.png" alt="Product"
+                    <img src="{{ asset('img/images/home/product1.png') }}" alt="Product"
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
 
                     <button

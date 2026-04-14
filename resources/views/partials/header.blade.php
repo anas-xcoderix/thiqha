@@ -1,9 +1,9 @@
-<header class="relative z-50 w-full flex justify-center pt-6 px-4 md:pt-8 md:px-8">
+<header class="absolute top-6 z-50 w-full flex justify-center pt-6 px-4 md:pt-8 md:px-8">
     <nav class="bg-white w-full rounded-[30px] md:rounded-full md:px-6 px-4 py-4 md:py-4 flex flex-col md:flex-row items-center justify-between shadow-lg gap-4 xl:gap-0 relative">
 
         <div class="w-full xl:w-auto flex items-center justify-between gap-4">
             <div class="flex-shrink-0 xl:hidden">
-                <img src="images/nav bar.png" alt="Logo" class="h-8 md:h-12">
+                <img src="{{ asset('/img/images/header/headerlogo.png') }}" alt="Logo" class="h-8 md:h-12">
             </div>
 
             <div class="flex md:hidden items-center gap-2">
@@ -50,7 +50,7 @@
         </div>
 
         <div class="flex-shrink-0 hidden xl:block">
-            <img src="images/nav bar.png" alt="Logo" class="h-12">
+            <img src={{ asset('img/images/header/headerlogo.png') }} alt="Logo" class="h-12">
         </div>
 
         <div class="hidden xl:flex items-center gap-12 text-[18px] text-gray-500">

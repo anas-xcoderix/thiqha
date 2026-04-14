@@ -2,15 +2,15 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
+
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\VendorController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\PolicyController;
+use App\Http\Controllers\frontend\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+
 
 Route::middleware('guest')->group(function () {
     Route::get('/login', [LoginController::class, 'create'])->name('login');
@@ -32,3 +32,5 @@ Route::get('/services', [ServicesController::class, 'index'])->name('services');
 
 Route::get('/policy', [PolicyController::class, 'index'])->name('policy');
 
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
