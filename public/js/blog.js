@@ -23,8 +23,8 @@ const blogs = [
         title: "Safety Standards in Modern Projects",
         date: "April 20, 2022",
         readTime: "4 min read",
-        img: "img/img_1.png",
-        fallbackImg: "img/img_1.png",
+        img: "img/card_2.png",
+        fallbackImg: "img/card_2.png",
         body: `
         <h2 class="text-[32px] font-bold text-gray-900 mb-3 text-[#20395d]">Lorom ipsum dolor</h2>
         <p class="text-[16px] text-gray-500 mb-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
@@ -42,8 +42,8 @@ const blogs = [
         title: "Engineering Excellence & Innovation",
         date: "April 18, 2022",
         readTime: "6 min read",
-        img: "img/img_2.png",
-        fallbackImg: "img/img_2.png",
+        img: "img/card_3.png",
+        fallbackImg: "img/card_3.png",
         body: `
         <h2 class="text-[32px] font-bold text-gray-900 mb-3 text-[#20395d]">Lorom ipsum dolor</h2>
         <p class="text-[16px] text-gray-500 mb-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident.</p>
@@ -80,8 +80,8 @@ const blogs = [
         title: "Infrastructure Development Trends",
         date: "April 12, 2022",
         readTime: "7 min read",
-        img: "img/img_1.png",
-        fallbackImg: "img/img_1.png",
+        img: "img/card_2.png",
+        fallbackImg: "img/card_2.png",
         body: `
         <h2 class="text-[32px] font-bold text-gray-900 mb-3 text-[#20395d]">Lorom ipsum dolor</h2>
         <p class="text-[16px] text-gray-500 mb-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
@@ -99,8 +99,8 @@ const blogs = [
         title: "Project Management Best Practices",
         date: "April 10, 2022",
         readTime: "4 min read",
-        img: "img/img_2.png",
-        fallbackImg: "img/img_2.png",
+        img: "img/card_3.png",
+        fallbackImg: "img/card_3.png",
         body: `
         <h2 class="text-[32px] font-bold text-gray-900 mb-3 text-[#20395d]">Lorom ipsum dolor</h2>
         <p class="text-[16px] text-gray-500 mb-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
@@ -137,8 +137,8 @@ const blogs = [
         title: "Urban Planning & Smart Cities",
         date: "April 5, 2022",
         readTime: "6 min read",
-        img: "img/img_1.png",
-        fallbackImg: "img/img_1.png",
+        img: "img/card_2.png",
+        fallbackImg: "img/card_2.png",
         body: `
         <h2 class="text-[32px] font-bold text-gray-900 mb-3 text-[#20395d]">Lorom ipsum dolor</h2>
         <p class="text-[16px] text-gray-500 mb-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years.</p>
@@ -156,8 +156,8 @@ const blogs = [
         title: "Worker Safety & Health Guidelines",
         date: "April 2, 2022",
         readTime: "3 min read",
-        img: "img/img_2.png",
-        fallbackImg: "img/img_2.png",
+        img: "img/card_3.png",
+        fallbackImg: "img/card_3.png",
         body: `
         <h2 class="text-[32px] font-bold text-gray-900 mb-3 text-[#20395d]">Lorom ipsum dolor</h2>
         <p class="text-[16px] text-gray-500 mb-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>

@@ -7,7 +7,7 @@
         <div class="grid place-items-center justify-items-center h-screen mt-[75px]">
             <div class="grid grid-cols-1 place-items-center justify-items-center mx-2 space-y-6">
                 <div>
-                    <img src="{{ asset('images/cart/img.png') }}" alt="" class="max-w-[141px]">
+                    <img src="{{ asset('images/cart/card_1.png') }}" alt="" class="max-w-[141px]">
                 </div>
                 <div>
                     <h2 class="text-xl font-bold text-center">Your Cart is Empty</h2>

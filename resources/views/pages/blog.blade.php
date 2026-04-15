@@ -61,7 +61,7 @@
     @for($i=0; $i<8; $i++)
                     <article class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100 max-h-[518px] max-w-[445px] cursor-pointer" onclick="showDetail(1)">
                         <div class="overflow-hidden h-[292px]">
-                            <img src="{{ asset('images/blog/img.png') }}" alt="Construction workers" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='{{ asset('images/blog/img.png') }}'"/>
+                            <img src="{{ asset('images/blog/card_1.png') }}" alt="Construction workers" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='{{ asset('images/blog/card_1.png') }}'"/>
                         </div>
                         <div class="p-5">
                             <h3 class="text-base font-bold text-gray-900 text-center mb-1">The Future of Smart Construction</h3>
