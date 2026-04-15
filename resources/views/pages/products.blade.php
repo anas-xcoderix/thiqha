@@ -131,7 +131,7 @@
     <!-- Products Cards -->
     <section class="bg-[#FAF8F4] w-full main-container mx-auto py-16 px-4">
         <div id="product-grid"
-             class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-7 gap-6 xl:gap-[23px] justify-items-center">
+             class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6 xl:gap-[23px] justify-items-center">
         </div>
     </section>
 
