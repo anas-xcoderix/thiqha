@@ -1337,3 +1337,7 @@
 </div>
 
 @endsection
+
+@push('scripts')
+    <script src="{{ asset('js/services.js') }}"></script>
+@endpush

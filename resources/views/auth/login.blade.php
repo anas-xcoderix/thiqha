@@ -73,6 +73,6 @@
 </div>
 @endsection
 
-@push('scripts')
+@push('auth_scripts')
     <script src="{{ asset('js/login.js') }}"></script>
 @endpush

@@ -4,6 +4,7 @@
 
 @section('content')
     <div id="app">
+
     <div id="page-list" class="block">
 
         <section class="p-6 w-full box-border">
@@ -57,105 +58,18 @@
             </div>
 
             <div class="cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-8">
-
-                <article class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100 max-h-[518px] max-w-[445px] cursor-pointer" onclick="showDetail(1)">
-                    <div class="overflow-hidden h-[292px]">
-                        <img src="{{ asset('images/blog/img.png') }}" alt="Construction workers" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='{{ asset('images/blog/img.png') }}'"/>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-base font-bold text-gray-900 text-center mb-1">The Future of Smart Construction</h3>
-                        <p class="text-xs text-gray-400 mb-3 text-center my-4">April 24, 2022 · 5 min read</p>
-                        <p class="text-sm leading-relaxed text-center line-clamp-3">Nunc non posuere consectetur, justo nisl tempor ante, non hendrerit dui odio id lorem.</p>
-                    </div>
-                </article>
-
-                <article class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100 max-h-[518px] max-w-[445px] cursor-pointer" onclick="showDetail(2)">
-                    <div class="overflow-hidden h-[292px]">
-                        <img src="{{ asset('images/blog/img_1.png') }}" alt="Construction site" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='{{ asset('images/blog/img_1.png') }}'"/>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-base font-bold text-gray-900 text-center mb-1">Safety Standards in Modern Projects</h3>
-                        <p class="text-xs text-gray-400 mb-3 text-center my-4">April 20, 2022 · 4 min read</p>
-                        <p class="text-sm leading-relaxed text-center line-clamp-3">Nunc non posuere consectetur, justo nisl tempor ante, non hendrerit dui odio id lorem.</p>
-                    </div>
-                </article>
-
-                <article class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100 max-h-[518px] max-w-[445px] cursor-pointer" onclick="showDetail(3)">
-                    <div class="overflow-hidden h-[292px]">
-                        <img src="{{ asset('images/blog/img_2.png') }}" alt="Workers in safety gear" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='{{ asset('images/blog/img_2.png') }}'"/>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-base font-bold text-gray-900 text-center mb-1">Engineering Excellence & Innovation</h3>
-                        <p class="text-xs text-gray-400 mb-3 text-center my-4">April 18, 2022 · 6 min read</p>
-                        <p class="text-sm leading-relaxed text-center line-clamp-3">Nunc non posuere consectetur, justo nisl tempor ante, non hendrerit dui odio id lorem.</p>
-                    </div>
-                </article>
-
-                <article class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100 max-h-[518px] max-w-[445px] cursor-pointer" onclick="showDetail(4)">
-                    <div class="overflow-hidden h-[292px]">
-                        <img src="{{ asset('images/blog/img.png') }}" alt="Building construction" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='{{ asset('images/blog/img.png') }}'"/>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-base font-bold text-gray-900 text-center mb-1">Sustainable Building Materials</h3>
-                        <p class="text-xs text-gray-400 mb-3 text-center my-4">April 15, 2022 · 5 min read</p>
-                        <p class="text-sm leading-relaxed text-center line-clamp-3">Nunc non posuere consectetur, justo nisl tempor ante, non hendrerit dui odio id lorem.</p>
-                    </div>
-                </article>
-
-                <article class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100 max-h-[518px] max-w-[445px] cursor-pointer" onclick="showDetail(5)">
-                    <div class="overflow-hidden h-[292px]">
-                        <img src="{{ asset('images/blog/img_1.png') }}" alt="Infrastructure project" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='{{ asset('images/blog/img_1.png') }}'"/>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-base font-bold text-gray-900 text-center mb-1">Infrastructure Development Trends</h3>
-                        <p class="text-xs text-gray-400 mb-3 text-center my-4">April 12, 2022 · 7 min read</p>
-                        <p class="text-sm leading-relaxed text-center line-clamp-3">Nunc non posuere consectetur, justo nisl tempor ante, non hendrerit dui odio id lorem.</p>
-                    </div>
-                </article>
-
-                <article class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100 max-h-[518px] max-w-[445px] cursor-pointer" onclick="showDetail(6)">
-                    <div class="overflow-hidden h-[292px]">
-                        <img src="{{ asset('images/blog/img_2.png') }}" alt="Team of engineers" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='{{ asset('images/blog/img_2.png') }}'"/>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-base font-bold text-gray-900 text-center mb-1">Project Management Best Practices</h3>
-                        <p class="text-xs text-gray-400 mb-3 text-center my-4">April 10, 2022 · 4 min read</p>
-                        <p class="text-sm leading-relaxed text-center line-clamp-3">Nunc non posuere consectetur, justo nisl tempor ante, non hendrerit dui odio id lorem.</p>
-                    </div>
-                </article>
-
-                <article class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100 max-h-[518px] max-w-[445px] cursor-pointer" onclick="showDetail(7)">
-                    <div class="overflow-hidden h-[292px]">
-                        <img src="{{ asset('images/blog/img.png') }}" alt="Construction workers" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src=''{{ asset('images/blog/img.png') }}"/>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-base font-bold text-gray-900 text-center mb-1">Digital Transformation in Construction</h3>
-                        <p class="text-xs text-gray-400 mb-3 text-center my-4">April 7, 2022 · 5 min read</p>
-                        <p class="text-sm leading-relaxed text-center line-clamp-3">Nunc non posuere consectetur, justo nisl tempor ante, non hendrerit dui odio id lorem.</p>
-                    </div>
-                </article>
-
-                <article class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100 max-h-[518px] max-w-[445px] cursor-pointer" onclick="showDetail(8)">
-                    <div class="overflow-hidden h-[292px]">
-                        <img src="{{ asset('images/blog/img_1.png') }}" alt="Construction site aerial" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='{{ asset('images/blog/img_1.png') }}'"/>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-base font-bold text-gray-900 text-center mb-1">Urban Planning & Smart Cities</h3>
-                        <p class="text-xs text-gray-400 mb-3 text-center my-4">April 5, 2022 · 6 min read</p>
-                        <p class="text-sm leading-relaxed text-center line-clamp-3">Nunc non posuere consectetur, justo nisl tempor ante, non hendrerit dui odio id lorem.</p>
-                    </div>
-                </article>
-
-                <article class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100 max-h-[518px] max-w-[445px] cursor-pointer" onclick="showDetail(9)">
-                    <div class="overflow-hidden h-[292px]">
-                        <img src="{{ asset('images/blog/img_2.png') }}" alt="Safety team" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='{{ asset('images/blog/img_2.png') }}'"/>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-base font-bold text-gray-900 text-center mb-1">Worker Safety & Health Guidelines</h3>
-                        <p class="text-xs text-gray-400 mb-3 text-center my-4">April 2, 2022 · 3 min read</p>
-                        <p class="text-sm leading-relaxed text-center line-clamp-3">Nunc non posuere consectetur, justo nisl tempor ante, non hendrerit dui odio id lorem.</p>
-                    </div>
-                </article>
+    @for($i=0; $i<8; $i++)
+                    <article class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100 max-h-[518px] max-w-[445px] cursor-pointer" onclick="showDetail(1)">
+                        <div class="overflow-hidden h-[292px]">
+                            <img src="{{ asset('images/blog/img.png') }}" alt="Construction workers" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='{{ asset('images/blog/img.png') }}'"/>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-base font-bold text-gray-900 text-center mb-1">The Future of Smart Construction</h3>
+                            <p class="text-xs text-gray-400 mb-3 text-center my-4">April 24, 2022 · 5 min read</p>
+                            <p class="text-sm leading-relaxed text-center line-clamp-3">Nunc non posuere consectetur, justo nisl tempor ante, non hendrerit dui odio id lorem.</p>
+                        </div>
+                    </article>
+    @endfor
 
             </div>
 

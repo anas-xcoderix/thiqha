@@ -429,7 +429,7 @@
 </div>
 @endsection
 
-@push('scripts')
+@push('auth_scripts')
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     @if(old('_form') === 'user')

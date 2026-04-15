@@ -98,6 +98,7 @@
 @include('partials.footer')
 
 
+@stack('scripts')
 <script>
     let toggles = [document.getElementById('menu-toggle'), document.getElementById('menu-toggle-md')];
     let mobileMenu = document.getElementById('mobile-menu');
@@ -110,28 +111,6 @@
             });
         }
     });
-
-
-
-</script>
-<script src="{{ asset('js/blog.js') }}"></script>
-<script src="{{ asset('js/services.js') }}"></script>
-<script src="{{ asset('js/checkout.js') }}"></script>
-
-<script>
-    // Header //
-    let toggles = [document.getElementById('menu-toggle'), document.getElementById('menu-toggle-md')];
-    let mobileMenu = document.getElementById('mobile-menu');
-
-    toggles.forEach(btn => {
-        if (btn) {
-            btn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-                mobileMenu.classList.toggle('flex');
-            });
-        }
-    });
-
 
 </script>
 </body>

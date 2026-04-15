@@ -31,6 +31,6 @@
 </head>
 <body class="@yield('body-class', 'font-sans')">
 @yield('content')
-@stack('scripts')
+@stack('auth_scripts')
 </body>
 </html>
