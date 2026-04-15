@@ -150,8 +150,7 @@
                 </button>
             </div>
 
-            <div
-                class="bg-white w-full rounded-[37.31px] p-8 md:p-12 flex flex-col items-center justify-center shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-xl transition-all duration-300 border border-gray-50/50 cursor-pointer group">
+            <a href="{{ route('services') }}" class="bg-white w-full rounded-[37.31px] p-8 md:p-12 flex flex-col items-center justify-center shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-xl transition-all duration-300 border border-gray-50/50 cursor-pointer group">
                 <svg class="w-[80px] h-[80px] md:w-[120px] md:h-[120px]" viewBox="0 0 120 120" fill="none">
                     <path
                         d="M60.0005 110C87.6147 110 110 87.6142 110 60C110 32.3858 87.6147 10 60.0005 10C32.3862 10 10.0005 32.3858 10.0005 60C10.0005 87.6142 32.3862 110 60.0005 110Z"
@@ -161,7 +160,7 @@
                           stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 <span class="text-[26px] md:text-[32px] font-bold text-black mt-4 md:mt-6">View All</span>
-            </div>
+            </a>
 
         </div>
     </section>
@@ -512,12 +511,12 @@
             </div>
         </div>
 
-        <div class="mt-12 md:mt-20 flex justify-center">
+        <a href="{{ route('ServiceProvider') }}" class="mt-12 md:mt-20 flex justify-center">
             <button
                 class="bg-[#223862] xl:w-[247px] xl:h-[64px] text-white px-12 md:px-20 py-3 md:py-4 rounded-tl-[35px] rounded-br-[35px] font-bold text-[18px] md:text-[18px] shadow-lg hover:shadow-[#223862]/30 hover:-translate-y-1 transition-all duration-300">
                 See All
             </button>
-        </div>
+        </a>
 
     </section>
 
@@ -555,7 +554,7 @@
 
                 <button
                     class="bg-[#FFFFFF] w-full max-w-[247px] xl:w-[247px] xl:h-[64px] text-[#20395D] py-3 md:py-4 rounded-tl-[35px] rounded-br-[35px] font-bold text-[16px] md:text-[18px] shadow-lg hover:shadow-[#223862]/30 hover:-translate-y-1 transition-all duration-300">
-                    See All
+                    Send Request
                 </button>
             </div>
 
@@ -959,12 +958,12 @@
 
         </div>
 
-        <div class="mt-16 flex justify-center">
+        <a href="{{ route('products') }}" class="mt-16 flex justify-center">
             <button
                 class="bg-[#FFFFFF] xl:w-[247px] xl:h-[64px] text-[#20395D] px-12 md:px-20 py-3 md:py-4 rounded-tl-[35px] rounded-br-[35px] font-bold text-[18px] md:text-[18px] shadow-lg hover:shadow-[#223862]/30 hover:-translate-y-1 transition-all duration-300">
                 See All
             </button>
-        </div>
+        </a>
 
     </section>
 

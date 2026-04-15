@@ -246,7 +246,7 @@
 
         products.forEach(product => {
             productGrid.innerHTML += `
-    <a href="Product-Detail.html?id=${product.id}" class="group block bg-white rounded-[20px] overflow-hidden shadow-md transition-all hover:shadow-xl">
+    <a href="{{ route('ProductDetails') }}" class="group block bg-white rounded-[20px] overflow-hidden shadow-md transition-all hover:shadow-xl">
 
         <div class="relative w-full h-[220px] overflow-hidden">
             <img src="${product.img}" alt="${product.name}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">

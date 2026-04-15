@@ -136,7 +136,7 @@
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 xl:gap-x-[24px] lg:gap-x-[14px] gap-x-6 xl:gap-y-[58px] lg:gap-y-[38px] gap-y-10 xl:px-8">
 
             <!-- Card 1 -->
-            <div class="relative group mx-auto w-full xl:rounded-[20px] lg:rounded-[30px] rounded-[25px] overflow-hidden shadow-md bg-white">
+            <a href="{{ route('vendor') }}" class="relative group mx-auto w-full xl:rounded-[20px] lg:rounded-[30px] rounded-[25px] overflow-hidden shadow-md bg-white">
                 <img src="{{ asset('img/images/home/SP-card1.png') }}" alt="Construction"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
 
@@ -164,10 +164,10 @@
                         </svg>
                     </button>
                 </div>
-            </div>
+            </a>
 
             <!-- Card 2 -->
-            <div
+            <a href="{{ route('vendor') }}"
                 class="relative group mx-auto w-full xl:rounded-[20px] lg:rounded-[30px] rounded-[25px] overflow-hidden shadow-md bg-white">
                 <img src="{{ asset('img/images/home/SP-card2.png') }}" alt="Construction"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -196,10 +196,10 @@
                         </svg>
                     </button>
                 </div>
-            </div>
+            </a>
 
             <!-- Card 3 -->
-            <div
+            <a href="{{ route('vendor') }}"
                 class="relative group mx-auto w-full xl:rounded-[20px] lg:rounded-[30px] rounded-[25px] overflow-hidden shadow-md bg-white">
                 <img src="{{ asset('img/images/home/SP-card3.png') }}" alt="Construction"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -228,10 +228,10 @@
                         </svg>
                     </button>
                 </div>
-            </div>
+            </a>
 
             <!-- Card 4 -->
-            <div
+            <a href="{{ route('vendor') }}"
                 class="relative group mx-auto w-full xl:rounded-[20px] lg:rounded-[30px] rounded-[25px] overflow-hidden shadow-md bg-white">
                 <img src="{{ asset('img/images/home/SP-card4.png') }}" alt="Construction"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -260,10 +260,10 @@
                         </svg>
                     </button>
                 </div>
-            </div>
+            </a>
 
             <!-- Card 5 -->
-            <div
+            <a href="{{ route('vendor') }}"
                 class="relative group mx-auto w-full xl:rounded-[20px] lg:rounded-[30px] rounded-[25px] overflow-hidden shadow-md bg-white">
                 <img src="{{ asset('img/images/home/SP-card5.png') }}" alt="Construction"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -292,10 +292,10 @@
                         </svg>
                     </button>
                 </div>
-            </div>
+            </a>
 
             <!-- Card 6 -->
-            <div
+            <a href="{{ route('vendor') }}"
                 class="relative group mx-auto w-full xl:rounded-[20px] lg:rounded-[30px] rounded-[25px] overflow-hidden shadow-md bg-white">
                 <img src="{{ asset('img/images/home/SP-card6.png') }}" alt="Construction"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -324,7 +324,7 @@
                         </svg>
                     </button>
                 </div>
-            </div>
+            </a>
         </div>
 
         <div class="main-container flex items-center gap-3 font-sans lg:justify-end justify-center">

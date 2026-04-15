@@ -24,12 +24,12 @@
             </div>
 
             <div class="flex flex-col gap-4 xl:gap-[32px] text-white font-medium text-[18px] 2xl:text-[24px] min-w-[150px]">
-                <a href="#" class="hover:text-gray-300 transition-colors">Home</a>
-                <a href="#" class="hover:text-gray-300 transition-colors">Thiqah Services</a>
-                <a href="#" class="hover:text-gray-300 transition-colors">Service Providers</a>
-                <a href="#" class="hover:text-gray-300 transition-colors">Products</a>
-                <a href="#" class="hover:text-gray-300 transition-colors">Blogs</a>
-                <a href="#" class="hover:text-gray-300 transition-colors">About Us</a>
+                <a href="{{ route('home') }}" class="hover:text-gray-300 transition-colors">Home</a>
+                <a href="{{ route('services') }}" class="hover:text-gray-300 transition-colors">Thiqah Services</a>
+                <a href="{{ route('ServiceProvider') }}" class="hover:text-gray-300 transition-colors">Service Providers</a>
+                <a href="{{ route('products') }}" class="hover:text-gray-300 transition-colors">Products</a>
+                <a href="{{ route('blog') }}" class="hover:text-gray-300 transition-colors">Blogs</a>
+                <a href="{{ route('about') }}" class="hover:text-gray-300 transition-colors">About Us</a>
             </div>
 
             <div class="flex flex-col gap-6 xl:gap-[32px] text-white text-[16px] xl:text-[18px] 2xl:text-[24px] max-w-[300px]">
@@ -73,8 +73,8 @@
                     Powered by: <span class="font-bold">Cloud lift solutions</span>
                 </p>
                 <div class="flex gap-8 text-white text-[14px]">
-                    <a href="#" class="text-white underline font-bold">Privacy Policy</a>
-                    <a href="#" class="text-white underline font-bold">Terms & Condition</a>
+                    <a href="{{ route('policy') }}" class="text-white underline font-bold">Privacy Policy</a>
+                    <a href="{{ route('terms-condition') }}" class="text-white underline font-bold">Terms & Condition</a>
                 </div>
             </div>
         </div>

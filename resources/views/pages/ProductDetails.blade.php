@@ -114,7 +114,7 @@
                             <span class="px-2 rounded-md bg-white">+</span>
                         </button>
                     </div>
-                    <button onclick="window.location.href='cart.html'"
+                    <button onclick="window.location.href='{{ route('Cart')}}'"
                             class="w-full h-[56px] bg-[#20395D] text-white rounded-[10px] font-bold text-[20px] shadow-lg shadow-[#20395D]/20 hover:bg-[#1a2c4e] transition-colors flex-grow">
                         Add to cart
                     </button>
