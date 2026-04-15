@@ -36,13 +36,13 @@
 
         {{-- Desktop Left Links --}}
         <div class="hidden xl:flex items-center gap-12 text-[18px] text-gray-500">
-            <a href="{{ route('home') }}" class="whitespace-nowrap transition {{ request()->routeIs('home') ? 'text-[#20395d] font-semibold' : 'text-gray-500 hover:text-[#20395d]' }}">
+            <a href="{{ route('home') }}" class="whitespace-nowrap transition {{ request()->routeIs('home') ? 'text-[#20395d] font-semibold' : 'text-gray-500 hover:font-semibold hover:text-[#20395d] ' }}">
                 Home
             </a>
-            <a href="{{ route('services') }}" class="whitespace-nowrap transition {{ request()->routeIs('services') ? 'text-[#20395d] font-semibold' : 'text-gray-500 hover:text-[#20395d]' }}">
+            <a href="{{ route('services') }}" class="whitespace-nowrap transition {{ request()->routeIs('services') ? 'text-[#20395d] font-semibold' : 'text-gray-500 hover:font-semibold hover:text-[#20395d] ' }}">
                 Thiqah Services
             </a>
-            <a href="{{ route('ServiceProvider') }}" class="whitespace-nowrap transition {{ request()->routeIs('ServiceProvider') ? 'text-[#20395d] font-semibold' : 'text-gray-500 hover:text-[#20395d]' }}">
+            <a href="{{ route('ServiceProvider') }}" class="whitespace-nowrap transition {{ request()->routeIs('ServiceProvider') ? 'text-[#20395d] font-semibold' : 'text-gray-500 hover:font-semibold hover:text-[#20395d] ' }}">
                 Service Providers
             </a>
         </div>
@@ -54,13 +54,13 @@
 
         {{-- Desktop Right Links --}}
         <div class="hidden xl:flex items-center gap-12 text-[18px] text-gray-500">
-            <a href="{{ route('products') }}" class="whitespace-nowrap transition {{ request()->routeIs('products') ? 'text-[#20395d] font-semibold' : 'text-gray-500 hover:text-[#20395d]' }}">
+            <a href="{{ route('products') }}" class="whitespace-nowrap transition {{ request()->routeIs('products') ? 'text-[#20395d] font-semibold' : 'text-gray-500 hover:font-semibold hover:text-[#20395d] ' }}">
                 Products
             </a>
-            <a href="{{ route('blog') }}" class="whitespace-nowrap transition {{ request()->routeIs('blog') ? 'text-[#20395d] font-semibold' : 'text-gray-500 hover:text-[#20395d]' }}">
+            <a href="{{ route('blog') }}" class="whitespace-nowrap transition {{ request()->routeIs('blog') ? 'text-[#20395d] font-semibold' : 'text-gray-500 hover:font-semibold hover:text-[#20395d] ' }}">
                 Blogs
             </a>
-            <a href="{{ route('about') }}" class="whitespace-nowrap transition {{ request()->routeIs('about') ? 'text-[#20395d] font-semibold' : 'text-gray-500 hover:text-[#20395d]' }}">
+            <a href="{{ route('about') }}" class="whitespace-nowrap transition {{ request()->routeIs('about') ? 'text-[#20395d] font-semibold' : 'text-gray-500 hover:font-semibold hover:text-[#20395d] ' }}">
                 About Us
             </a>
         </div>
