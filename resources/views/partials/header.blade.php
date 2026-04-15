@@ -1,4 +1,4 @@
-<header class="absolute top-6 z-50 w-full flex justify-center pt-6 px-4 md:pt-8 md:px-8">
+<header class="absolute top-2 z-50 w-full flex justify-center pt-6 px-4 md:pt-8 md:px-8">
     <nav class="bg-white w-full rounded-[30px] md:rounded-full md:px-6 px-4 py-4 md:py-4 flex flex-col md:flex-row items-center justify-between shadow-lg gap-4 xl:gap-0 relative">
 
         <div class="w-full xl:w-auto flex items-center justify-between gap-4">

@@ -56,11 +56,11 @@
             <div class="flex flex-col gap-6 xl:gap-[16px]">
                 <h4 class="text-white font-bold text-[18px] 2xl:text-[24px]">Download App Now</h4>
                 <div class="flex flex-col gap-[24px]">
-                    <a href="#" class="hover:opacity-80 transition-opacity w-[200px] xl:w-[269px] xl:h-[80px] 2xl:w-[380px] 2xl:h-[100px]">
+                    <a href="#" class="hover:opacity-80 transition-opacity w-[200px] xl:w-[269px] xl:h-[80px] 2xl:w-[320px] 2xl:h-[100px]">
                         <img src="{{ asset('img/images/footer/google-play.png') }}" alt="Google Play"
                              class="w-full object-contain">
                     </a>
-                    <a href="#" class="hover:opacity-80 transition-opacity w-[200px] xl:w-[269px] xl:h-[80px] 2xl:w-[380px] 2xl:h-[100px]">
+                    <a href="#" class="hover:opacity-80 transition-opacity w-[200px] xl:w-[269px] xl:h-[80px] 2xl:w-[320px] 2xl:h-[100px]">
                         <img src="{{ asset('img/images/footer/app-store.png') }}" alt="App Store"
                              class="w-full object-contain">
                     </a>
