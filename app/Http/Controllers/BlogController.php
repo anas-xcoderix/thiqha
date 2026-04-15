@@ -9,4 +9,7 @@ class BlogController extends Controller
     public function index(){
         return view('pages.blog');
     }
+    public function show(){
+        return view('pages.blog_detail');
+    }
 }

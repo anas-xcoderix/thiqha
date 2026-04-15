@@ -32,6 +32,7 @@ Route::middleware('guest')->group(function () {
 Route::post('/logout', [LoginController::class, 'destroy'])->middleware('auth')->name('logout');
 
 Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+Route::get('/blog/detail', [BlogController::class, 'show'])->name('detail');
 
 Route::get('/vendor', [VendorController::class, 'index'])->name('vendor');
 
