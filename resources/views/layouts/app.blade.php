@@ -76,6 +76,11 @@
             scrollbar-width: none;
         }
 
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            opacity: 0;
+            cursor: pointer;
+        }
+
         ::-webkit-scrollbar{
             display: none;
         }

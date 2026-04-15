@@ -11,6 +11,7 @@ use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\TermsConditionController;
 use \App\Http\Controllers\CheckoutController;
 use \App\Http\Controllers\AddtoCartController;
+use \App\Http\Controllers\RequestController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -39,3 +40,5 @@ Route::get('/terms-condition', [TermsConditionController::class, 'index'])->name
 Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout');
 
 Route::get('/add-to-cart', [AddtoCartController::class, 'index'])->name('add-to-cart');
+
+Route::get('/request', [RequestController::class, 'index'])->name('request');
