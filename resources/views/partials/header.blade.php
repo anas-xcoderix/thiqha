@@ -1,5 +1,5 @@
 <header class="absolute top-6 z-50 w-full flex justify-center pt-6 px-4 md:pt-8 md:px-8">
-    <nav class="bg-white w-full rounded-[30px] md:rounded-full md:px-6 px-4 py-4 md:py-4 flex flex-col md:flex-row items-center justify-between shadow-lg gap-4 xl:gap-0 relative">
+    <nav class="bg-white w-full rounded-[30px] md:rounded-full md:px-6 px-4 py-4 md:py-4 flex flex-col md:flex-row items-center justify-between shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] gap-4 xl:gap-0 relative">
 
         <div class="w-full xl:w-auto flex items-center justify-between gap-4">
             <div class="flex-shrink-0 xl:hidden">
@@ -44,8 +44,8 @@
         </div>
 
         <div class="hidden xl:flex items-center gap-12 text-[18px] text-gray-500">
-            <a href="#" class="text-[#21395D] font-semibold whitespace-nowrap">Home</a>
-            <a href="#" class="hover:text-[#21395D] transition whitespace-nowrap">Thiqah Services</a>
+            <a href="{{ route('home') }}" class="text-[#21395D] font-semibold whitespace-nowrap">Home</a>
+            <a href="{{ route('services') }}" class="hover:text-[#21395D] transition whitespace-nowrap">Thiqah Services</a>
             <a href="#" class="hover:text-[#21395D] transition whitespace-nowrap">Service Providers</a>
         </div>
 
@@ -55,7 +55,7 @@
 
         <div class="hidden xl:flex items-center gap-12 text-[18px] text-gray-500">
             <a href="#" class="hover:text-[#21395D] transition whitespace-nowrap">Products</a>
-            <a href="#" class="hover:text-[#21395D] transition whitespace-nowrap">Blogs</a>
+            <a href="{{ route('blog') }}" class="hover:text-[#21395D] transition whitespace-nowrap">Blogs</a>
             <a href="#" class="hover:text-[#21395D] transition whitespace-nowrap">About Us</a>
         </div>
 
