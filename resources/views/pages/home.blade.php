@@ -166,6 +166,88 @@
         </div>
     </section>
 
+    {{--<section>
+        <div class="services font-sans px-4 py-16 lg:max-w-[80%] mx-auto">
+            <div class="flex flex-col">
+                <h2 class="font-bold text-black text-3xl mb-10">Thiqah Services</h2>
+                <div class="flex flex-wrap justify-center w-full gap-14">
+
+                    <div onclick="showPage('page-water')" class="cursor-pointer bg-white w-full md:w-[45%] xl:w-[30%] max-w-[460px] min-h-[358px] rounded-[37px] p-8 md:p-12 flex flex-col items-center shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] border border-gray-50/50 hover:shadow-[0_0_25px_8px_rgba(129,110,162,0.2)] transition-all">
+                        <div class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-[#816EA2] rotate-45 flex items-center justify-center rounded-[22px] mb-8 md:mb-10 shadow-lg flex-shrink-0">
+                            <div class="-rotate-45">
+                                <img src="{{ asset('images/thiqah-services/water-tank.png') }}" alt="Water Tanker" class="w-10 h-10 md:w-12 md:h-12 object-contain brightness-0 invert">
+                            </div>
+                        </div>
+                        <h3 class="text-[26px] md:text-[32px] font-bold text-black mb-6 md:mb-8 text-center">Water Tank</h3>
+                        <button class="border-[1.5px] border-[#816EA2] text-[#816EA2] px-10 py-2.5 rounded-tl-[20px] rounded-br-[20px] font-bold text-[15px] hover:bg-[#816EA2] hover:text-white transition-colors whitespace-nowrap">
+                            Order Now
+                        </button>
+                    </div>
+
+                    <div onclick="showPage('page-soil')" class="cursor-pointer bg-white w-full md:w-[45%] xl:w-[30%] max-w-[460px] min-h-[358px] rounded-[37px] p-8 md:p-12 flex flex-col items-center shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] border border-gray-50/50 hover:shadow-[0_0_25px_8px_rgba(129,110,162,0.2)] transition-all">
+                        <div class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-[#816EA2] rotate-45 flex items-center justify-center rounded-[22px] mb-8 md:mb-10 shadow-lg flex-shrink-0">
+                            <div class="-rotate-45">
+                                <img src="{{ asset('images/thiqah-services/soil.png') }}" alt="Water Tanker" class="w-10 h-10 md:w-12 md:h-12 object-contain brightness-0 invert">
+                            </div>
+                        </div>
+                        <h3 class="text-[26px] md:text-[32px] font-bold text-black mb-6 md:mb-8 text-center">Soil</h3>
+                        <button class="border-[1.5px] border-[#816EA2] text-[#816EA2] px-10 py-2.5 rounded-tl-[20px] rounded-br-[20px] font-bold text-[15px] hover:bg-[#816EA2] hover:text-white transition-colors whitespace-nowrap">
+                            Order Now
+                        </button>
+                    </div>
+
+                    <div onclick="showPage('page-bricks')" class="cursor-pointer bg-white w-full md:w-[45%] xl:w-[30%] max-w-[460px] min-h-[358px] rounded-[37px] p-8 md:p-12 flex flex-col items-center shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] border border-gray-50/50 hover:shadow-[0_0_25px_8px_rgba(129,110,162,0.2)] transition-all">
+                        <div class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-[#816EA2] rotate-45 flex items-center justify-center rounded-[22px] mb-8 md:mb-10 shadow-lg flex-shrink-0">
+                            <div class="-rotate-45">
+                                <img src="{{ asset('images/thiqah-services/bricks.png') }}" alt="Water Tanker" class="w-10 h-10 md:w-12 md:h-12 object-contain brightness-0 invert">
+                            </div>
+                        </div>
+                        <h3 class="text-[26px] md:text-[32px] font-bold text-black mb-6 md:mb-8 text-center">Bricks</h3>
+                        <button class="border-[1.5px] border-[#816EA2] text-[#816EA2] px-10 py-2.5 rounded-tl-[20px] rounded-br-[20px] font-bold text-[15px] hover:bg-[#816EA2] hover:text-white transition-colors whitespace-nowrap">
+                            Order Now
+                        </button>
+                    </div>
+
+                    <div onclick="showPage('page-contracts')" class="cursor-pointer bg-white w-full md:w-[45%] xl:w-[30%] max-w-[460px] min-h-[358px] rounded-[37px] p-8 md:p-12 flex flex-col items-center shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] border border-gray-50/50 hover:shadow-[0_0_25px_8px_rgba(129,110,162,0.2)] transition-all">
+                        <div class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-[#816EA2] rotate-45 flex items-center justify-center rounded-[22px] mb-8 md:mb-10 shadow-lg flex-shrink-0">
+                            <div class="-rotate-45">
+                                <img src="{{ asset('images/thiqah-services/contracts.png') }}" alt="Water Tanker" class="w-10 h-10 md:w-12 md:h-12 object-contain brightness-0 invert">
+                            </div>
+                        </div>
+                        <h3 class="text-[26px] md:text-[32px] font-bold text-black mb-6 md:mb-8 text-center">Contracts</h3>
+                        <button class="border-[1.5px] border-[#816EA2] text-[#816EA2] px-10 py-2.5 rounded-tl-[20px] rounded-br-[20px] font-bold text-[15px] hover:bg-[#816EA2] hover:text-white transition-colors whitespace-nowrap">
+                            Order Now
+                        </button>
+                    </div>
+
+                    <div onclick="showPage('page-insurance')" class="cursor-pointer bg-white w-full md:w-[45%] xl:w-[30%] max-w-[460px] min-h-[358px] rounded-[37px] p-8 md:p-12 flex flex-col items-center shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] border border-gray-50/50 hover:shadow-[0_0_25px_8px_rgba(129,110,162,0.2)] transition-all">
+                        <div class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-[#816EA2] rotate-45 flex items-center justify-center rounded-[22px] mb-8 md:mb-10 shadow-lg flex-shrink-0">
+                            <div class="-rotate-45">
+                                <img src="{{ asset('images/thiqah-services/insurance.png') }}" alt="Water Tanker" class="w-10 h-10 md:w-12 md:h-12 object-contain brightness-0 invert">
+                            </div>
+                        </div>
+                        <h3 class="text-[26px] md:text-[32px] font-bold text-black mb-6 md:mb-8 text-center">Insurance</h3>
+                        <button class="border-[1.5px] border-[#816EA2] text-[#816EA2] px-10 py-2.5 rounded-tl-[20px] rounded-br-[20px] font-bold text-[15px] hover:bg-[#816EA2] hover:text-white transition-colors whitespace-nowrap">
+                            Order Now
+                        </button>
+                    </div>
+
+                    <div onclick="showPage('page-insurance')" class="cursor-pointer bg-white w-full md:w-[45%] xl:w-[30%] max-w-[460px] min-h-[358px] rounded-[37px] p-8 md:p-12 flex flex-col items-center shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] border border-gray-50/50 hover:shadow-[0_0_25px_8px_rgba(129,110,162,0.2)] transition-all">
+                        <svg class="w-[80px] h-[80px] md:w-[120px] md:h-[120px]" viewBox="0 0 120 120" fill="none">
+                            <path d="M60.0005 110C87.6147 110 110 87.6142 110 60C110 32.3858 87.6147 10 60.0005 10C32.3862 10 10.0005 32.3858 10.0005 60C10.0005 87.6142 32.3862 110 60.0005 110Z"
+                                  stroke="#826EA3" stroke-width="7.5" stroke-miterlimit="10" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M53.7002 77.6501L71.3002 60.0001L53.7002 42.3501" stroke="#826EA3" stroke-width="7.5"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="text-[26px] md:text-[32px] font-bold text-black mt-4 md:mt-6">View All</span>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>--}}
 
     <div class="pt-20 bg-[#FAF8F4]">
         <div class="relative mb-16 h-[9rem]" style="background-image: url('{{ asset ('img/images/home/thiqah-services-bg.png')}}');">

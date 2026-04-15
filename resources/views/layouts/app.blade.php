@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/checkout.css') }}">
     <script>
         tailwind.config = {
             theme: {
@@ -43,7 +44,6 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-            background-color: #FAF8F4;
         }
 
         .btn-leaf {
@@ -76,6 +76,11 @@
             scrollbar-width: none;
         }
 
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            opacity: 0;
+            cursor: pointer;
+        }
+
         ::-webkit-scrollbar{
             display: none;
         }
@@ -106,7 +111,8 @@
 
 </script>
 <script src="{{ asset('js/blog.js') }}"></script>
-<script src="{{ asset('js/thiqah-services.js') }}"></script>
+<script src="{{ asset('js/services.js') }}"></script>
+<script src="{{ asset('js/checkout.js') }}"></script>
 
 <script>
     // Header //

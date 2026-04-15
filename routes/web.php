@@ -13,7 +13,13 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\VendorController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TermsConditionController;
+use \App\Http\Controllers\CheckoutController;
+use \App\Http\Controllers\AddtoCartController;
+use \App\Http\Controllers\RequestController;
 
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::middleware('guest')->group(function () {
     Route::get('/login', [LoginController::class, 'create'])->name('login');
@@ -26,8 +32,6 @@ Route::middleware('guest')->group(function () {
 Route::post('/logout', [LoginController::class, 'destroy'])->middleware('auth')->name('logout');
 
 Route::get('/blog', [BlogController::class, 'index'])->name('blog');
-
-Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 
 Route::get('/vendor', [VendorController::class, 'index'])->name('vendor');
 
@@ -46,3 +50,10 @@ Route::get('/ServiceProvider', [ServiceProviderController::class, 'index'])->nam
 Route::get('/ProductDetails', [ProductDetailsController::class, 'index'])->name('ProductDetails');
 
 Route::get('/Cart', [CartController::class, 'index'])->name('Cart');
+Route::get('/terms-condition', [TermsConditionController::class, 'index'])->name('terms-condition');
+
+Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout');
+
+Route::get('/add-to-cart', [AddtoCartController::class, 'index'])->name('add-to-cart');
+
+Route::get('/request', [RequestController::class, 'index'])->name('request');

@@ -1,0 +1,56 @@
+body { font-family: 'DM Sans', sans-serif; }
+
+#panel-edit-info,
+#panel-addresses,
+#panel-orders,
+#panel-requests,
+#panel-quotations,
+#panel-favourite { display: none; }
+
+#tab-edit-info:checked ~ * #panel-edit-info,
+#tab-addresses:checked ~ * #panel-addresses,
+#tab-orders:checked ~ * #panel-orders,
+#tab-requests:checked ~ * #panel-requests,
+#tab-quotations:checked ~ * #panel-quotations,
+#tab-favourite:checked ~ * #panel-favourite {  display: block !important; }
+
+#tab-edit-info:checked ~ * label[for="tab-edit-info"] span,
+#tab-addresses:checked ~ * label[for="tab-addresses"] span,
+#tab-orders:checked ~ * label[for="tab-orders"] span,
+#tab-requests:checked ~ * label[for="tab-requests"] span,
+#tab-quotations:checked ~ * label[for="tab-quotations"] span,
+#tab-favourite:checked ~ * label[for="tab-favourite"] span {
+    color: #20395D;
+    font-weight: 700;
+}
+
+#tab-edit-info:checked ~ * label[for="tab-edit-info"] svg path,
+#tab-edit-info:checked ~ * label[for="tab-edit-info"] svg line,
+#tab-addresses:checked ~ * label[for="tab-addresses"] svg path,
+#tab-orders:checked ~ * label[for="tab-orders"] svg path,
+#tab-requests:checked ~ * label[for="tab-requests"] svg path,
+#tab-quotations:checked ~ * label[for="tab-quotations"] svg path,
+#tab-favourite:checked ~ * label[for="tab-favourite"] svg path {
+    stroke: #20395D;
+}
+
+.nav-label svg path,
+.nav-label svg line { stroke: #AEC0DA; transition: stroke 0.2s; }
+.nav-label span { color: #555; font-size: 14px; transition: color 0.2s, font-weight 0.2s; }
+.nav-label:hover span { color: #20395D; }
+.nav-label:hover svg path { stroke: #20395D; }
+
+#t1:checked ~ .subtab-content-1 { display: block; }
+#t2:checked ~ .subtab-content-2 { display: block; }
+
+#t1:checked ~ .subtab-nav .bar-1,
+#t2:checked ~ .subtab-nav .bar-2 {
+    background-color: #20395d;
+}
+
+.company-detail-panel {
+    display: none;
+}
+.company-detail-panel.active {
+    display: block;
+}
