@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class ServiceProviderController extends Controller
 {
     public function index(){
-        return view('pages.ServiceProvider');
+        return view('pages.service-provider');
     }
 }

@@ -6,7 +6,7 @@
     <div class="max-w-[90%] mx-auto py-10 px-4 mt-[130px]">
 
         <nav class="flex items-center gap-2 text-sm mb-6 text-gray-500">
-            <a href="#" class="text-[18px] text-[#a7a7a7]">Home</a>
+            <a href="{{ route('home') }}" class="text-[18px] text-[#a7a7a7]">Home</a>
             <span class="text-[#a7a7a7]">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008" stroke="#A8A8A8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>

@@ -1,0 +1,101 @@
+<?php
+
+return [
+    /*
+    |--------------------------------------------------------------------------
+    | Static demo posts (replace with database later)
+    |--------------------------------------------------------------------------
+    */
+    'posts' => [
+        [
+            'id' => 1,
+            'title' => 'The Future of Smart Construction',
+            'date' => 'April 24, 2022',
+            'read_time' => '5 min read',
+            'hero_image' => 'images/blog/hero.png',
+            'card_image' => 'images/blog/card_1.png',
+            'excerpt' => 'Nunc non posuere consectetur, justo nisl tempor ante, non hendrerit dui odio id lorem.',
+            'related_ids' => [2, 3, 4],
+        ],
+        [
+            'id' => 2,
+            'title' => 'Safety Standards in Modern Projects',
+            'date' => 'April 20, 2022',
+            'read_time' => '4 min read',
+            'hero_image' => 'images/blog/card_2.png',
+            'card_image' => 'images/blog/card_2.png',
+            'excerpt' => 'Nunc non posuere consectetur, justo nisl tempor ante, non hendrerit dui odio id lorem.',
+            'related_ids' => [1, 3, 5],
+        ],
+        [
+            'id' => 3,
+            'title' => 'Engineering Excellence & Innovation',
+            'date' => 'April 18, 2022',
+            'read_time' => '6 min read',
+            'hero_image' => 'images/blog/card_3.png',
+            'card_image' => 'images/blog/card_3.png',
+            'excerpt' => 'Nunc non posuere consectetur, justo nisl tempor ante, non hendrerit dui odio id lorem.',
+            'related_ids' => [1, 4, 6],
+        ],
+        [
+            'id' => 4,
+            'title' => 'Sustainable Building Materials',
+            'date' => 'April 15, 2022',
+            'read_time' => '5 min read',
+            'hero_image' => 'images/blog/hero.png',
+            'card_image' => 'images/blog/card_1.png',
+            'excerpt' => 'Nunc non posuere consectetur, justo nisl tempor ante, non hendrerit dui odio id lorem.',
+            'related_ids' => [2, 5, 7],
+        ],
+        [
+            'id' => 5,
+            'title' => 'Infrastructure Development Trends',
+            'date' => 'April 12, 2022',
+            'read_time' => '7 min read',
+            'hero_image' => 'images/blog/card_2.png',
+            'card_image' => 'images/blog/card_2.png',
+            'excerpt' => 'Nunc non posuere consectetur, justo nisl tempor ante, non hendrerit dui odio id lorem.',
+            'related_ids' => [3, 6, 8],
+        ],
+        [
+            'id' => 6,
+            'title' => 'Project Management Best Practices',
+            'date' => 'April 10, 2022',
+            'read_time' => '4 min read',
+            'hero_image' => 'images/blog/card_3.png',
+            'card_image' => 'images/blog/card_3.png',
+            'excerpt' => 'Nunc non posuere consectetur, justo nisl tempor ante, non hendrerit dui odio id lorem.',
+            'related_ids' => [4, 7, 9],
+        ],
+        [
+            'id' => 7,
+            'title' => 'Digital Transformation in Construction',
+            'date' => 'April 7, 2022',
+            'read_time' => '5 min read',
+            'hero_image' => 'images/blog/hero.png',
+            'card_image' => 'images/blog/card_1.png',
+            'excerpt' => 'Nunc non posuere consectetur, justo nisl tempor ante, non hendrerit dui odio id lorem.',
+            'related_ids' => [5, 8, 9],
+        ],
+        [
+            'id' => 8,
+            'title' => 'Urban Planning & Smart Cities',
+            'date' => 'April 5, 2022',
+            'read_time' => '6 min read',
+            'hero_image' => 'images/blog/card_2.png',
+            'card_image' => 'images/blog/card_2.png',
+            'excerpt' => 'Nunc non posuere consectetur, justo nisl tempor ante, non hendrerit dui odio id lorem.',
+            'related_ids' => [6, 7, 9],
+        ],
+        [
+            'id' => 9,
+            'title' => 'Worker Safety & Health Guidelines',
+            'date' => 'April 2, 2022',
+            'read_time' => '3 min read',
+            'hero_image' => 'images/blog/card_3.png',
+            'card_image' => 'images/blog/card_3.png',
+            'excerpt' => 'Nunc non posuere consectetur, justo nisl tempor ante, non hendrerit dui odio id lorem.',
+            'related_ids' => [1, 7, 8],
+        ],
+    ],
+];

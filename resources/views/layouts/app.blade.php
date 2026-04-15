@@ -71,15 +71,6 @@
             scrollbar-width: none;
         }
 
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-
         input[type="date"]::-webkit-calendar-picker-indicator {
             opacity: 0;
             cursor: pointer;

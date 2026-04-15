@@ -5,16 +5,16 @@
     <main class="main-container mx-auto p-4 md:p-8 mt-[120px]">
 
         <header class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-10 gap-4">
-            <nav class="text-[18px] text-gray-500 font-bold flex">
-                Home
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <nav class="text-[18px] text-gray-500 font-bold flex items-center flex-wrap gap-1">
+                <a href="{{ route('home') }}" class="text-inherit no-underline hover:text-[#20395D]">Home</a>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0">
                     <path d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008"
                           stroke="#A8A8A8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
                           stroke-linejoin="round"/>
                 </svg>
 
-                Products
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="{{ route('products.index') }}" class="text-inherit no-underline hover:text-[#20395D]">Products</a>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0">
                     <path d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008"
                           stroke="#A8A8A8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
                           stroke-linejoin="round"/>
@@ -114,10 +114,10 @@
                             <span class="px-2 rounded-md bg-white">+</span>
                         </button>
                     </div>
-                    <button onclick="window.location.href='cart.html'"
-                            class="w-full h-[56px] bg-[#20395D] text-white rounded-[10px] font-bold text-[20px] shadow-lg shadow-[#20395D]/20 hover:bg-[#1a2c4e] transition-colors flex-grow">
+                    <a href="{{ route('cart.index') }}"
+                       class="w-full h-[56px] bg-[#20395D] text-white rounded-[10px] font-bold text-[20px] shadow-lg shadow-[#20395D]/20 hover:bg-[#1a2c4e] transition-colors flex-grow flex items-center justify-center no-underline">
                         Add to cart
-                    </button>
+                    </a>
                 </div>
                 <button onclick="toggleModal()"
                         class="w-full h-[56px] border border-[#20395D] text-[#20395D] rounded-[15px] font-bold text-[20px] hover:bg-blue-50 transition-colors">
@@ -151,55 +151,15 @@
 
             <div id="related-product-grid"
                  class="flex gap-6 overflow-x-auto pb-4 scrollbar-hide lg:grid lg:grid-cols-4 lg:gap-[23px]">
-                <div class="min-w-[305px] max-w-[305px] lg:min-w-0 lg:max-w-none flex-shrink-0 bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group h-[400px]">
-                    <div class="relative w-full h-[220px] overflow-hidden">
-                        <img src="{{ asset('img/images/home/product1.png') }}" alt="Product"
-                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                        <button onclick="event.preventDefault();"
-                                class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-red-50 z-10">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#20395D" stroke-width="2">
-                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="p-5 flex flex-col flex-grow">
-                        <div class="mb-3">
-                            <span class="bg-[#F3F4F6] text-[12px] px-4 py-1 rounded-full font-medium w-fit">Bricks</span>
-                        </div>
-                        <div class="flex justify-between items-center mb-6">
-                            <h3 class="text-[20px] font-medium text-[#20395D]">Products</h3>
-                            <span class="text-[20px] font-bold text-[#5570A6] whitespace-nowrap">100 KD</span>
-                        </div>
-                        <button class="w-full bg-[#20395D] text-white py-3 rounded-lg font-bold text-[18px] hover:bg-[#1a2c4e] shadow-md shadow-[#20395D]/20 mt-auto">
-                            Add to Cart
-                        </button>
-                    </div>
-                </div>
+                <x-product-card
+                    wrapper-class="min-w-[305px] max-w-[305px] lg:min-w-0 lg:max-w-none flex-shrink-0 h-[400px]"
+                    :image="asset('img/images/home/product1.png')"
+                    :detail-href="route('products.show', 1)"/>
 
-                <div class="min-w-[305px] max-w-[305px] lg:min-w-0 lg:max-w-none flex-shrink-0 bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group h-[400px]">
-                    <div class="relative w-full h-[220px] overflow-hidden">
-                        <img src="{{ asset('img/images/home/product1.png') }}" alt="Product"
-                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                        <button onclick="event.preventDefault();"
-                                class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-red-50 z-10">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#20395D" stroke-width="2">
-                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="p-5 flex flex-col flex-grow">
-                        <div class="mb-3">
-                            <span class="bg-[#F3F4F6] text-[12px] px-4 py-1 rounded-full font-medium w-fit">Bricks</span>
-                        </div>
-                        <div class="flex justify-between items-center mb-6">
-                            <h3 class="text-[20px] font-medium text-[#20395D]">Products</h3>
-                            <span class="text-[20px] font-bold text-[#5570A6] whitespace-nowrap">100 KD</span>
-                        </div>
-                        <button class="w-full bg-[#20395D] text-white py-3 rounded-lg font-bold text-[18px] hover:bg-[#1a2c4e] shadow-md shadow-[#20395D]/20 mt-auto">
-                            Add to Cart
-                        </button>
-                    </div>
-                </div>
+                <x-product-card
+                    wrapper-class="min-w-[305px] max-w-[305px] lg:min-w-0 lg:max-w-none flex-shrink-0 h-[400px]"
+                    :image="asset('img/images/home/product1.png')"
+                    :detail-href="route('products.show', 2)"/>
             </div>
         </section>
 
@@ -234,8 +194,8 @@
                 </div>
 
                 <p class="text-[18px] font-bold">Enter the quantity<span class="text-red-500 pl-[2px]">*</span></p>
-                <input type="email" placeholder="Your Quantity"
-                       class="w-full text-[12px] lg:h-[48px] border p-3 rounded-lg outline-none focus:border-[#20395D]">
+                <x-input type="text" placeholder="Your Quantity"
+                         class="w-full text-[12px] lg:h-[48px] border border-gray-300 p-3 rounded-lg outline-none focus:border-[#20395D]"/>
 
                 <button type="submit" class="w-full bg-[#20395D] text-white py-3 rounded-lg font-bold">Submit</button>
             </div>
@@ -244,21 +204,7 @@
 
     <script>
 
-        let toggles = [document.getElementById('menu-toggle'), document.getElementById('menu-toggle-md')];
-        let mobileMenu = document.getElementById('mobile-menu');
-
-        toggles.forEach(btn => {
-            if (btn) {
-                btn.addEventListener('click', () => {
-                    mobileMenu.classList.toggle('hidden');
-                    mobileMenu.classList.toggle('flex');
-                });
-            }
-        });
-
-        let params = new URLSearchParams(window.location.search);
-        let id = params.get('id');
-
+        let id = {{ (int) $id }};
 
         let products = [
             {id: 1, name: "Product 1", price: "100", category: "Bricks", img: "images/product1.png"},

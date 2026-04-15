@@ -135,9 +135,9 @@
                             <input type="checkbox" name="terms" id="terms" value="1" class="size-3 md:size-4 accent-[#1e2d5a]" {{ old('terms') ? 'checked' : '' }}/>
                             <label for="terms" class="text-xs md:text-sm text-gray-600 flex items-start">
                                 I Agree To The
-                                <a href="#" class="text-[#20395d] font-bold underline">Terms Of Use</a>
+                                <a href="{{ route('terms-condition.index') }}" class="text-[#20395d] font-bold underline">Terms Of Use</a>
                                 And
-                                <a href="#" class="text-[#20395d] font-bold underline">Privacy Policy</a>
+                                <a href="{{ route('policy.index') }}" class="text-[#20395d] font-bold underline">Privacy Policy</a>
                             </label>
                         </div>
                         <x-auth.field-error name="terms"/>
@@ -406,9 +406,9 @@
                             <input type="checkbox" name="partner_terms" id="partner-terms" value="1" class="w-4 h-4 accent-[#1e2d5a]" {{ old('partner_terms') ? 'checked' : '' }}/>
                             <label for="partner-terms" class="text-sm">
                                 I Agree To The
-                                <a href="#" class="text-[#20395d] font-bold underline">Terms Of Use</a>
+                                <a href="{{ route('terms-condition.index') }}" class="text-[#20395d] font-bold underline">Terms Of Use</a>
                                 And
-                                <a href="#" class="text-[#20395d] font-bold underline">Privacy Policy</a>
+                                <a href="{{ route('policy.index') }}" class="text-[#20395d] font-bold underline">Privacy Policy</a>
                             </label>
                         </div>
 

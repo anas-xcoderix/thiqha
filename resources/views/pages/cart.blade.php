@@ -10,101 +10,22 @@
 
                 <header class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-10 gap-4">
                     <h1 class="text-[32px] md:text-[40px] font-bold text-black">Cart</h1>
-                    <a href="index.html"
+                    <a href="{{ route('products.index') }}"
                        class="text-[18px] md:text-[24px] underline text-[#294035] font-medium hover:underline flex items-center gap-1.5">
                         Continue Shopping
                     </a>
                 </header>
 
                 <div id="cart-items-container">
-                    <article class="flex flex-col sm:flex-row items-center sm:items-center gap-6 p-4 md:p-6 border-b">
-                        <div class="w-full sm:w-[158px] h-[154px] overflow-hidden rounded-[10px] flex-shrink-0">
-                            <img src="{{ asset('img/images/home/cart-pic1.png') }}" alt="Products" class="w-full h-full object-cover">
-                        </div>
+                    <x-cart-line-item
+                        :image="asset('img/images/home/cart-pic1.png')"
+                        line-price="120 KWD"
+                        :border-bottom="true"/>
 
-                        <div class="flex flex-col flex-grow gap-3 w-full">
-                            <div class="flex justify-between items-start">
-                                <h3 class="text-[18px] font-bold">Products</h3>
-                                <span class="text-[18px] font-bold whitespace-nowrap hidden sm:block">120 KWD</span>
-                            </div>
-                            <span class="text-[16px] text-gray-400">120 KWD</span>
-                            <div>
-                                <span class="bg-[#F3F4F6] text-[14px] md:text-[18px] px-4 py-1.5 rounded-full font-medium w-fit">Bricks</span>
-                            </div>
-
-                            <div class="flex items-center justify-between sm:justify-start gap-4">
-                                <div class="flex items-center justify-center gap-2 border border-gray-200 rounded-[10px] bg-white h-[31px]">
-                                    <button class="w-8 h-8 flex items-center justify-center text-[#20395D] font-medium text-xl hover:bg-blue-50">
-                                        −
-                                    </button>
-                                    <input type="text" value="1"
-                                           class="w-10 text-center text-[18px] font-bold text-black outline-none" readonly>
-                                    <button class="w-8 h-8 flex items-center justify-center text-[#20395D] font-medium text-xl hover:bg-blue-50">
-                                        +
-                                    </button>
-                                </div>
-
-                                <span class="text-[18px] font-bold sm:hidden">120 KWD</span>
-
-                                <button class="w-11 h-11 flex items-center justify-center text-gray-400 hover:text-red-500 transition-colors">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="3" y="3.3999" width="10" height="12" rx="1" stroke="currentColor"
-                                              stroke-width="1.2"/>
-                                        <rect x="1.5" y="1.3999" width="13" height="2" rx="0.5" stroke="currentColor"
-                                              stroke-width="1.2"/>
-                                        <path d="M6 0.600098L10 0.600098M8 6V13M10.5 6V13M5.5 6V13" stroke="currentColor"
-                                              stroke-width="1.2" stroke-linecap="round"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </article>
-
-
-                    <article class="flex flex-col sm:flex-row items-center sm:items-center gap-6 p-4 md:p-6">
-                        <div class="w-full sm:w-[158px] h-[154px] overflow-hidden rounded-[10px] flex-shrink-0">
-                            <img src="{{ asset('img/images/home/cart-pic1.png') }}" alt="Products" class="w-full h-full object-cover">
-                        </div>
-
-                        <div class="flex flex-col flex-grow gap-3 w-full">
-                            <div class="flex justify-between items-start">
-                                <h3 class="text-[18px] font-bold">Products</h3>
-                                <span class="text-[18px] font-bold whitespace-nowrap hidden sm:block">120 KWD</span>
-                            </div>
-                            <span class="text-[16px] text-gray-400">120 KWD</span>
-                            <div>
-                                <span class="bg-[#F3F4F6] text-[14px] md:text-[18px] px-4 py-1.5 rounded-full font-medium w-fit">Bricks</span>
-                            </div>
-
-                            <div class="flex items-center justify-between sm:justify-start gap-4">
-                                <div class="flex items-center justify-center gap-2 border border-gray-200 rounded-[10px] bg-white h-[31px]">
-                                    <button class="w-8 h-8 flex items-center justify-center text-[#20395D] font-medium text-xl hover:bg-blue-50">
-                                        −
-                                    </button>
-                                    <input type="text" value="1"
-                                           class="w-10 text-center text-[18px] font-bold text-black outline-none" readonly>
-                                    <button class="w-8 h-8 flex items-center justify-center text-[#20395D] font-medium text-xl hover:bg-blue-50">
-                                        +
-                                    </button>
-                                </div>
-
-                                <span class="text-[18px] font-bold sm:hidden">120 KWD</span>
-
-                                <button class="w-11 h-11 flex items-center justify-center text-gray-400 hover:text-red-500 transition-colors">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="3" y="3.3999" width="10" height="12" rx="1" stroke="currentColor"
-                                              stroke-width="1.2"/>
-                                        <rect x="1.5" y="1.3999" width="13" height="2" rx="0.5" stroke="currentColor"
-                                              stroke-width="1.2"/>
-                                        <path d="M6 0.600098L10 0.600098M8 6V13M10.5 6V13M5.5 6V13" stroke="currentColor"
-                                              stroke-width="1.2" stroke-linecap="round"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </article>
+                    <x-cart-line-item
+                        :image="asset('img/images/home/cart-pic1.png')"
+                        line-price="120 KWD"
+                        :border-bottom="false"/>
                 </div>
             </section>
 
@@ -160,9 +81,9 @@
                         </div>
                     </div>
 
-                    <button class="w-full h-[40px] bg-[#223862] text-white rounded-[5px] font-bold text-[14px] shadow-lg shadow-[#223862]/20 hover:bg-[#1a2c4e] transition-colors">
+                    <a href="{{ route('checkout.index') }}" class="block w-full h-[40px] bg-[#223862] text-white rounded-[5px] font-bold text-[14px] shadow-lg shadow-[#223862]/20 hover:bg-[#1a2c4e] transition-colors text-center leading-[40px] no-underline">
                         Proceed to checkout
-                    </button>
+                    </a>
                 </section>
             </aside>
         </div>

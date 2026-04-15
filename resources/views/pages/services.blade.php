@@ -5,6 +5,10 @@
 
 @section('content')
 
+@php
+    $servicesCardWrap = 'cursor-pointer bg-white w-full md:w-[45%] xl:w-[30%] max-w-[460px] min-h-[358px] rounded-[37px] p-8 md:p-12 flex flex-col items-center shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] border border-gray-50/50 hover:shadow-[0_0_25px_8px_rgba(129,110,162,0.2)] transition-all';
+@endphp
+
 <div id="page-main">
     <section class="p-6 w-full box-border">
         <main class="relative min-h-screen w-full rounded-[40px] overflow-hidden shadow-2xl flex flex-col">
@@ -19,12 +23,8 @@
                 </h1>
 
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10">
-                    <button class="rounded-tl-[2.5rem] rounded-br-[2.5rem] bg-[#21395D] text-white md:w-[214px] md:h-[64px] w-36 md:py-5 py-4 font-bold transition-all">
-                        Explore
-                    </button>
-                    <button class="rounded-tl-[2.5rem] rounded-br-[2.5rem] bg-white text-[#21395D] md:w-[214px] md:h-[64px] w-36 md:py-5 py-4 font-bold transition-all">
-                        Contact Us
-                    </button>
+                    <x-button variant="rounded-leaf-primary" href="{{ route('products.index') }}">Explore</x-button>
+                    <x-button variant="rounded-leaf-secondary" href="{{ route('about.index') }}">Contact Us</x-button>
                 </div>
             </div>
 
@@ -37,65 +37,35 @@
                 <h2 class="font-bold text-black text-3xl mb-10">Thiqah Services</h2>
                 <div class="flex flex-wrap justify-center w-full gap-14">
 
-                    <div onclick="showPage('page-water')" class="cursor-pointer bg-white w-full md:w-[45%] xl:w-[30%] max-w-[460px] min-h-[358px] rounded-[37px] p-8 md:p-12 flex flex-col items-center shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] border border-gray-50/50 hover:shadow-[0_0_25px_8px_rgba(129,110,162,0.2)] transition-all">
-                        <div class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-[#816EA2] rotate-45 flex items-center justify-center rounded-[22px] mb-8 md:mb-10 shadow-lg flex-shrink-0">
-                            <div class="-rotate-45">
-                                <img src="{{ asset('images/thiqah-services/water-tank.png') }}" alt="Water Tanker" class="w-10 h-10 md:w-12 md:h-12 object-contain brightness-0 invert">
-                            </div>
-                        </div>
-                        <h3 class="text-[26px] md:text-[32px] font-bold text-black mb-6 md:mb-8 text-center">Water Tank</h3>
-                        <button class="border-[1.5px] border-[#816EA2] text-[#816EA2] px-10 py-2.5 rounded-tl-[20px] rounded-br-[20px] font-bold text-[15px] hover:bg-[#816EA2] hover:text-white transition-colors whitespace-nowrap">
-                            Order Now
-                        </button>
-                    </div>
+                    <x-thiqah-service-card onclick="showPage('page-water')" :wrapper-class="$servicesCardWrap"
+                        :purple-icon-glow="false"
+                        :icon="asset('images/thiqah-services/water-tank.png')"
+                        icon-alt="Water Tanker"
+                        title="Water Tank"/>
 
-                    <div onclick="showPage('page-soil')" class="cursor-pointer bg-white w-full md:w-[45%] xl:w-[30%] max-w-[460px] min-h-[358px] rounded-[37px] p-8 md:p-12 flex flex-col items-center shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] border border-gray-50/50 hover:shadow-[0_0_25px_8px_rgba(129,110,162,0.2)] transition-all">
-                        <div class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-[#816EA2] rotate-45 flex items-center justify-center rounded-[22px] mb-8 md:mb-10 shadow-lg flex-shrink-0">
-                            <div class="-rotate-45">
-                                <img src="{{ asset('images/thiqah-services/soil.png') }}" alt="Water Tanker" class="w-10 h-10 md:w-12 md:h-12 object-contain brightness-0 invert">
-                            </div>
-                        </div>
-                        <h3 class="text-[26px] md:text-[32px] font-bold text-black mb-6 md:mb-8 text-center">Soil</h3>
-                        <button class="border-[1.5px] border-[#816EA2] text-[#816EA2] px-10 py-2.5 rounded-tl-[20px] rounded-br-[20px] font-bold text-[15px] hover:bg-[#816EA2] hover:text-white transition-colors whitespace-nowrap">
-                            Order Now
-                        </button>
-                    </div>
+                    <x-thiqah-service-card onclick="showPage('page-soil')" :wrapper-class="$servicesCardWrap"
+                        :purple-icon-glow="false"
+                        :icon="asset('images/thiqah-services/soil.png')"
+                        icon-alt="Soil"
+                        title="Soil"/>
 
-                    <div onclick="showPage('page-bricks')" class="cursor-pointer bg-white w-full md:w-[45%] xl:w-[30%] max-w-[460px] min-h-[358px] rounded-[37px] p-8 md:p-12 flex flex-col items-center shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] border border-gray-50/50 hover:shadow-[0_0_25px_8px_rgba(129,110,162,0.2)] transition-all">
-                        <div class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-[#816EA2] rotate-45 flex items-center justify-center rounded-[22px] mb-8 md:mb-10 shadow-lg flex-shrink-0">
-                            <div class="-rotate-45">
-                                <img src="{{ asset('images/thiqah-services/bricks.png') }}" alt="Water Tanker" class="w-10 h-10 md:w-12 md:h-12 object-contain brightness-0 invert">
-                            </div>
-                        </div>
-                        <h3 class="text-[26px] md:text-[32px] font-bold text-black mb-6 md:mb-8 text-center">Bricks</h3>
-                        <button class="border-[1.5px] border-[#816EA2] text-[#816EA2] px-10 py-2.5 rounded-tl-[20px] rounded-br-[20px] font-bold text-[15px] hover:bg-[#816EA2] hover:text-white transition-colors whitespace-nowrap">
-                            Order Now
-                        </button>
-                    </div>
+                    <x-thiqah-service-card onclick="showPage('page-bricks')" :wrapper-class="$servicesCardWrap"
+                        :purple-icon-glow="false"
+                        :icon="asset('images/thiqah-services/bricks.png')"
+                        icon-alt="Bricks"
+                        title="Bricks"/>
 
-                    <div onclick="showPage('page-contracts')" class="cursor-pointer bg-white w-full md:w-[45%] xl:w-[30%] max-w-[460px] min-h-[358px] rounded-[37px] p-8 md:p-12 flex flex-col items-center shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] border border-gray-50/50 hover:shadow-[0_0_25px_8px_rgba(129,110,162,0.2)] transition-all">
-                        <div class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-[#816EA2] rotate-45 flex items-center justify-center rounded-[22px] mb-8 md:mb-10 shadow-lg flex-shrink-0">
-                            <div class="-rotate-45">
-                                <img src="{{ asset('images/thiqah-services/contracts.png') }}" alt="Water Tanker" class="w-10 h-10 md:w-12 md:h-12 object-contain brightness-0 invert">
-                            </div>
-                        </div>
-                        <h3 class="text-[26px] md:text-[32px] font-bold text-black mb-6 md:mb-8 text-center">Contracts</h3>
-                        <button class="border-[1.5px] border-[#816EA2] text-[#816EA2] px-10 py-2.5 rounded-tl-[20px] rounded-br-[20px] font-bold text-[15px] hover:bg-[#816EA2] hover:text-white transition-colors whitespace-nowrap">
-                            Order Now
-                        </button>
-                    </div>
+                    <x-thiqah-service-card onclick="showPage('page-contracts')" :wrapper-class="$servicesCardWrap"
+                        :purple-icon-glow="false"
+                        :icon="asset('images/thiqah-services/contracts.png')"
+                        icon-alt="Contracts"
+                        title="Contracts"/>
 
-                    <div onclick="showPage('page-insurance')" class="cursor-pointer bg-white w-full md:w-[45%] xl:w-[30%] max-w-[460px] min-h-[358px] rounded-[37px] p-8 md:p-12 flex flex-col items-center shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] border border-gray-50/50 hover:shadow-[0_0_25px_8px_rgba(129,110,162,0.2)] transition-all">
-                        <div class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-[#816EA2] rotate-45 flex items-center justify-center rounded-[22px] mb-8 md:mb-10 shadow-lg flex-shrink-0">
-                            <div class="-rotate-45">
-                                <img src="{{ asset('images/thiqah-services/insurance.png') }}" alt="Water Tanker" class="w-10 h-10 md:w-12 md:h-12 object-contain brightness-0 invert">
-                            </div>
-                        </div>
-                        <h3 class="text-[26px] md:text-[32px] font-bold text-black mb-6 md:mb-8 text-center">Insurance</h3>
-                        <button class="border-[1.5px] border-[#816EA2] text-[#816EA2] px-10 py-2.5 rounded-tl-[20px] rounded-br-[20px] font-bold text-[15px] hover:bg-[#816EA2] hover:text-white transition-colors whitespace-nowrap">
-                            Order Now
-                        </button>
-                    </div>
+                    <x-thiqah-service-card onclick="showPage('page-insurance')" :wrapper-class="$servicesCardWrap"
+                        :purple-icon-glow="false"
+                        :icon="asset('images/thiqah-services/insurance.png')"
+                        icon-alt="Insurance"
+                        title="Insurance"/>
 
                 </div>
             </div>

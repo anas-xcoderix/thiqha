@@ -1,7 +1,7 @@
 
 
 
-<footer class="w-full bg-[#1D3256] bg-center bg-contain relative flex flex-col justify-between overflow-hidden" style="background-image: url('{{ asset ('img/images/footer/footerBG.png')}}');">
+<footer class="w-full bg-[#1D3256] bg-center bg-contain relative flex flex-col justify-between overflow-hidden" style="background-image: url('{{ asset('img/images/footer/footerBG.png') }}');">
     <div class="px-4 pt-10">
         <div class=" mx-auto w-full flex flex-col lg:flex-row xl:justify-between gap-12 xl:gap-0 items-start">
 
@@ -24,12 +24,12 @@
             </div>
 
             <div class="flex flex-col gap-4 xl:gap-[32px] text-white font-medium text-[18px] 2xl:text-[24px] min-w-[150px]">
-                <a href="#" class="hover:text-gray-300 transition-colors">Home</a>
-                <a href="#" class="hover:text-gray-300 transition-colors">Thiqah Services</a>
-                <a href="#" class="hover:text-gray-300 transition-colors">Service Providers</a>
-                <a href="#" class="hover:text-gray-300 transition-colors">Products</a>
-                <a href="#" class="hover:text-gray-300 transition-colors">Blogs</a>
-                <a href="#" class="hover:text-gray-300 transition-colors">About Us</a>
+                <a href="{{ route('home') }}" class="hover:text-gray-300 transition-colors">Home</a>
+                <a href="{{ route('services.index') }}" class="hover:text-gray-300 transition-colors">Thiqah Services</a>
+                <a href="{{ route('service-providers.index') }}" class="hover:text-gray-300 transition-colors">Service Providers</a>
+                <a href="{{ route('products.index') }}" class="hover:text-gray-300 transition-colors">Products</a>
+                <a href="{{ route('blog.index') }}" class="hover:text-gray-300 transition-colors">Blogs</a>
+                <a href="{{ route('about.index') }}" class="hover:text-gray-300 transition-colors">About Us</a>
             </div>
 
             <div class="flex flex-col gap-6 xl:gap-[32px] text-white text-[16px] xl:text-[18px] 2xl:text-[24px] max-w-[300px]">
@@ -73,8 +73,8 @@
                     Powered by: <span class="font-bold">Cloud lift solutions</span>
                 </p>
                 <div class="flex gap-8 text-white text-[14px]">
-                    <a href="#" class="text-white underline font-bold">Privacy Policy</a>
-                    <a href="#" class="text-white underline font-bold">Terms & Condition</a>
+                    <a href="{{ route('policy.index') }}" class="text-white underline font-bold">Privacy Policy</a>
+                    <a href="{{ route('terms-condition.index') }}" class="text-white underline font-bold">Terms & Condition</a>
                 </div>
             </div>
         </div>

@@ -8,6 +8,6 @@ class AddtoCartController extends Controller
 {
     public function index()
     {
-        return view('pages.addtoCart');
+        return view('pages.add-to-cart');
     }
 }
