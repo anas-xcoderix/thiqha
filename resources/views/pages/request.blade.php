@@ -1,12 +1,6 @@
 @extends('layouts.app')
 
-@section('body-class', 'm-0 p-0 font-sans')
-
 @section('title', 'add to cart')
-
-@push('head-scripts')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-@endpush
 
 @section('content')
     <div class="max-w-[90%] mx-auto py-10 px-4 mt-[130px]">

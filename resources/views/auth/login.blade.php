@@ -1,12 +1,7 @@
 @extends('layouts.auth')
 
-@section('body-class', 'm-0 p-0 font-sans')
 
 @section('title', 'THIQAH – Login')
-
-@push('head-scripts')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-@endpush
 
 @section('content')
 <div class="flex w-full h-screen gap-[3.4rem]">

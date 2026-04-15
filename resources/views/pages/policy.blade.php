@@ -1,13 +1,7 @@
 @extends('layouts.app')
 
-@section('body-class', 'm-0 p-0 font-sans')
 
 @section('title', 'Our Privacy-Policy')
-
-@push('head-scripts')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-@endpush
-
 
 @section('content')
     <section class="p-6 w-full box-border">
