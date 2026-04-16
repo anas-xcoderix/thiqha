@@ -32,5 +32,6 @@
 <body class="@yield('body-class', 'font-sans')">
 @yield('content')
 @stack('auth_scripts')
+<x-ui.flash-modal />
 </body>
 </html>

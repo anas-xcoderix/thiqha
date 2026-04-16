@@ -28,16 +28,6 @@
 
             <h1 class="text-xl md:text-2xl font-bold text-gray-900 mb-8 text-center md:text-left">Create an Account</h1>
 
-            @if ($errors->any() && old('_form') === 'user')
-                <div class="mb-4 rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-800">
-                    <ul class="list-disc pl-5 space-y-1">
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
-
             <div class="step-nav flex items-center shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] rounded-full p-2 mb-10 w-full">
                 <label for="r1" class="flex-1 py-3 rounded-full text-sm font-semibold text-center cursor-pointer transition-all text-gray-400">Step 1</label>
                 <label for="r2" class="flex-1 py-3 rounded-full text-sm font-semibold text-center cursor-pointer transition-all text-gray-400">Step 2</label>
@@ -155,16 +145,6 @@
 
             <div class="step-content-3 hidden">
                 <h2 class="text-2xl font-extrabold text-gray-800 mb-5">Become a partner</h2>
-
-                @if ($errors->any() && old('_form') === 'partner')
-                    <div class="mb-4 rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-800">
-                        <ul class="list-disc pl-5 space-y-1">
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
 
                 <form id="partner-register-form" method="post" action="{{ route('partners.store') }}" enctype="multipart/form-data">
                     @csrf

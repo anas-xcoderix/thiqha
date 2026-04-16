@@ -94,6 +94,7 @@
 
 @include('partials.footer')
 
+<x-ui.flash-modal />
 
 @stack('scripts')
 <script>

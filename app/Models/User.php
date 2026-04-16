@@ -38,6 +38,11 @@ class User extends Authenticatable
         return $this->hasOne(Partner::class);
     }
 
+    public function address(): HasOne
+    {
+        return $this->hasOne(Address::class);
+    }
+
     public function isAdmin(): bool
     {
         return $this->role === UserRole::Admin;

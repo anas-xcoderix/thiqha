@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'THIQAH – Blog')
+@section('title', __('Profile'))
 
 @section('content')
     <input type="radio" name="profile-tab" id="tab-edit-info" class="hidden" checked/>
@@ -31,9 +31,7 @@
                             </svg>
                         </div>
                     </div>
-                    <p class="text-[15px] font-semibold tracking-[0.2px]">Mrehan Nasser</p>
-                    <p class="mt-1 text-[13px] font-semibold text-[#868787] tracking-[0.4px]">MREHAN.OSAMA22@GMAIL.COM</p>
-                    <p class="mt-[3px] text-[13px] font-semibold text-[#868787]">(+965) 6655 8877</p>
+                    @include('profile.partials.sidebar-user', ['user' => $user])
                 </div>
 
                 <div class="flex flex-col gap-1 flex-1">
@@ -88,7 +86,7 @@
 
                 <div class="mt-auto pt-4">
                     <div class="h-[0.5px] bg-primary opacity-15 mb-3"></div>
-                    <span class="text-[14px] text-gray-400 cursor-pointer px-4 transition">Log out</span>
+                    <a href="{{ route('logout') }}" class="inline-block text-[14px] text-gray-400 hover:text-primary cursor-pointer px-4 transition">{{ __('Log out') }}</a>
                 </div>
             </div>
         </div>
@@ -96,105 +94,11 @@
         <div class="flex flex-col gap-6 flex-1 px-3 md:px-0 max-h-full">
 
             <div id="panel-edit-info" class="flex flex-col space-y-6">
-                <div class="bg-white rounded-2xl shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] px-8 py-7 flex flex-col justify-between box-border 2xl:max-w-[90rem] h-[432px]">
-                    <h2 class="text-[18px] font-bold mb-5">Edit Info</h2>
-                    <div class="flex flex-col gap-4 flex-1">
-                        <div>
-                            <label class="text-[14px] font-bold mb-1.5 block">Full Name <span class="text-red-500">*</span></label>
-                            <input type="text" placeholder="Enter Name" class="h-[42px] border border-[#dde3ee] rounded-lg px-3.5 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none focus:border-primary w-full max-w-[80%]"/>
-                        </div>
-                        <div>
-                            <label class="text-[14px] font-bold mb-1.5 block">Email <span class="text-red-500">*</span></label>
-                            <input type="email" placeholder="Enter Mail" class="h-[42px] border border-[#dde3ee] rounded-lg px-3.5 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none focus:border-primary w-full max-w-[80%]"/>
-                        </div>
-                        <div>
-                            <label class="text-[14px] font-bold mb-1.5 block">Phone Number <span class="text-red-500">*</span></label>
-                            <div class="h-[42px] border border-[#dde3ee] rounded-lg flex items-center overflow-hidden bg-white w-full max-w-[80%]">
-                                <div class="flex items-center gap-1.5 px-3 border-r border-[#dde3ee] h-full bg-[#faf8f4] shrink-0">
-                                    <svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="22" height="5" fill="#007A3D"/>
-                                        <rect y="5" width="22" height="5" fill="#FFFFFF"/>
-                                        <rect y="10" width="22" height="5" fill="#CE1126"/>
-                                        <polygon points="0,0 7,7.5 0,15" fill="#000000"/>
-                                    </svg>
-                                    <span class="text-[13px] font-bold text-primary whitespace-nowrap">+965</span>
-                                </div>
-                                <input type="tel" placeholder="Enter Phone" class="flex-1 h-full px-3 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none bg-transparent"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-5">
-                        <button class="h-[46px] bg-[#20395D] text-white rounded-[10px] text-[15px] font-bold transition-colors w-full max-w-[80%]">Edit</button>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] px-8 py-6 flex flex-col justify-between box-border w-full 2xl:max-w-[90rem] h-[392px]">
-                    <h2 class="text-[18px] font-bold mb-5">Change Password</h2>
-                    <div class="flex flex-col gap-4 flex-1">
-                        <div>
-                            <label class="text-[14px] font-bold mb-1.5 block">Old Password</label>
-                            <div class="h-[42px] border border-[#dde3ee] rounded-lg flex items-center px-3.5 bg-white w-full max-w-[80%]">
-                                <input type="password" placeholder="Enter Password" class="flex-1 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none bg-transparent"/>
-                            </div>
-                        </div>
-                        <div>
-                            <label class="text-[14px] font-bold mb-1.5 block">New Password</label>
-                            <div class="h-[42px] border border-[#dde3ee] rounded-lg flex items-center px-3.5 bg-white w-full max-w-[80%]">
-                                <input type="password" placeholder="Enter Password" class="flex-1 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none bg-transparent"/>
-                            </div>
-                        </div>
-                        <div>
-                            <label class="text-[14px] font-bold mb-1.5 block">Confirm New Password</label>
-                            <div class="h-[42px] border border-[#dde3ee] rounded-lg flex items-center px-3.5 bg-white w-full max-w-[80%]">
-                                <input type="password" placeholder="Enter Password" class="flex-1 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none bg-transparent"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-5">
-                        <button class="h-[46px] bg-[#20395D] text-white rounded-[10px] text-[15px] font-bold transition-colors w-full max-w-[80%]">Edit</button>
-                    </div>
-                </div>
+                @include('profile.partials.account-forms', ['user' => $user])
             </div>
 
             <div id="panel-addresses" class="gap-6">
-                <div class="bg-white rounded-2xl shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] px-8 py-7 flex flex-col box-border w-full 2xl:max-w-[90rem]">
-                    <h2 class="text-[18px] font-bold mb-6">Address</h2>
-                    <div class="flex flex-col gap-4">
-                        <div>
-                            <label class="text-[14px] font-bold mb-1.5 block">Region <span class="text-red-500">*</span></label>
-                            <div class="h-[42px] border border-[#dde3ee] rounded-lg flex items-center px-3.5 bg-white w-full max-w-[80%] relative">
-                                <select class="flex-1 h-full text-[13px] text-[#b0b8c9] focus:outline-none bg-transparent appearance-none pr-8 cursor-pointer">
-                                    <option value="" disabled selected>Choose Region</option>
-                                </select>
-                                <div class="absolute right-3 pointer-events-none text-[#b0b8c9]">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <label class="text-[14px] font-bold mb-1.5 block text-right w-full max-w-[80%]">رقم القطعة <span class="text-red-500">*</span></label>
-                            <input type="text" placeholder="ادخل الرقم" dir="rtl" class="h-[42px] border border-[#dde3ee] rounded-lg px-3.5 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none focus:border-primary w-full max-w-[80%] text-right"/>
-                        </div>
-                        <div>
-                            <label class="text-[14px] font-bold mb-1.5 block">Street Name <span class="text-red-500">*</span></label>
-                            <input type="text" placeholder="Enter Name" class="h-[42px] border border-[#dde3ee] rounded-lg px-3.5 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none focus:border-primary w-full max-w-[80%]"/>
-                        </div>
-                        <div>
-                            <label class="text-[14px] font-bold mb-1.5 block">Building Number <span class="text-red-500">*</span></label>
-                            <input type="text" placeholder="Enter Number" class="h-[42px] border border-[#dde3ee] rounded-lg px-3.5 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none focus:border-primary w-full max-w-[80%]"/>
-                        </div>
-                        <div>
-                            <label class="text-[14px] font-bold mb-1.5 block">Floor</label>
-                            <input type="text" placeholder="Enter Floor" class="h-[42px] border border-[#dde3ee] rounded-lg px-3.5 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none focus:border-primary w-full max-w-[80%]"/>
-                        </div>
-                        <div>
-                            <label class="text-[14px] font-bold mb-1.5 block">Flat</label>
-                            <input type="text" placeholder="Enter Flat" class="h-[42px] border border-[#dde3ee] rounded-lg px-3.5 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none focus:border-primary w-full max-w-[80%]"/>
-                        </div>
-                    </div>
-                    <div class="mt-6">
-                        <button class="h-[46px] bg-[#20395D] text-white rounded-[10px] text-[15px] font-bold transition-colors w-full max-w-[80%]">Edit</button>
-                    </div>
-                </div>
+                @include('profile.partials.addresses-panel', ['user' => $user])
             </div>
 
             <div id="panel-orders">

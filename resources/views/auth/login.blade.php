@@ -17,10 +17,6 @@
 
             <h1 class="text-xl md:text-2xl font-bold text-gray-900 mb-8 text-center md:text-left">{{ __('Welcome Back !') }}</h1>
 
-            @if (session('status'))
-                <p class="mb-4 text-sm font-medium text-green-700">{{ session('status') }}</p>
-            @endif
-
             <form class="space-y-5" method="post" action="{{ route('login.store') }}">
                 @csrf
 
