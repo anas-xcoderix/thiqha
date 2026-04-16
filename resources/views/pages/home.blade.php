@@ -13,8 +13,8 @@
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <x-button variant="leaf-primary" href="{{ route('products.index') }}">Explore</x-button>
-            <x-button variant="leaf-secondary" href="{{ route('about.index') }}">Contact Us</x-button>
+            <x-button class="btn-leaf bg-[#21395D] text-white md:w-[214px] md:h-[64px] w-36 md:py-5 py-4 font-bold transition-all" href="{{ route('products.index') }}">Explore</x-button>
+            <x-button class="btn-leaf bg-white text-[#21395D] md:w-[214px] md:h-[64px] w-36 md:py-5 py-4 font-bold transition-all" href="{{ route('about.index') }}">Contact Us</x-button>
         </div>
     </x-hero>
 
@@ -86,7 +86,7 @@
         </div>
 
         <div class="mt-12 md:mt-20 flex justify-center">
-            <x-button variant="see-all-dark" href="{{ route('service-providers.index') }}">See All</x-button>
+            <x-button class="bg-[#223862] xl:w-[247px] xl:h-[64px] text-white px-12 md:px-20 py-3 md:py-4 rounded-tl-[35px] rounded-br-[35px] font-bold text-[18px] md:text-[18px] shadow-lg hover:shadow-[#223862]/30 hover:-translate-y-1 transition-all duration-300" href="{{ route('service-providers.index') }}">See All</x-button>
         </div>
 
     </section>
@@ -118,7 +118,7 @@
                     Explore the latest opportunities and submit your price offer today.
                 </p>
 
-                <x-button variant="see-all-banner" href="{{ route('request.index') }}">See All</x-button>
+                <x-button class="inline-flex items-center justify-center text-center bg-[#FFFFFF] w-full max-w-[247px] xl:w-[247px] xl:h-[64px] text-[#20395D] py-3 md:py-4 rounded-tl-[35px] rounded-br-[35px] font-bold text-[16px] md:text-[18px] shadow-lg hover:shadow-[#223862]/30 hover:-translate-y-1 transition-all duration-300" href="{{ route('request.index') }}">See All</x-button>
             </div>
 
             <div class="w-full xl:w-[532px] h-auto xl:h-[456px] flex flex-col items-center xl:items-end gap-6 xl:gap-0 relative">
@@ -176,7 +176,7 @@
         </div>
 
         <div class="mt-16 flex justify-center">
-            <x-button variant="see-all-white" href="{{ route('products.index') }}">See All</x-button>
+            <x-button class="bg-[#FFFFFF] xl:w-[247px] xl:h-[64px] text-[#20395D] px-12 md:px-20 py-3 md:py-4 rounded-tl-[35px] rounded-br-[35px] font-bold text-[18px] md:text-[18px] shadow-lg hover:shadow-[#223862]/30 hover:-translate-y-1 transition-all duration-300" href="{{ route('products.index') }}">See All</x-button>
         </div>
 
     </section>

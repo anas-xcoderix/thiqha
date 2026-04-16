@@ -18,5 +18,5 @@
 
     <h3 class="text-[26px] md:text-[32px] font-bold text-black mb-6 md:mb-8 text-center">{{ $title }}</h3>
 
-    <x-button variant="order-now" type="button">Order Now</x-button>
+    <x-button class="border-[1.5px] border-[#816EA2] text-[#816EA2] px-10 py-2.5 rounded-tl-[20px] rounded-br-[20px] font-bold text-[15px] hover:bg-[#816EA2] hover:text-white transition-colors" type="button">Order Now</x-button>
 </div>

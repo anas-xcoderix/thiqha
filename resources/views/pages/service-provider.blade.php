@@ -13,8 +13,8 @@
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <x-button variant="leaf-primary" href="{{ route('products.index') }}">Explore</x-button>
-            <x-button variant="leaf-secondary" href="{{ route('about.index') }}">Contact Us</x-button>
+            <x-button class="btn-leaf bg-[#21395D] text-white md:w-[214px] md:h-[64px] w-36 md:py-5 py-4 font-bold transition-all" href="{{ route('products.index') }}">Explore</x-button>
+            <x-button class="btn-leaf bg-white text-[#21395D] md:w-[214px] md:h-[64px] w-36 md:py-5 py-4 font-bold transition-all" href="{{ route('about.index') }}">Contact Us</x-button>
         </div>
     </x-hero>
 
