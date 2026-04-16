@@ -10,7 +10,7 @@
 @endphp
 
 <div id="page-main">
-    <section class="p-6 w-full box-border">
+    <section class="p-[7px] md:p-[24px] w-full box-border">
         <main class="relative min-h-screen w-full rounded-[40px] overflow-hidden shadow-2xl flex flex-col">
 
             <div class="absolute inset-0 z-0">
@@ -18,7 +18,7 @@
             </div>
 
             <div class="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-6">
-                <h1 class="text-white text-3xl md:text-[64px] font-bold leading-tight mb-20 tracking-tight">
+                <h1 class="text-white text-3xl md:text-[64px] font-bold leading-tight my-6 tracking-tight">
                     Thiqah Services
                 </h1>
 

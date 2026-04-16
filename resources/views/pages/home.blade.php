@@ -156,7 +156,7 @@
 
     <section class="bg-[#FAF8F4] w-full main-container mx-auto py-16 px-4">
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-6 xl:gap-[23px] justify-items-center">
+        <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-6 md:space-x-0 xl:gap-[23px] justify-items-center">
 
             @foreach ([
                 'product1.png',

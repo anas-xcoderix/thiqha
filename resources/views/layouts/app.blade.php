@@ -57,11 +57,16 @@
 
 
         .main-container {
-            padding: 24px;
+            padding: 7px;
             width: 100%;
             box-sizing: border-box;
         }
 
+        @media (min-width: 768px) {
+            .main-container {
+                padding: 24px;
+            }
+        }
         .no-scrollbar::-webkit-scrollbar {
             display: none;
         }

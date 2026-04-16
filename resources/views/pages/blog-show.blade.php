@@ -3,7 +3,7 @@
 @section('title', 'THIQAH – ' . $post['title'])
 
 @section('content')
-    <section class="p-6 w-full box-border">
+    <section class="p-[7px] md:p-[24px] w-full box-border">
         <main class="relative rounded-[40px] overflow-hidden shadow-2xl flex flex-col min-h-[400px]">
             <div class="absolute inset-0 z-0">
                 <img src="{{ asset($post['hero_image']) }}" class="w-full h-full object-cover" alt="{{ $post['title'] }}"/>

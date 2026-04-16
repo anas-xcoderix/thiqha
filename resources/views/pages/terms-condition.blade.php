@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <section class="p-6 w-full box-border">
+    <section class="p-[7px] md:p-[24px] w-full box-border">
         <main class="relative max-w-full min-h-[521px] mx-auto w-full rounded-[40px] overflow-hidden shadow-2xl flex flex-col">
 
             <div class="absolute inset-0 z-0">
