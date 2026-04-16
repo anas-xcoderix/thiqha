@@ -48,6 +48,7 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
+            background: #FAF8F4;
         }
 
         .btn-leaf {

@@ -2,9 +2,9 @@
     <nav
         class="bg-white w-full rounded-[30px] md:rounded-full md:px-6 px-4 py-4 md:py-4 flex flex-col md:flex-row items-center justify-between shadow-lg gap-4 xl:gap-0 relative">
         <div class="w-full xl:w-auto flex items-center justify-between gap-4">
-            <div class="flex-shrink-0 xl:hidden">
+            <a href="{{ route('home') }}" class="flex-shrink-0 xl:hidden">
                 <img src="{{ asset('/img/images/header/headerlogo.png') }}" alt="Logo" class="h-8 md:h-12">
-            </div>
+            </a>
 
             <div class="flex md:hidden items-center gap-2">
                 <button class="text-gray-500">
@@ -61,9 +61,9 @@
         </div>
 
         {{-- Center Logo --}}
-        <div class="flex-shrink-0 hidden xl:block">
+        <a href="{{ route('home') }}" class="flex-shrink-0 hidden xl:block">
             <img src="{{ asset('img/images/header/headerlogo.png') }}" alt="Logo" class="h-12">
-        </div>
+        </a>
 
         {{-- Desktop Right Links --}}
         <div class="hidden xl:flex items-center gap-12 text-[18px] text-gray-500">

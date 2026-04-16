@@ -38,7 +38,8 @@
     </section>
 
     <div class="pt-20 bg-[#FAF8F4]">
-        <div class="relative mb-16 h-[9rem]" style="background-image: url('{{ asset ('img/images/home/thiqah-services-bg.png')}}');">
+        <div class="relative mb-16 h-[9rem]"
+             style="background-image: url('{{ asset ('img/images/home/thiqah-services-bg.png')}}');">
 
             <div class="main-container mx-auto relative z-10">
                 <h2 class="absolute top-[55px] text-3xl md:text-[48px] font-bold text-black">
@@ -150,7 +151,8 @@
                 </button>
             </div>
 
-            <a href="{{ route('services') }}" class="bg-white w-full rounded-[37.31px] p-8 md:p-12 flex flex-col items-center justify-center shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-xl transition-all duration-300 border border-gray-50/50 cursor-pointer group">
+            <a href="{{ route('services') }}"
+               class="bg-white w-full rounded-[37.31px] p-8 md:p-12 flex flex-col items-center justify-center shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-xl transition-all duration-300 border border-gray-50/50 cursor-pointer group">
                 <svg class="w-[80px] h-[80px] md:w-[120px] md:h-[120px]" viewBox="0 0 120 120" fill="none">
                     <path
                         d="M60.0005 110C87.6147 110 110 87.6142 110 60C110 32.3858 87.6147 10 60.0005 10C32.3862 10 10.0005 32.3858 10.0005 60C10.0005 87.6142 32.3862 110 60.0005 110Z"
@@ -249,7 +251,8 @@
     </section>--}}
 
     <div class="pt-20 bg-[#FAF8F4]">
-        <div class="relative mb-16 h-[9rem]" style="background-image: url('{{ asset ('img/images/home/thiqah-services-bg.png')}}');">
+        <div class="relative mb-16 h-[9rem]"
+             style="background-image: url('{{ asset ('img/images/home/thiqah-services-bg.png')}}');">
 
             <div class="main-container mx-auto relative z-10">
                 <h2 class="absolute top-[55px] text-3xl md:text-[48px] font-bold text-black">
@@ -277,7 +280,8 @@
             <button
                 class="flex flex-col items-center justify-center flex-shrink-0 min-w-[180px] h-[120px] md:w-[252px] md:h-[156px] bg-white rounded-[25px] shadow-sm border border-gray-50 hover:shadow-md transition-all">
                 <div class="mb-2">
-                    <img src="{{ asset('img/images/home/construction.png') }}" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
+                    <img src="{{ asset('img/images/home/construction.png') }}"
+                         class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
                          alt="Construction">
                 </div>
                 <span class="text-gray-500 font-semibold text-[18px] lg:text-[24px]">Construction</span>
@@ -286,7 +290,8 @@
             <button
                 class="flex flex-col items-center justify-center flex-shrink-0 min-w-[180px] h-[120px] md:w-[251px] md:h-[156px] bg-white rounded-[25px] shadow-sm border border-gray-50 hover:shadow-md transition-all">
                 <div class="mb-2">
-                    <img src="{{ asset('img/images/home/electricity.png') }}" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
+                    <img src="{{ asset('img/images/home/electricity.png') }}"
+                         class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
                          alt="Electricity">
                 </div>
                 <span class="text-gray-500 font-semibold text-[18px] lg:text-[24px]">Electricity</span>
@@ -295,7 +300,8 @@
             <button
                 class="flex flex-col items-center justify-center flex-shrink-0 min-w-[180px] h-[120px] md:w-[251px] md:h-[156px] bg-white rounded-[25px] shadow-sm border border-gray-50 hover:shadow-md transition-all">
                 <div class="mb-2">
-                    <img src="{{ asset('img/images/home/plumbing.png') }}" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
+                    <img src="{{ asset('img/images/home/plumbing.png') }}"
+                         class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
                          alt="Plumbing">
                 </div>
                 <span class="text-gray-500 font-semibold text-[18px] lg:text-[24px]">Plumbing</span>
@@ -304,7 +310,8 @@
             <button
                 class="flex flex-col items-center justify-center flex-shrink-0 min-w-[180px] h-[120px] md:w-[251px] md:h-[156px] bg-white rounded-[25px] shadow-sm border border-gray-50 hover:shadow-md transition-all">
                 <div class="mb-2">
-                    <img src="{{ asset('img/images/home/carpentry.png') }}" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
+                    <img src="{{ asset('img/images/home/carpentry.png') }}"
+                         class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
                          alt="Carpentry">
                 </div>
                 <span class="text-gray-500 font-semibold text-[18px] lg:text-[24px]">Carpentry</span>
@@ -320,15 +327,18 @@
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 xl:gap-x-[24px] lg:gap-x-[14px] gap-x-6 xl:gap-y-[58px] lg:gap-y-[38px] gap-y-10 xl:px-8">
 
             <!-- Card 1 -->
-            <div class="relative group mx-auto w-full xl:rounded-[20px] lg:rounded-[30px] rounded-[25px] overflow-hidden shadow-md bg-white">
+            <div
+                class="relative group mx-auto w-full xl:rounded-[20px] lg:rounded-[30px] rounded-[25px] overflow-hidden shadow-md bg-white">
                 <img src="{{ asset('img/images/home/SP-card1.png') }}" alt="Construction"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
 
-                <div class="absolute bottom-3 left-3 right-3 lg:bottom-4 lg:left-4 lg:right-4 xl:bottom-1 xl:left-1 xl:right-1 bg-white h-auto min-h-[80px] xl:min-h-[92px] rounded-[22px] xl:rounded-full 2xl:rounded-[25px] px-4 py-3 xl:px-6 xl:py-4 2xl:px-2 2xl:py-2 flex items-center justify-between shadow-[0_10px_25px_rgba(0,0,0,0.1)]">
+                <div
+                    class="absolute bottom-3 left-3 right-3 lg:bottom-4 lg:left-4 lg:right-4 xl:bottom-1 xl:left-1 xl:right-1 bg-white h-auto min-h-[80px] xl:min-h-[92px] rounded-[22px] xl:rounded-full 2xl:rounded-[25px] px-4 py-3 xl:px-6 xl:py-4 2xl:px-2 2xl:py-2 flex items-center justify-between shadow-[0_10px_25px_rgba(0,0,0,0.1)]">
 
                     <div class="flex flex-col overflow-hidden w-full">
                         <div class="flex items-center gap-1.5 mb-0.5">
-                            <span class="xl:text-[17px] lg:text-[15px] text-[14px] font-bold text-black tracking-tight truncate">Provider Name</span>
+                            <span
+                                class="xl:text-[17px] lg:text-[15px] text-[14px] font-bold text-black tracking-tight truncate">Provider Name</span>
                             <img src="{{ asset('img/images/home/tick.png') }}" alt="Tick"
                                  class="xl:w-[20px] xl:h-[20px] lg:w-[16px] lg:h-[16px] w-[15px] h-[15px]">
                         </div>
@@ -336,14 +346,19 @@
                         <span class="text-[11px] text-[#AAAAAA] font-medium mb-1.5">Building</span>
 
                         <div class="flex gap-1 xl:gap-2 2xl:gap-1 items-center">
-                            <span class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Bricks</span>
-                            <span class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Electrical</span>
-                            <span class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Lighting</span>
+                            <span
+                                class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Bricks</span>
+                            <span
+                                class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Electrical</span>
+                            <span
+                                class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Lighting</span>
                         </div>
                     </div>
 
-                    <button class="xl:w-10 xl:h-10 lg:w-8 lg:h-8 w-8 h-8 flex-shrink-0 flex items-center justify-center text-gray-400 hover:text-[#223862] transition-colors ml-2">
-                        <svg class="xl:w-6 xl:h-6 lg:w-5 lg:h-5 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <button
+                        class="xl:w-10 xl:h-10 lg:w-8 lg:h-8 w-8 h-8 flex-shrink-0 flex items-center justify-center text-gray-400 hover:text-[#223862] transition-colors ml-2">
+                        <svg class="xl:w-6 xl:h-6 lg:w-5 lg:h-5 w-5 h-5" fill="none" stroke="currentColor"
+                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/>
                         </svg>
                     </button>
@@ -356,11 +371,13 @@
                 <img src="{{ asset('img/images/home/SP-card2.png') }}" alt="Construction"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
 
-                <div class="absolute bottom-3 left-3 right-3 lg:bottom-4 lg:left-4 lg:right-4 xl:bottom-1 xl:left-1 xl:right-1 bg-white h-auto min-h-[80px] xl:min-h-[92px] rounded-[22px] xl:rounded-full 2xl:rounded-[25px] px-4 py-3 xl:px-6 xl:py-4 2xl:px-2 2xl:py-2 flex items-center justify-between shadow-[0_10px_25px_rgba(0,0,0,0.1)]">
+                <div
+                    class="absolute bottom-3 left-3 right-3 lg:bottom-4 lg:left-4 lg:right-4 xl:bottom-1 xl:left-1 xl:right-1 bg-white h-auto min-h-[80px] xl:min-h-[92px] rounded-[22px] xl:rounded-full 2xl:rounded-[25px] px-4 py-3 xl:px-6 xl:py-4 2xl:px-2 2xl:py-2 flex items-center justify-between shadow-[0_10px_25px_rgba(0,0,0,0.1)]">
 
                     <div class="flex flex-col overflow-hidden w-full">
                         <div class="flex items-center gap-1.5 mb-0.5">
-                            <span class="xl:text-[17px] lg:text-[15px] text-[14px] font-bold text-black tracking-tight truncate">Provider Name</span>
+                            <span
+                                class="xl:text-[17px] lg:text-[15px] text-[14px] font-bold text-black tracking-tight truncate">Provider Name</span>
                             <img src="{{ asset('img/images/home/tick.png') }}" alt="Tick"
                                  class="xl:w-[20px] xl:h-[20px] lg:w-[16px] lg:h-[16px] w-[15px] h-[15px]">
                         </div>
@@ -368,14 +385,19 @@
                         <span class="text-[11px] text-[#AAAAAA] font-medium mb-1.5">Building</span>
 
                         <div class="flex gap-1 xl:gap-2 2xl:gap-1 items-center">
-                            <span class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Bricks</span>
-                            <span class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Electrical</span>
-                            <span class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Lighting</span>
+                            <span
+                                class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Bricks</span>
+                            <span
+                                class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Electrical</span>
+                            <span
+                                class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Lighting</span>
                         </div>
                     </div>
 
-                    <button class="xl:w-10 xl:h-10 lg:w-8 lg:h-8 w-8 h-8 flex-shrink-0 flex items-center justify-center text-gray-400 hover:text-[#223862] transition-colors ml-2">
-                        <svg class="xl:w-6 xl:h-6 lg:w-5 lg:h-5 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <button
+                        class="xl:w-10 xl:h-10 lg:w-8 lg:h-8 w-8 h-8 flex-shrink-0 flex items-center justify-center text-gray-400 hover:text-[#223862] transition-colors ml-2">
+                        <svg class="xl:w-6 xl:h-6 lg:w-5 lg:h-5 w-5 h-5" fill="none" stroke="currentColor"
+                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/>
                         </svg>
                     </button>
@@ -388,11 +410,13 @@
                 <img src="{{ asset('img/images/home/SP-card3.png') }}" alt="Construction"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
 
-                <div class="absolute bottom-3 left-3 right-3 lg:bottom-4 lg:left-4 lg:right-4 xl:bottom-1 xl:left-1 xl:right-1 bg-white h-auto min-h-[80px] xl:min-h-[92px] rounded-[22px] xl:rounded-full 2xl:rounded-[25px] px-4 py-3 xl:px-6 xl:py-4 2xl:px-2 2xl:py-2 flex items-center justify-between shadow-[0_10px_25px_rgba(0,0,0,0.1)]">
+                <div
+                    class="absolute bottom-3 left-3 right-3 lg:bottom-4 lg:left-4 lg:right-4 xl:bottom-1 xl:left-1 xl:right-1 bg-white h-auto min-h-[80px] xl:min-h-[92px] rounded-[22px] xl:rounded-full 2xl:rounded-[25px] px-4 py-3 xl:px-6 xl:py-4 2xl:px-2 2xl:py-2 flex items-center justify-between shadow-[0_10px_25px_rgba(0,0,0,0.1)]">
 
                     <div class="flex flex-col overflow-hidden w-full">
                         <div class="flex items-center gap-1.5 mb-0.5">
-                            <span class="xl:text-[17px] lg:text-[15px] text-[14px] font-bold text-black tracking-tight truncate">Provider Name</span>
+                            <span
+                                class="xl:text-[17px] lg:text-[15px] text-[14px] font-bold text-black tracking-tight truncate">Provider Name</span>
                             <img src="{{ asset('img/images/home/tick.png') }}" alt="Tick"
                                  class="xl:w-[20px] xl:h-[20px] lg:w-[16px] lg:h-[16px] w-[15px] h-[15px]">
                         </div>
@@ -400,14 +424,19 @@
                         <span class="text-[11px] text-[#AAAAAA] font-medium mb-1.5">Building</span>
 
                         <div class="flex gap-1 xl:gap-2 2xl:gap-1 items-center">
-                            <span class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Bricks</span>
-                            <span class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Electrical</span>
-                            <span class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Lighting</span>
+                            <span
+                                class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Bricks</span>
+                            <span
+                                class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Electrical</span>
+                            <span
+                                class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Lighting</span>
                         </div>
                     </div>
 
-                    <button class="xl:w-10 xl:h-10 lg:w-8 lg:h-8 w-8 h-8 flex-shrink-0 flex items-center justify-center text-gray-400 hover:text-[#223862] transition-colors ml-2">
-                        <svg class="xl:w-6 xl:h-6 lg:w-5 lg:h-5 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <button
+                        class="xl:w-10 xl:h-10 lg:w-8 lg:h-8 w-8 h-8 flex-shrink-0 flex items-center justify-center text-gray-400 hover:text-[#223862] transition-colors ml-2">
+                        <svg class="xl:w-6 xl:h-6 lg:w-5 lg:h-5 w-5 h-5" fill="none" stroke="currentColor"
+                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/>
                         </svg>
                     </button>
@@ -420,11 +449,13 @@
                 <img src="{{ asset('img/images/home/SP-card4.png') }}" alt="Construction"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
 
-                <div class="absolute bottom-3 left-3 right-3 lg:bottom-4 lg:left-4 lg:right-4 xl:bottom-1 xl:left-1 xl:right-1 bg-white h-auto min-h-[80px] xl:min-h-[92px] rounded-[22px] xl:rounded-full 2xl:rounded-[25px] px-4 py-3 xl:px-6 xl:py-4 2xl:px-2 2xl:py-2 flex items-center justify-between shadow-[0_10px_25px_rgba(0,0,0,0.1)]">
+                <div
+                    class="absolute bottom-3 left-3 right-3 lg:bottom-4 lg:left-4 lg:right-4 xl:bottom-1 xl:left-1 xl:right-1 bg-white h-auto min-h-[80px] xl:min-h-[92px] rounded-[22px] xl:rounded-full 2xl:rounded-[25px] px-4 py-3 xl:px-6 xl:py-4 2xl:px-2 2xl:py-2 flex items-center justify-between shadow-[0_10px_25px_rgba(0,0,0,0.1)]">
 
                     <div class="flex flex-col overflow-hidden w-full">
                         <div class="flex items-center gap-1.5 mb-0.5">
-                            <span class="xl:text-[17px] lg:text-[15px] text-[14px] font-bold text-black tracking-tight truncate">Provider Name</span>
+                            <span
+                                class="xl:text-[17px] lg:text-[15px] text-[14px] font-bold text-black tracking-tight truncate">Provider Name</span>
                             <img src="{{ asset('img/images/home/tick.png') }}" alt="Tick"
                                  class="xl:w-[20px] xl:h-[20px] lg:w-[16px] lg:h-[16px] w-[15px] h-[15px]">
                         </div>
@@ -432,14 +463,19 @@
                         <span class="text-[11px] text-[#AAAAAA] font-medium mb-1.5">Building</span>
 
                         <div class="flex gap-1 xl:gap-2 2xl:gap-1 items-center">
-                            <span class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Bricks</span>
-                            <span class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Electrical</span>
-                            <span class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Lighting</span>
+                            <span
+                                class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Bricks</span>
+                            <span
+                                class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Electrical</span>
+                            <span
+                                class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Lighting</span>
                         </div>
                     </div>
 
-                    <button class="xl:w-10 xl:h-10 lg:w-8 lg:h-8 w-8 h-8 flex-shrink-0 flex items-center justify-center text-gray-400 hover:text-[#223862] transition-colors ml-2">
-                        <svg class="xl:w-6 xl:h-6 lg:w-5 lg:h-5 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <button
+                        class="xl:w-10 xl:h-10 lg:w-8 lg:h-8 w-8 h-8 flex-shrink-0 flex items-center justify-center text-gray-400 hover:text-[#223862] transition-colors ml-2">
+                        <svg class="xl:w-6 xl:h-6 lg:w-5 lg:h-5 w-5 h-5" fill="none" stroke="currentColor"
+                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/>
                         </svg>
                     </button>
@@ -452,11 +488,13 @@
                 <img src="{{ asset('img/images/home/SP-card5.png') }}" alt="Construction"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
 
-                <div class="absolute bottom-3 left-3 right-3 lg:bottom-4 lg:left-4 lg:right-4 xl:bottom-1 xl:left-1 xl:right-1 bg-white h-auto min-h-[80px] xl:min-h-[92px] rounded-[22px] xl:rounded-full 2xl:rounded-[25px] px-4 py-3 xl:px-6 xl:py-4 2xl:px-2 2xl:py-2 flex items-center justify-between shadow-[0_10px_25px_rgba(0,0,0,0.1)]">
+                <div
+                    class="absolute bottom-3 left-3 right-3 lg:bottom-4 lg:left-4 lg:right-4 xl:bottom-1 xl:left-1 xl:right-1 bg-white h-auto min-h-[80px] xl:min-h-[92px] rounded-[22px] xl:rounded-full 2xl:rounded-[25px] px-4 py-3 xl:px-6 xl:py-4 2xl:px-2 2xl:py-2 flex items-center justify-between shadow-[0_10px_25px_rgba(0,0,0,0.1)]">
 
                     <div class="flex flex-col overflow-hidden w-full">
                         <div class="flex items-center gap-1.5 mb-0.5">
-                            <span class="xl:text-[17px] lg:text-[15px] text-[14px] font-bold text-black tracking-tight truncate">Provider Name</span>
+                            <span
+                                class="xl:text-[17px] lg:text-[15px] text-[14px] font-bold text-black tracking-tight truncate">Provider Name</span>
                             <img src="{{ asset('img/images/home/tick.png') }}" alt="Tick"
                                  class="xl:w-[20px] xl:h-[20px] lg:w-[16px] lg:h-[16px] w-[15px] h-[15px]">
                         </div>
@@ -464,14 +502,19 @@
                         <span class="text-[11px] text-[#AAAAAA] font-medium mb-1.5">Building</span>
 
                         <div class="flex gap-1 xl:gap-2 2xl:gap-1 items-center">
-                            <span class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Bricks</span>
-                            <span class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Electrical</span>
-                            <span class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Lighting</span>
+                            <span
+                                class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Bricks</span>
+                            <span
+                                class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Electrical</span>
+                            <span
+                                class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Lighting</span>
                         </div>
                     </div>
 
-                    <button class="xl:w-10 xl:h-10 lg:w-8 lg:h-8 w-8 h-8 flex-shrink-0 flex items-center justify-center text-gray-400 hover:text-[#223862] transition-colors ml-2">
-                        <svg class="xl:w-6 xl:h-6 lg:w-5 lg:h-5 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <button
+                        class="xl:w-10 xl:h-10 lg:w-8 lg:h-8 w-8 h-8 flex-shrink-0 flex items-center justify-center text-gray-400 hover:text-[#223862] transition-colors ml-2">
+                        <svg class="xl:w-6 xl:h-6 lg:w-5 lg:h-5 w-5 h-5" fill="none" stroke="currentColor"
+                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/>
                         </svg>
                     </button>
@@ -484,11 +527,13 @@
                 <img src="{{ asset('img/images/home/SP-card6.png') }}" alt="Construction"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
 
-                <div class="absolute bottom-3 left-3 right-3 lg:bottom-4 lg:left-4 lg:right-4 xl:bottom-1 xl:left-1 xl:right-1 bg-white h-auto min-h-[80px] xl:min-h-[92px] rounded-[22px] xl:rounded-full 2xl:rounded-[25px] px-4 py-3 xl:px-6 xl:py-4 2xl:px-2 2xl:py-2 flex items-center justify-between shadow-[0_10px_25px_rgba(0,0,0,0.1)]">
+                <div
+                    class="absolute bottom-3 left-3 right-3 lg:bottom-4 lg:left-4 lg:right-4 xl:bottom-1 xl:left-1 xl:right-1 bg-white h-auto min-h-[80px] xl:min-h-[92px] rounded-[22px] xl:rounded-full 2xl:rounded-[25px] px-4 py-3 xl:px-6 xl:py-4 2xl:px-2 2xl:py-2 flex items-center justify-between shadow-[0_10px_25px_rgba(0,0,0,0.1)]">
 
                     <div class="flex flex-col overflow-hidden w-full">
                         <div class="flex items-center gap-1.5 mb-0.5">
-                            <span class="xl:text-[17px] lg:text-[15px] text-[14px] font-bold text-black tracking-tight truncate">Provider Name</span>
+                            <span
+                                class="xl:text-[17px] lg:text-[15px] text-[14px] font-bold text-black tracking-tight truncate">Provider Name</span>
                             <img src="{{ asset('img/images/home/tick.png') }}" alt="Tick"
                                  class="xl:w-[20px] xl:h-[20px] lg:w-[16px] lg:h-[16px] w-[15px] h-[15px]">
                         </div>
@@ -496,14 +541,19 @@
                         <span class="text-[11px] text-[#AAAAAA] font-medium mb-1.5">Building</span>
 
                         <div class="flex gap-1 xl:gap-2 2xl:gap-1 items-center">
-                            <span class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Bricks</span>
-                            <span class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Electrical</span>
-                            <span class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Lighting</span>
+                            <span
+                                class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Bricks</span>
+                            <span
+                                class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Electrical</span>
+                            <span
+                                class="bg-[#D9D3E3] text-[#000000] text-[8px] xl:text-[10px] px-2 xl:px-3 2xl:px-2 py-0.5 xl:py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap">Lighting</span>
                         </div>
                     </div>
 
-                    <button class="xl:w-10 xl:h-10 lg:w-8 lg:h-8 w-8 h-8 flex-shrink-0 flex items-center justify-center text-gray-400 hover:text-[#223862] transition-colors ml-2">
-                        <svg class="xl:w-6 xl:h-6 lg:w-5 lg:h-5 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <button
+                        class="xl:w-10 xl:h-10 lg:w-8 lg:h-8 w-8 h-8 flex-shrink-0 flex items-center justify-center text-gray-400 hover:text-[#223862] transition-colors ml-2">
+                        <svg class="xl:w-6 xl:h-6 lg:w-5 lg:h-5 w-5 h-5" fill="none" stroke="currentColor"
+                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/>
                         </svg>
                     </button>
@@ -532,7 +582,8 @@
                 class="w-full xl:w-[610px] flex flex-col items-center xl:items-start text-center xl:text-left text-white">
 
                 <div class="flex items-center gap-3 mb-4 md:mb-6">
-                    <img src="{{ asset('img/images/home/decor.png') }}" alt="decor" class="w-[12px] h-[18px] xl:w-[14px] xl:h-[22px]">
+                    <img src="{{ asset('img/images/home/decor.png') }}" alt="decor"
+                         class="w-[12px] h-[18px] xl:w-[14px] xl:h-[22px]">
                     <span class="text-[12px] md:text-[16px] text-[#AAAAAA] uppercase font-medium tracking-wider">Send Requests</span>
                 </div>
 
@@ -563,12 +614,14 @@
 
                 <div
                     class="w-[260px] md:w-[320px] xl:w-[380px] h-[160px] md:h-[200px] xl:h-[231px] rounded-[100px] xl:mr-56 overflow-hidden shadow-2xl z-10 flex items-center justify-center">
-                    <img src="{{ asset('img/images/home/banner1.png') }}" alt="Road Roller" class="w-full h-full object-cover">
+                    <img src="{{ asset('img/images/home/banner1.png') }}" alt="Road Roller"
+                         class="w-full h-full object-cover">
                 </div>
 
                 <div
                     class="w-[300px] md:w-[450px] xl:w-[550px] h-[180px] md:h-[220px] xl:h-[200px] rounded-full overflow-hidden shadow-2xl z-20 xl:mr-14 -mt-10 md:-mt-5 xl:mt-[20px] flex items-center justify-center">
-                    <img src="{{ asset('img/images/home/banner2.png') }}" alt="Construction Site" class="w-full h-full object-cover">
+                    <img src="{{ asset('img/images/home/banner2.png') }}" alt="Construction Site"
+                         class="w-full h-full object-cover">
                 </div>
 
             </div>
@@ -577,7 +630,8 @@
 
 
     <div class="bg-[#FAF8F4]">
-        <div class="relative mb-16 h-[9rem]" style="background-image: url('{{ asset ('img/images/home/thiqah-services-bg.png')}}');">
+        <div class="relative mb-16 h-[9rem]"
+             style="background-image: url('{{ asset ('img/images/home/thiqah-services-bg.png')}}');">
 
             <div class="main-container mx-auto relative z-10">
                 <h2 class="absolute top-[55px] text-3xl md:text-[48px] font-bold text-black">
@@ -605,7 +659,8 @@
             <button
                 class="flex flex-col items-center justify-center flex-shrink-0 min-w-[180px] h-[120px] md:w-[252px] md:h-[156px] bg-white rounded-[25px] shadow-sm border border-gray-50 hover:shadow-md transition-all">
                 <div class="mb-2">
-                    <img src="{{ asset('img/images/home/building.png') }}" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
+                    <img src="{{ asset('img/images/home/building.png') }}"
+                         class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
                          alt="Construction">
                 </div>
                 <span class="text-gray-500 font-semibold text-[18px] lg:text-[24px]">Building</span>
@@ -614,7 +669,8 @@
             <button
                 class="flex flex-col items-center justify-center flex-shrink-0 min-w-[180px] h-[120px] md:w-[251px] md:h-[156px] bg-white rounded-[25px] shadow-sm border border-gray-50 hover:shadow-md transition-all">
                 <div class="mb-2">
-                    <img src="{{ asset('img/images/home/electric.png') }}" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
+                    <img src="{{ asset('img/images/home/electric.png') }}"
+                         class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
                          alt="Electricity">
                 </div>
                 <span class="text-gray-500 font-semibold text-[18px] lg:text-[24px]">Electrical</span>
@@ -623,7 +679,8 @@
             <button
                 class="flex flex-col items-center justify-center flex-shrink-0 min-w-[180px] h-[120px] md:w-[251px] md:h-[156px] bg-white rounded-[25px] shadow-sm border border-gray-50 hover:shadow-md transition-all">
                 <div class="mb-2">
-                    <img src="{{ asset('img/images/home/lighting.png') }}" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
+                    <img src="{{ asset('img/images/home/lighting.png') }}"
+                         class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
                          alt="Plumbing">
                 </div>
                 <span class="text-gray-500 font-semibold text-[18px] lg:text-[24px]">Lighting</span>
@@ -632,7 +689,8 @@
             <button
                 class="flex flex-col items-center justify-center flex-shrink-0 min-w-[180px] h-[120px] md:w-[251px] md:h-[156px] bg-white rounded-[25px] shadow-sm border border-gray-50 hover:shadow-md transition-all">
                 <div class="mb-2">
-                    <img src="{{ asset('img/images/home/plumbing.png') }}" class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
+                    <img src="{{ asset('img/images/home/plumbing.png') }}"
+                         class="w-10 h-10 md:w-[63px] md:h-[63px] object-contain"
                          alt="Plumbing">
                 </div>
                 <span class="text-gray-500 font-semibold text-[18px] lg:text-[24px]">Plumbing</span>
@@ -648,8 +706,8 @@
             class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-6 xl:gap-[23px] justify-items-center">
 
             <!-- Card 1 -->
-            <div
-                class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
+            <a href="{{ route('ProductDetails') }}"
+               class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
 
                 <div class="relative w-full h-[200px] xl:h-[220px] overflow-hidden">
                     <img src="{{ asset('img/images/home/product1.png') }}" alt="Product"
@@ -683,12 +741,12 @@
                         Add To Cart
                     </button>
                 </div>
-            </div>
+            </a>
 
 
             <!-- Card 2 -->
-            <div
-                class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
+            <a href="{{ route('ProductDetails') }}"
+               class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
 
                 <div class="relative w-full h-[200px] xl:h-[220px] overflow-hidden">
                     <img src="{{ asset('img/images/home/product2.png') }}" alt="Product"
@@ -722,12 +780,12 @@
                         Add To Cart
                     </button>
                 </div>
-            </div>
+            </a>
 
 
             <!-- Card 3 -->
-            <div
-                class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
+            <a href="{{ route('ProductDetails') }}"
+               class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
 
                 <div class="relative w-full h-[200px] xl:h-[220px] overflow-hidden">
                     <img src="{{ asset('img/images/home/product3.png') }}" alt="Product"
@@ -761,12 +819,12 @@
                         Add To Cart
                     </button>
                 </div>
-            </div>
+            </a>
 
 
             <!-- Card 4 -->
-            <div
-                class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
+            <a href="{{ route('ProductDetails') }}"
+               class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
 
                 <div class="relative w-full h-[200px] xl:h-[220px] overflow-hidden">
                     <img src="{{ asset('img/images/home/product4.png') }}" alt="Product"
@@ -800,12 +858,12 @@
                         Add To Cart
                     </button>
                 </div>
-            </div>
+            </a>
 
 
             <!-- Card 5 -->
-            <div
-                class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
+            <a href="{{ route('ProductDetails') }}"
+               class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
 
                 <div class="relative w-full h-[200px] xl:h-[220px] overflow-hidden">
                     <img src="{{ asset('img/images/home/product5.png') }}" alt="Product"
@@ -839,11 +897,11 @@
                         Add To Cart
                     </button>
                 </div>
-            </div>
+            </a>
 
             <!-- Card 6 -->
-            <div
-                class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
+            <a href="{{ route('ProductDetails') }}"
+               class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
 
                 <div class="relative w-full h-[200px] xl:h-[220px] overflow-hidden">
                     <img src="{{ asset('img/images/home/product6.png') }}" alt="Product"
@@ -877,12 +935,12 @@
                         Add To Cart
                     </button>
                 </div>
-            </div>
+            </a>
 
 
             <!-- Card 7 -->
-            <div
-                class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
+            <a href="{{ route('ProductDetails') }}"
+               class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
 
                 <div class="relative w-full h-[200px] xl:h-[220px] overflow-hidden">
                     <img src="{{ asset('img/images/home/product7.png') }}" alt="Product"
@@ -916,11 +974,11 @@
                         Add To Cart
                     </button>
                 </div>
-            </div>
+            </a>
 
             <!-- Card 8 -->
-            <div
-                class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
+            <a href="{{ route('ProductDetails') }}"
+               class="bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group">
 
                 <div class="relative w-full h-[200px] xl:h-[220px] overflow-hidden">
                     <img src="{{ asset('img/images/home/product1.png') }}" alt="Product"
@@ -954,8 +1012,7 @@
                         Add To Cart
                     </button>
                 </div>
-            </div>
-
+            </a>
         </div>
 
         <a href="{{ route('products') }}" class="mt-16 flex justify-center">
