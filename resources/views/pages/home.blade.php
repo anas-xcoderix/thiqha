@@ -118,7 +118,8 @@
                     Explore the latest opportunities and submit your price offer today.
                 </p>
 
-                <x-button class="inline-flex items-center justify-center text-center bg-[#FFFFFF] w-full max-w-[247px] xl:w-[247px] xl:h-[64px] text-[#20395D] py-3 md:py-4 rounded-tl-[35px] rounded-br-[35px] font-bold text-[16px] md:text-[18px] shadow-lg hover:shadow-[#223862]/30 hover:-translate-y-1 transition-all duration-300" href="{{ route('request.index') }}">See All</x-button>
+                <x-button class="xl:block hidden inline-flex items-center justify-center text-center bg-[#FFFFFF] w-full max-w-[247px] xl:w-[247px] xl:h-[64px] text-[#20395D] py-3 md:py-4 rounded-tl-[35px] rounded-br-[35px] font-bold text-[16px] md:text-[18px] shadow-lg hover:shadow-[#223862]/30 hover:-translate-y-1 transition-all duration-300" href="{{ route('request.index') }}">See All</x-button>
+
             </div>
 
             <div class="w-full xl:w-[532px] h-auto xl:h-[456px] flex flex-col items-center xl:items-end gap-6 xl:gap-0 relative">
@@ -131,6 +132,7 @@
                     <img src="{{ asset('img/images/home/banner2.png') }}" alt="Construction Site" class="w-full h-full object-cover">
                 </div>
 
+                <x-button class="xl:hidden block inline-flex items-center justify-center text-center bg-[#FFFFFF] w-full max-w-[247px] xl:w-[247px] xl:h-[64px] text-[#20395D] py-3 md:py-4 rounded-tl-[35px] rounded-br-[35px] font-bold text-[16px] md:text-[18px] shadow-lg hover:shadow-[#223862]/30 hover:-translate-y-1 transition-all duration-300" href="{{ route('request.index') }}">See All</x-button>
             </div>
         </div>
     </section>

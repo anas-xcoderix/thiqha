@@ -37,7 +37,7 @@
         </div>
     </section>
 
-    <section class="bg-[#FAF8F4] main-container w-full mx-auto font-sans flex flex-col mt-16 px-4 md:px-6 xl:px-0">
+    <section class="bg-[#FAF8F4] main-container w-full mx-auto font-sans flex flex-col mt-16 px-4 md:px-6">
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 xl:gap-x-[24px] lg:gap-x-[14px] gap-x-6 xl:gap-y-[58px] lg:gap-y-[38px] gap-y-10 xl:px-8">
 

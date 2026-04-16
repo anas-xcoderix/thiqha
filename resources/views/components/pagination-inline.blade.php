@@ -1,4 +1,4 @@
-<div {{ $attributes->merge(['class' => 'main-container flex items-center gap-3 font-sans lg:justify-end justify-center']) }}>
+<div {{ $attributes->merge(['class' => 'flex items-center gap-3 font-sans lg:justify-end justify-center xl:px-8']) }}>
 
     <button type="button"
             class="md:w-[125px] w-24 md:h-[42px] flex items-center md:gap-2 md:p-2 pr-[6px] md:pr-[0px] border border-[#20395D] md:rounded-[10px] rounded-[6px] text-[#20395D] font-bold hover:bg-gray-50 transition-colors">

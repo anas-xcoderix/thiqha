@@ -17,8 +17,8 @@
                 <img src="{{ asset('images/thiqah-services/hero.png') }}" class="min-h-screen object-cover w-full" alt="Construction">
             </div>
 
-            <div class="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-6">
-                <h1 class="text-white text-3xl md:text-[64px] font-bold leading-tight my-6 tracking-tight">
+            <div class="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-6 mt-[100px]">
+                <h1 class="text-white text-3xl md:text-[64px] font-bold leading-tight mb-20 tracking-tight">
                     Thiqah Services
                 </h1>
 
@@ -32,7 +32,7 @@
     </section>
 
     <section>
-        <div class="services font-sans px-4 py-16 lg:max-w-[80%] mx-auto">
+        <div class="services font-sans px-6 py-16 mx-auto">
             <div class="flex flex-col">
                 <h2 class="font-bold text-black text-3xl mb-10">Thiqah Services</h2>
                 <div class="flex flex-wrap justify-center w-full gap-14">
