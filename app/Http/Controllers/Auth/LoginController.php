@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Enums\UserRole;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -10,7 +11,7 @@ use Illuminate\View\View;
 
 class LoginController extends Controller
 {
-    public function create(): View
+    public function index(): View
     {
         return view('auth.login');
     }
@@ -27,7 +28,12 @@ class LoginController extends Controller
         if (Auth::attempt(['email' => $credentials['email'], 'password' => $credentials['password']], $remember)) {
             $request->session()->regenerate();
 
-            return redirect()->intended('/');
+            $user = Auth::user();
+            $defaultPath = $user->role === UserRole::Admin
+                ? route('admin.dashboard.index')
+                : route('home.index');
+
+            return redirect()->intended($defaultPath);
         }
 
         return back()
@@ -41,6 +47,6 @@ class LoginController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect()->route('login');
+        return redirect()->route('login.index');
     }
 }

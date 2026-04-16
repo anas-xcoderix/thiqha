@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\PartnerRegisterController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\UserRegisterController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\frontend\AboutController;
 use App\Http\Controllers\frontend\HomeController;
@@ -17,17 +20,18 @@ use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\AddtoCartController;
 use App\Http\Controllers\RequestController;
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
 Route::middleware('guest')->group(function () {
-    Route::get('/login', [LoginController::class, 'create'])->name('login');
-    Route::post('/login', [LoginController::class, 'store'])->name('login.store');
-    Route::get('/register', [RegisterController::class, 'create'])->name('register');
-    Route::post('/register/user', [RegisterController::class, 'storeUser'])->name('register.user');
-    Route::post('/register/partner', [RegisterController::class, 'storePartner'])->name('register.partner');
+    Route::resource('login', LoginController::class)->only(['index', 'store']);
+    Route::resource('register', RegisterController::class)->only(['create']);
+    Route::resource('register/users', UserRegisterController::class)->only(['store']);
+    Route::resource('register/partners', PartnerRegisterController::class)->only(['store']);
 });
 
-Route::post('/logout', [LoginController::class, 'destroy'])->middleware('auth')->name('logout');
+Route::middleware('auth')->group(function () {
+    Route::singleton('logout', LoginController::class)->destroyable()->only(['destroy']);
+});
 
 Route::resource('products', ProductsController::class)->only(['index', 'show']);
 Route::resource('blog', BlogController::class)->only(['index', 'show']);

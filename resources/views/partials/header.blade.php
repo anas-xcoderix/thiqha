@@ -36,7 +36,7 @@
 
         {{-- Desktop Left Links --}}
         <div class="hidden xl:flex items-center gap-12 text-[18px] text-gray-500">
-            <a href="{{ route('home') }}" class="whitespace-nowrap transition {{ request()->routeIs('home') ? 'text-[#20395d] font-semibold' : 'text-gray-500 hover:font-semibold hover:text-[#20395d] ' }}">
+            <a href="{{ route('home.index') }}" class="whitespace-nowrap transition {{ request()->routeIs('home.index') ? 'text-[#20395d] font-semibold' : 'text-gray-500 hover:font-semibold hover:text-[#20395d] ' }}">
                 Home
             </a>
             <a href="{{ route('services.index') }}" class="whitespace-nowrap transition {{ request()->routeIs('services.index') ? 'text-[#20395d] font-semibold' : 'text-gray-500 hover:font-semibold hover:text-[#20395d] ' }}">
@@ -98,7 +98,7 @@
 
         {{-- Mobile Menu --}}
         <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white mt-2 rounded-2xl shadow-2xl p-6 xl:hidden flex-col gap-4 text-gray-600 font-medium z-[100]">
-            <a href="{{ route('home') }}" class="py-2 border-b border-gray-50 transition {{ request()->routeIs('home') ? 'text-[#20395d] font-semibold' : 'hover:text-[#20395d]' }}">
+            <a href="{{ route('home.index') }}" class="py-2 border-b border-gray-50 transition {{ request()->routeIs('home.index') ? 'text-[#20395d] font-semibold' : 'hover:text-[#20395d]' }}">
                 Home
             </a>
             <a href="{{ route('services.index') }}" class="py-2 border-b border-gray-50 transition {{ request()->routeIs('services.index') ? 'text-[#20395d] font-semibold' : 'hover:text-[#20395d]' }}">

@@ -2,7 +2,7 @@
 
 @section('body-class', 'm-0 p-0 font-[Inter,sans-serif]')
 
-@section('title', 'THIQAH ? SIGNUP')
+@section('title', 'THIQAH - SIGNUP')
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/signup.css') }}">
@@ -12,7 +12,7 @@
 <div class="lg:flex lg:gap-8">
 
     <div class="hidden lg:block w-[60%]">
-        <img src="{{ asset('images/auth/sidebar.png') }}" alt="" class="w-full h-full object-cover">
+        <img src="{{ asset('img/auth/sidebar.png') }}" alt="" class="w-full h-full object-cover">
     </div>
 
     <input type="radio" name="step" id="r1" class="hidden" checked/>
@@ -23,7 +23,7 @@
         <div class="lg:max-w-[90%] px-5 lg:px-0">
 
             <div class="mb-10 flex justify-center md:justify-start">
-                <img src="{{ asset('images/auth/header.png') }}" alt="THIQAH" class="w-[200px] md:w-full md:max-w-[306px] md:aspect-[306/144.42]">
+                <img src="{{ asset('img/auth/header.png') }}" alt="THIQAH" class="w-[200px] md:w-full md:max-w-[306px] md:aspect-[306/144.42]">
             </div>
 
             <h1 class="text-xl md:text-2xl font-bold text-gray-900 mb-8 text-center md:text-left">Create an Account</h1>
@@ -47,14 +47,13 @@
             <div class="step-content-1 hidden">
                 <div class="flex flex-col md:flex-row gap-5 mb-10">
                     <label for="r2" class="shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] rounded-xl flex flex-col items-center justify-center w-full md:h-[15.625rem] px-4 md:px-0 py-3 md:py-0 cursor-pointer hover:shadow-md transition-all">
-                        <img src="{{ asset('images/auth/user.png') }}" alt="" class="size-[70px] md:size-[115.2px] mb-3">
+                        <img src="{{ asset('img/auth/user.png') }}" alt="" class="size-[70px] md:size-[115.2px] mb-3">
                         <p class="font-bold text-md mb-1">User</p>
-                        <p class="text-center font-bold text-md"> Become a partner </p>
                         <span class="text-md font-semibold underline text-[#1e2d5a]">Sign UP</span>
                     </label>
 
                     <label for="r3" class="shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] rounded-xl flex flex-col items-center justify-center w-full md:h-[15.625rem] px-4 md:px-0 py-3 md:py-0 cursor-pointer hover:shadow-md transition-all">
-                        <img src="{{ asset('images/auth/shake.png') }}" class="size-[70px] md:size-[115.2px] mb-3" alt="">
+                        <img src="{{ asset('img/auth/shake.png') }}" class="size-[70px] md:size-[115.2px] mb-3" alt="">
                         <p class="font-bold text-center text-md mb-1 pt-7 ">Become a Partner</p>
                         <span class="text-md font-semibold underline text-[#1e2d5a]">Sign UP</span>
                     </label>
@@ -62,13 +61,13 @@
 
                 <p class="text-center text-sm text-gray-500">
                     Have an account?
-                    <a href="{{ route('login') }}" class="font-bold text-[#1e2d5a] ml-1 border-b-2 border-[#1e2d5a]">Sign in</a>
+                    <a href="{{ route('login.index') }}" class="font-bold text-[#1e2d5a] ml-1 border-b-2 border-[#1e2d5a]">Sign in</a>
                 </p>
             </div>
 
             <div class="step-content-2 hidden">
                 <h2 class="text-lg font-bold text-gray-800 mb-6">User</h2>
-                <form method="post" action="{{ route('register.user') }}">
+                <form method="post" action="{{ route('users.store') }}">
                     @csrf
                     <input type="hidden" name="_form" value="user">
 
@@ -93,7 +92,7 @@
                                 <label class="block text-sm font-bold mb-1" for="reg_phone">Phone Number <span class="text-red-500">*</span></label>
                                 <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden @error('phone') border-red-500 @enderror">
                                     <div class="flex items-center gap-2 px-3 py-3 border-r border-gray-300 bg-white">
-                                        <img src="{{ asset('images/auth/flag.png') }}" alt="KW" class="w-5 h-4 object-cover"/>
+                                        <img src="{{ asset('img/auth/flag.png') }}" alt="KW" class="w-5 h-4 object-cover"/>
                                         <span class="text-xs text-gray-700 font-medium">+965</span>
                                     </div>
                                     <input id="reg_phone" type="tel" name="phone" value="{{ old('phone') }}" required placeholder="Enter Phone"
@@ -148,7 +147,7 @@
 
                         <p class="text-center text-sm text-gray-500">
                             Have an account?
-                            <a href="{{ route('login') }}" class="font-bold text-[#1e2d5a] ml-1 border-b-2 border-[#1e2d5a]">Sign In</a>
+                            <a href="{{ route('login.index') }}" class="font-bold text-[#1e2d5a] ml-1 border-b-2 border-[#1e2d5a]">Sign In</a>
                         </p>
                     </div>
                 </form>
@@ -167,7 +166,7 @@
                     </div>
                 @endif
 
-                <form method="post" action="{{ route('register.partner') }}" enctype="multipart/form-data">
+                <form id="partner-register-form" method="post" action="{{ route('partners.store') }}" enctype="multipart/form-data">
                     @csrf
                     <input type="hidden" name="_form" value="partner">
 
@@ -215,9 +214,9 @@
                         <div class="flex flex-col md:flex-row gap-5 mb-5">
                             <div class="flex-1">
                                 <label class="block text-sm font-bold mb-1">Copy of Commercial Registration (valid) <span class="text-red-500">*</span></label>
-                                <label class="flex items-center justify-between border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-400 cursor-pointer hover:border-[#1e2d5a] transition-colors bg-white">
-                                    <span>Upload File</span>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <label class="partner-file-input-label flex items-center justify-between gap-3 min-w-0 border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-400 cursor-pointer hover:border-[#1e2d5a] transition-colors bg-white">
+                                    <span class="partner-file-name flex-1 min-w-0 truncate text-left font-medium text-gray-500" data-placeholder="{{ __('Upload File') }}">{{ __('Upload File') }}</span>
+                                    <svg class="shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M16.4405 8.8999C20.0405 9.2099 21.5105 11.0599 21.5105 15.1099V15.2399C21.5105 19.7099 19.7205 21.4999 15.2505 21.4999H8.74047C4.27047 21.4999 2.48047 19.7099 2.48047 15.2399V15.1099C2.48047 11.0899 3.93047 9.2399 7.47047 8.9099" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M12 15.0001V3.62012" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M15.3504 5.85L12.0004 2.5L8.65039 5.85" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -227,9 +226,9 @@
                             </div>
                             <div class="flex-1">
                                 <label class="block text-sm font-bold mb-1">Chamber of Commerce Certificate <span class="text-red-500">*</span></label>
-                                <label class="flex items-center justify-between border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-400 cursor-pointer hover:border-[#1e2d5a] transition-colors bg-white">
-                                    <span>Upload File</span>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <label class="partner-file-input-label flex items-center justify-between gap-3 min-w-0 border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-400 cursor-pointer hover:border-[#1e2d5a] transition-colors bg-white">
+                                    <span class="partner-file-name flex-1 min-w-0 truncate text-left font-medium text-gray-500" data-placeholder="{{ __('Upload File') }}">{{ __('Upload File') }}</span>
+                                    <svg class="shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M16.4405 8.8999C20.0405 9.2099 21.5105 11.0599 21.5105 15.1099V15.2399C21.5105 19.7099 19.7205 21.4999 15.2505 21.4999H8.74047C4.27047 21.4999 2.48047 19.7099 2.48047 15.2399V15.1099C2.48047 11.0899 3.93047 9.2399 7.47047 8.9099" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M12 15.0001V3.62012" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M15.3504 5.85L12.0004 2.5L8.65039 5.85" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -242,9 +241,9 @@
                         <div class="flex flex-col md:flex-row gap-5 mb-5">
                             <div class="flex-1">
                                 <label class="block text-sm font-bold mb-1">Municipal License</label>
-                                <label class="flex items-center justify-between border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-400 cursor-pointer hover:border-[#1e2d5a] transition-colors bg-white">
-                                    <span>Upload File</span>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <label class="partner-file-input-label flex items-center justify-between gap-3 min-w-0 border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-400 cursor-pointer hover:border-[#1e2d5a] transition-colors bg-white">
+                                    <span class="partner-file-name flex-1 min-w-0 truncate text-left font-medium text-gray-500" data-placeholder="{{ __('Upload File') }}">{{ __('Upload File') }}</span>
+                                    <svg class="shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M16.4405 8.8999C20.0405 9.2099 21.5105 11.0599 21.5105 15.1099V15.2399C21.5105 19.7099 19.7205 21.4999 15.2505 21.4999H8.74047C4.27047 21.4999 2.48047 19.7099 2.48047 15.2399V15.1099C2.48047 11.0899 3.93047 9.2399 7.47047 8.9099" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M12 15.0001V3.62012" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M15.3504 5.85L12.0004 2.5L8.65039 5.85" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -254,9 +253,9 @@
                             </div>
                             <div class="flex-1">
                                 <label class="block text-sm font-bold mb-1">Civil ID Number of Authorized Signatory <span class="text-red-500">*</span></label>
-                                <label class="flex items-center justify-between border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-400 cursor-pointer hover:border-[#1e2d5a] transition-colors bg-white">
-                                    <span>Upload File</span>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <label class="partner-file-input-label flex items-center justify-between gap-3 min-w-0 border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-400 cursor-pointer hover:border-[#1e2d5a] transition-colors bg-white">
+                                    <span class="partner-file-name flex-1 min-w-0 truncate text-left font-medium text-gray-500" data-placeholder="{{ __('Upload File') }}">{{ __('Upload File') }}</span>
+                                    <svg class="shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M16.4405 8.8999C20.0405 9.2099 21.5105 11.0599 21.5105 15.1099V15.2399C21.5105 19.7099 19.7205 21.4999 15.2505 21.4999H8.74047C4.27047 21.4999 2.48047 19.7099 2.48047 15.2399V15.1099C2.48047 11.0899 3.93047 9.2399 7.47047 8.9099" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M12 15.0001V3.62012" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M15.3504 5.85L12.0004 2.5L8.65039 5.85" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -269,9 +268,9 @@
                         <div class="flex flex-col md:flex-row gap-5 mb-8">
                             <div class="flex-1">
                                 <label class="block text-sm font-bold mb-1">Copy of Authorized Signatory's Civil ID</label>
-                                <label class="flex items-center justify-between border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-400 cursor-pointer hover:border-[#1e2d5a] transition-colors bg-white">
-                                    <span>Upload File</span>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <label class="partner-file-input-label flex items-center justify-between gap-3 min-w-0 border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-400 cursor-pointer hover:border-[#1e2d5a] transition-colors bg-white">
+                                    <span class="partner-file-name flex-1 min-w-0 truncate text-left font-medium text-gray-500" data-placeholder="{{ __('Upload File') }}">{{ __('Upload File') }}</span>
+                                    <svg class="shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M16.4405 8.8999C20.0405 9.2099 21.5105 11.0599 21.5105 15.1099V15.2399C21.5105 19.7099 19.7205 21.4999 15.2505 21.4999H8.74047C4.27047 21.4999 2.48047 19.7099 2.48047 15.2399V15.1099C2.48047 11.0899 3.93047 9.2399 7.47047 8.9099" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M12 15.0001V3.62012" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M15.3504 5.85L12.0004 2.5L8.65039 5.85" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -281,9 +280,9 @@
                             </div>
                             <div class="flex-1">
                                 <label class="block text-sm font-bold mb-1">Official Power of Attorney <span class="text-red-500">*</span></label>
-                                <label class="flex items-center justify-between border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-400 cursor-pointer hover:border-[#1e2d5a] transition-colors bg-white">
-                                    <span>Upload File</span>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <label class="partner-file-input-label flex items-center justify-between gap-3 min-w-0 border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-400 cursor-pointer hover:border-[#1e2d5a] transition-colors bg-white">
+                                    <span class="partner-file-name flex-1 min-w-0 truncate text-left font-medium text-gray-500" data-placeholder="{{ __('Upload File') }}">{{ __('Upload File') }}</span>
+                                    <svg class="shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M16.4405 8.8999C20.0405 9.2099 21.5105 11.0599 21.5105 15.1099V15.2399C21.5105 19.7099 19.7205 21.4999 15.2505 21.4999H8.74047C4.27047 21.4999 2.48047 19.7099 2.48047 15.2399V15.1099C2.48047 11.0899 3.93047 9.2399 7.47047 8.9099" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M12 15.0001V3.62012" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M15.3504 5.85L12.0004 2.5L8.65039 5.85" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -300,42 +299,103 @@
                     </div>
 
                     <div class="subtab-content-2 hidden">
+                        <p class="text-sm font-semibold text-gray-800 mb-4">{{ __('Account login') }} <span class="font-normal text-gray-500">({{ __('used to sign in') }})</span></p>
+
                         <div class="flex flex-col md:flex-row gap-5 mb-5">
                             <div class="flex-1">
-                                <label class="block text-sm font-bold mb-1">Account Manager's Name<span class="text-red-500">*</span></label>
-                                <input type="text" name="account_manager_name" value="{{ old('account_manager_name') }}" required placeholder="Enter Name"
-                                       class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#1e2d5a] placeholder-gray-400"/>
+                                <label class="block text-sm font-bold mb-1" for="partner_reg_name">Full Name <span class="text-red-500">*</span></label>
+                                <input id="partner_reg_name" type="text" name="name" value="{{ old('name') }}" required placeholder="Enter Name"
+                                       class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#1e2d5a] placeholder-gray-400 @error('name') border-red-500 @enderror"/>
+                                <x-auth.field-error name="name"/>
                             </div>
                             <div class="flex-1">
-                                <label class="block text-sm font-bold mb-1">Number of Employees <span class="text-red-500">*</span></label>
-                                <input type="number" name="number_of_employees" value="{{ old('number_of_employees') }}" required min="1" placeholder="Enter Number"
+                                <label class="block text-sm font-bold mb-1" for="partner_reg_email">Email <span class="text-red-500">*</span></label>
+                                <input id="partner_reg_email" type="email" name="email" value="{{ old('email') }}" required placeholder="Enter Mail"
+                                       class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#1e2d5a] placeholder-gray-400 @error('email') border-red-500 @enderror"/>
+                                <x-auth.field-error name="email"/>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row gap-5 mb-5">
+                            <div class="flex-1">
+                                <label class="block text-sm font-bold mb-1" for="partner_reg_phone">Your Phone Number <span class="text-red-500">*</span></label>
+                                <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden @error('phone') border-red-500 @enderror">
+                                    <div class="flex items-center gap-2 px-3 py-3 border-r border-gray-300 bg-white">
+                                        <img src="{{ asset('img/auth/flag.png') }}" alt="KW" class="w-5 h-4 object-cover"/>
+                                        <span class="text-xs text-gray-700 font-medium">+965</span>
+                                    </div>
+                                    <input id="partner_reg_phone" type="tel" name="phone" value="{{ old('phone') }}" required placeholder="Enter Phone"
+                                           class="flex-1 px-4 py-3 text-sm outline-none placeholder-gray-400"/>
+                                </div>
+                                <x-auth.field-error name="phone"/>
+                            </div>
+                            <div class="flex-1">
+                                <label class="block text-sm font-bold mb-1" for="partner_account_manager">Account Manager's Name<span class="text-red-500">*</span></label>
+                                <input id="partner_account_manager" type="text" name="account_manager_name" value="{{ old('account_manager_name') }}" required placeholder="Enter Name"
                                        class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#1e2d5a] placeholder-gray-400"/>
                             </div>
                         </div>
 
                         <div class="flex flex-col md:flex-row gap-5 mb-5">
                             <div class="flex-1">
-                                <label class="block text-sm font-bold mb-1">Phone Number <span class="text-red-500">*</span></label>
+                                <label class="block text-sm font-bold mb-1" for="partner_num_employees">Number of Employees <span class="text-red-500">*</span></label>
+                                <input id="partner_num_employees" type="number" name="number_of_employees" value="{{ old('number_of_employees') }}" required min="1" placeholder="Enter Number"
+                                       class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#1e2d5a] placeholder-gray-400"/>
+                            </div>
+                            <div class="flex-1">
+                                <label class="block text-sm font-bold mb-1" for="partner_operations_phone">Operations Phone Number <span class="text-red-500">*</span></label>
                                 <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden">
                                     <div class="flex items-center gap-2 px-3 py-3 border-r border-gray-300 bg-white">
                                         <img src="https://flagcdn.com/w20/kw.png" alt="KW" class="w-5 h-4 object-cover"/>
                                         <span class="text-sm text-gray-700 font-medium">+965</span>
                                     </div>
-                                    <input type="tel" name="operations_phone" value="{{ old('operations_phone') }}" required placeholder="Enter Phone"
+                                    <input id="partner_operations_phone" type="tel" name="operations_phone" value="{{ old('operations_phone') }}" required placeholder="Enter Phone"
                                            class="flex-1 px-4 py-3 text-sm outline-none placeholder-gray-400"/>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row gap-5 mb-5">
                             <div class="flex-1">
-                                <label class="block text-sm font-bold mb-1">Office Address</label>
-                                <input type="url" name="office_address" value="{{ old('office_address') }}" placeholder="Enter Address"
+                                <label class="block text-sm font-bold mb-1" for="partner_office_address">Office Address</label>
+                                <input id="partner_office_address" type="text" name="office_address" value="{{ old('office_address') }}" placeholder="Enter Address"
+                                       class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#1e2d5a] placeholder-gray-400"/>
+                            </div>
+                            <div class="flex-1">
+                                <label class="block text-sm font-bold mb-1" for="partner_website_link">Website Link</label>
+                                <input id="partner_website_link" type="url" name="website_link" value="{{ old('website_link') }}" placeholder="Enter Link"
                                        class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#1e2d5a] placeholder-gray-400"/>
                             </div>
                         </div>
 
-                        <div class="mb-8">
-                            <label class="block text-sm font-bold mb-1">Website Link</label>
-                            <input type="url" name="website_link" value="{{ old('website_link') }}" placeholder="Enter Link"
-                                   class="flex items-center justify-between border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-400 cursor-pointer hover:border-[#1e2d5a] transition-colors bg-white w-full md:w-[calc(50%-10px)]"/>
+                        <div class="flex flex-col md:flex-row gap-5 mb-8">
+                            <div class="flex-1">
+                                <label class="block text-sm font-bold mb-1" for="partner_reg_password">Password <span class="text-red-500">*</span></label>
+                                <div class="relative">
+                                    <input id="partner_reg_password" type="password" name="password" required autocomplete="new-password" placeholder="Enter Password"
+                                           class="w-full border border-gray-300 rounded-lg px-4 py-3 pr-10 text-sm outline-none focus:ring-2 focus:ring-[#1e2d5a] placeholder-gray-400 @error('password') border-red-500 @enderror"/>
+                                    <span class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <x-auth.field-error name="password"/>
+                            </div>
+                            <div class="flex-1">
+                                <label class="block text-sm font-bold mb-1" for="partner_reg_password_confirmation">Confirm Password <span class="text-red-500">*</span></label>
+                                <div class="relative">
+                                    <input id="partner_reg_password_confirmation" type="password" name="password_confirmation" required autocomplete="new-password" placeholder="Confirm Password"
+                                           class="w-full border border-gray-300 rounded-lg px-4 py-3 pr-10 text-sm outline-none focus:ring-2 focus:ring-[#1e2d5a] placeholder-gray-400 @error('password') border-red-500 @enderror"/>
+                                    <span class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="flex justify-between items-center">
@@ -366,9 +426,9 @@
                             </div>
                             <div class="flex-1">
                                 <label class="block text-sm font-bold mb-1">Declaration that Account Belongs to the Company <span class="text-red-500">*</span></label>
-                                <label class="flex items-center justify-between border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-400 cursor-pointer hover:border-[#1e2d5a] transition-colors bg-white">
-                                    <span>Upload File</span>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <label class="partner-file-input-label flex items-center justify-between gap-3 min-w-0 border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-400 cursor-pointer hover:border-[#1e2d5a] transition-colors bg-white">
+                                    <span class="partner-file-name flex-1 min-w-0 truncate text-left font-medium text-gray-500" data-placeholder="{{ __('Upload File') }}">{{ __('Upload File') }}</span>
+                                    <svg class="shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M16.4405 8.8999C20.0405 9.2099 21.5105 11.0599 21.5105 15.1099V15.2399C21.5105 19.7099 19.7205 21.4999 15.2505 21.4999H8.74047C4.27047 21.4999 2.48047 19.7099 2.48047 15.2399V15.1099C2.48047 11.0899 3.93047 9.2399 7.47047 8.9099" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M12 15.0001V3.62012" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M15.3504 5.85L12.0004 2.5L8.65039 5.85" stroke="#A8A8A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -384,7 +444,6 @@
                                     <select name="activity_classification" required class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[#1e2d5a] placeholder-gray-400">
                                         <option value="Subcontractor" @selected(old('activity_classification', 'Subcontractor') === 'Subcontractor')>Subcontractor</option>
                                         <option value="Main Contractor" @selected(old('activity_classification') === 'Main Contractor')>Main Contractor</option>
-                                        <option value="Subcontractor">Subcontractor</option>
                                         <option value="Designer" @selected(old('activity_classification') === 'Designer')>Designer</option>
                                         <option value="Supervisor/Consultant" @selected(old('activity_classification') === 'Supervisor/Consultant')>Supervisor/Consultant</option>
                                         <option value="Supplier" @selected(old('activity_classification') === 'Supplier')>Supplier</option>
@@ -421,7 +480,7 @@
 
                 <p class="text-center text-sm text-gray-500 mt-8 hide-on-step3">
                     Have an account?
-                    <a href="{{ route('login') }}" class="font-bold text-[#1e2d5a] ml-1 border-b-2 border-[#1e2d5a]">Sign in</a>
+                    <a href="{{ route('login.index') }}" class="font-bold text-[#1e2d5a] ml-1 border-b-2 border-[#1e2d5a]">Sign in</a>
                 </p>
             </div>
         </div>
@@ -438,6 +497,23 @@ document.addEventListener('DOMContentLoaded', function () {
     @if(old('_form') === 'partner')
     document.getElementById('r3').checked = true;
     @endif
+
+    var partnerForm = document.getElementById('partner-register-form');
+    if (partnerForm) {
+        partnerForm.querySelectorAll('input[type="file"]').forEach(function (input) {
+            input.addEventListener('change', function () {
+                var label = input.closest('.partner-file-input-label');
+                if (!label) return;
+                var nameEl = label.querySelector('.partner-file-name');
+                if (!nameEl) return;
+                var ph = nameEl.getAttribute('data-placeholder') || 'Upload File';
+                var file = input.files && input.files[0];
+                nameEl.textContent = file ? file.name : ph;
+                nameEl.classList.toggle('text-gray-500', !file);
+                nameEl.classList.toggle('text-gray-800', !!file);
+            });
+        });
+    }
 });
 </script>
 @endpush

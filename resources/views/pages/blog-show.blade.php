@@ -20,7 +20,7 @@
     <section class="container mx-auto px-4 sm:px-6 lg:px-12 py-10 max-w-[90%]">
 
         <div class="flex items-center gap-1 mb-6 flex-wrap">
-            <a href="{{ route('home') }}" class="text-[#A7A7A7] text-[29px] no-underline hover:text-[#20395d]">
+            <a href="{{ route('home.index') }}" class="text-[#A7A7A7] text-[29px] no-underline hover:text-[#20395d]">
                 Home
             </a>
             <span class="text-[#A7A7A7] text-[29px] mx-1.5">

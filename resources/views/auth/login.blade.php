@@ -6,13 +6,13 @@
 @section('content')
 <div class="flex w-full h-screen gap-[3.4rem]">
     <div class="lg:flex hidden w-[40%]">
-        <img src="{{ asset('images/auth/sidebar.png') }}" alt="" class="h-full w-full object-cover">
+        <img src="{{ asset('img/auth/sidebar.png') }}" alt="" class="h-full w-full object-cover">
     </div>
     <div class="lg:w-[40%] w-full px-4 lg:px-0 py-10">
         <div class="px-5 lg:px-0">
 
             <div class="mb-10 flex justify-center md:justify-start">
-                <img src="{{ asset('images/auth/header.png') }}" alt="" class="w-[200px] md:w-full md:max-w-[306px] md:aspect-[306/144.42]">
+                <img src="{{ asset('img/auth/header.png') }}" alt="" class="w-[200px] md:w-full md:max-w-[306px] md:aspect-[306/144.42]">
             </div>
 
             <h1 class="text-xl md:text-2xl font-bold text-gray-900 mb-8 text-center md:text-left">{{ __('Welcome Back !') }}</h1>
@@ -65,7 +65,7 @@
 
             <p class="text-center text-sm text-gray-500 mt-6">
                 {{ __("Don't have an account ?") }}
-                <a href="{{ route('register') }}" class="font-bold text-brand ml-1 border-b-2 border-brand transition-opacity hover:opacity-80">{{ __('Create account') }}</a>
+                <a href="{{ route('register.create') }}" class="font-bold text-brand ml-1 border-b-2 border-brand transition-opacity hover:opacity-80">{{ __('Create account') }}</a>
             </p>
 
         </div>

@@ -24,7 +24,7 @@
             </div>
 
             <div class="flex flex-col gap-4 xl:gap-[32px] text-white font-medium text-[18px] 2xl:text-[24px] min-w-[150px]">
-                <a href="{{ route('home') }}" class="hover:text-gray-300 transition-colors">Home</a>
+                <a href="{{ route('home.index') }}" class="hover:text-gray-300 transition-colors">Home</a>
                 <a href="{{ route('services.index') }}" class="hover:text-gray-300 transition-colors">Thiqah Services</a>
                 <a href="{{ route('service-providers.index') }}" class="hover:text-gray-300 transition-colors">Service Providers</a>
                 <a href="{{ route('products.index') }}" class="hover:text-gray-300 transition-colors">Products</a>

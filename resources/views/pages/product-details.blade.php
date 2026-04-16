@@ -6,7 +6,7 @@
 
         <header class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-10 gap-4">
             <nav class="text-[18px] text-gray-500 font-bold flex items-center flex-wrap gap-1">
-                <a href="{{ route('home') }}" class="text-inherit no-underline hover:text-[#20395D]">Home</a>
+                <a href="{{ route('home.index') }}" class="text-inherit no-underline hover:text-[#20395D]">Home</a>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0">
                     <path d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008"
                           stroke="#A8A8A8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
