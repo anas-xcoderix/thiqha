@@ -1,5 +1,5 @@
 <header class="absolute top-2 z-50 w-full flex justify-center pt-6 px-4 md:pt-8 md:px-8">
-    <nav class="bg-white w-full rounded-[30px] md:rounded-full md:px-6 px-4 py-4 md:py-4 flex flex-col md:flex-row items-center justify-between shadow-lg gap-4 xl:gap-0 relative">
+    <nav class="bg-white w-full rounded-[30px] md:rounded-full md:px-6 px-4 py-4 md:py-4 flex flex-col md:flex-row items-center justify-between shadow-[0_0_10px_2px_rgba(0,0,0,0.1)] gap-4 xl:gap-0 relative">
         <div class="w-full xl:w-auto flex items-center justify-between gap-4">
             <div class="flex-shrink-0 xl:hidden">
                 <img src="{{ asset('/img/images/header/headerlogo.png') }}" alt="Logo" class="h-8 md:h-12">

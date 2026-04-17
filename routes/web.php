@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\PartnerRegisterController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\UserRegisterController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\frontend\AboutController;
 use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\ProductsController;
@@ -53,3 +54,4 @@ Route::middleware('auth')->group(function () {
     Route::get('/logout', [LoginController::class, 'destroy'])->name('logout');
 });
 
+Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout.index');

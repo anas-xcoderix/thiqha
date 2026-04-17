@@ -48,7 +48,7 @@
             </div>
         </div>
 
-        <div class="cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-8">
+        <div class="cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             @for($i = 0; $i < $posts->count(); $i++)
                 @php($post = $posts[$i])
                 <a href="{{ route('blog.show', $post['id']) }}" class="block max-w-[445px] mx-auto sm:mx-0">

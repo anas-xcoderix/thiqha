@@ -7,13 +7,28 @@
 
     <section class="px-2 md:px-6 pt-4 pb-2 w-full">
         <div class="relative rounded-3xl overflow-hidden min-h-screen bg-gray-800">
-            <img src="{{ asset('images/vendor/hero.png') }}" alt="Construction Site" class="absolute inset-0 w-full h-full object-cover opacity-90"/>
+
+            <!-- Slides -->
+            <img src="{{ asset('images/vendor/hero.png') }}"
+                 class="slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-500">
+
+            <img src="{{ asset('images/vendor/hero.png') }}"
+                 class="slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500">
+
+            <img src="{{ asset('images/vendor/hero.png') }}"
+                 class="slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500">
+
+            <img src="{{ asset('images/vendor/hero.png') }}"
+                 class="slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500">
+
+            <!-- Pagination -->
             <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
-                <span class="w-[20px] h-[20px] rounded-full bg-white"></span>
-                <span class="w-[20px] h-[20px] rounded-full bg-white"></span>
-                <span class="w-[114px] h-[20px] rounded-full bg-[#20395D]"></span>
-                <span class="w-[20px] h-[20px] rounded-full bg-white"></span>
+                <span class="dot w-5 h-5 bg-white rounded-full cursor-pointer transition-all duration-300"></span>
+                <span class="dot w-5 h-5 bg-white rounded-full cursor-pointer transition-all duration-300"></span>
+                <span class="dot w-5 h-5 bg-white rounded-full cursor-pointer transition-all duration-300"></span>
+                <span class="dot w-5 h-5 bg-white rounded-full cursor-pointer transition-all duration-300"></span>
             </div>
+
         </div>
     </section>
 
@@ -307,3 +322,6 @@
         </div>
     </div>
 @endsection
+@push('scripts')
+    <script src="{{ asset('js/vendor.js') }}"></script>
+@endpush

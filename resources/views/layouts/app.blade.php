@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="{{ asset('css/checkout.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/profile.css') }}">
     <script>
         tailwind.config = {
             theme: {
@@ -48,7 +48,6 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-            background: #FAF8F4;
         }
 
         .btn-leaf {

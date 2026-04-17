@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Thiqah - About')
+
 @section('content')
 
     <!-- Header & Hero -->

@@ -523,15 +523,26 @@
                     <p class="text-[20px] font-bold mb-4">My Quotations yet.</p>
                     <input type="radio" name="subtab" id="t1" class="hidden" checked/>
                     <input type="radio" name="subtab" id="t2" class="hidden"/>
-                    <div class="flex">
-                        <label for="t1" class="cursor-pointer border-none mb-2">
-                            <p class="mt-2 text-[10px] font-semibold md:text-sm text-gray-500 text-start mb-2">Price Offer</p>
-                            <div class="h-2 rounded-full w-[95px] bg-gray-200 overflow-hidden"><div class="bar-1 h-full bg-[#20395d] transition-all"></div></div>
+                    <div class="flex gap-1">
+
+                        <label for="t1" class="cursor-pointer mb-2">
+                            <p class="mt-2 text-[10px] font-semibold md:text-sm text-gray-500 mb-2">
+                                Price Offer
+                            </p>
+                            <div class="h-2 rounded-full w-[95px] bg-gray-200 overflow-hidden">
+                                <div class="bar-1 h-full"></div>
+                            </div>
                         </label>
-                        <label for="t2" class="cursor-pointer border-none mb-2">
-                            <p class="mt-2 text-[10px] font-semibold md:text-sm text-gray-500 text-start mb-2">Products</p>
-                            <div class="h-2 rounded-full w-[95px] bg-gray-200 overflow-hidden"><div class="bar-1 h-full bg-gray-200 transition-all"></div></div>
+
+                        <label for="t2" class="cursor-pointer mb-2">
+                            <p class="mt-2 text-[10px] font-semibold md:text-sm text-gray-500 mb-2">
+                                Products
+                            </p>
+                            <div class="h-2 rounded-full w-[95px] bg-gray-200 overflow-hidden">
+                                <div class="bar-2 h-full"></div>
+                            </div>
                         </label>
+
                     </div>
                     <h1 class="text-gray-400 mt-3 font-semibold">2/2/2026</h1>
                     <div class="subtab-content-1 hidden">
@@ -668,5 +679,5 @@
     </div>
 @endsection
 @push('scripts')
-    <script src="{{ asset('js/checkout.js') }}"></script>
+    <script src="{{ asset('js/profile.js') }}"></script>
 @endpush

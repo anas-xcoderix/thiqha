@@ -13,7 +13,7 @@
         @endif
         <div>
             <label class="text-[14px] font-bold mb-1.5 block">{{ __('Region') }} <span class="text-red-500">*</span></label>
-            <div class="h-[42px] border border-[#dde3ee] rounded-lg flex items-center px-3.5 bg-white w-full max-w-[80%] relative @error('region') border-red-500 @enderror">
+            <div class="h-[42px] border border-[#dde3ee] rounded-lg flex items-center px-3.5 bg-white w-full lg:max-w-[80%] relative @error('region') border-red-500 @enderror">
                 <select name="region" required class="flex-1 h-full text-[13px] text-primary focus:outline-none bg-transparent appearance-none pr-8 cursor-pointer">
                     @unless ($address)
                         <option value="" disabled @selected(! old('region'))>{{ __('Choose Region') }}</option>
@@ -29,37 +29,37 @@
             <x-auth.field-error name="region"/>
         </div>
         <div>
-            <label class="text-[14px] font-bold mb-1.5 block text-right w-full max-w-[80%]">{{ __('Piece number') }} <span class="text-red-500">*</span></label>
+            <label class="text-[14px] font-bold mb-1.5 block text-right w-full lg:max-w-[80%]">{{ __('Piece number') }} <span class="text-red-500">*</span></label>
             <input type="text" name="piece_number" value="{{ old('piece_number', $address?->piece_number) }}" required dir="rtl" placeholder="{{ __('Enter number') }}"
-                   class="h-[42px] border border-[#dde3ee] rounded-lg px-3.5 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none focus:border-primary w-full max-w-[80%] text-right @error('piece_number') border-red-500 @enderror"/>
+                   class="h-[42px] border border-[#dde3ee] rounded-lg px-3.5 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none focus:border-primary w-full lg:max-w-[80%] text-right @error('piece_number') border-red-500 @enderror"/>
             <x-auth.field-error name="piece_number"/>
         </div>
         <div>
             <label class="text-[14px] font-bold mb-1.5 block">{{ __('Street Name') }} <span class="text-red-500">*</span></label>
             <input type="text" name="street_name" value="{{ old('street_name', $address?->street_name) }}" required placeholder="{{ __('Enter Name') }}"
-                   class="h-[42px] border border-[#dde3ee] rounded-lg px-3.5 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none focus:border-primary w-full max-w-[80%] @error('street_name') border-red-500 @enderror"/>
+                   class="h-[42px] border border-[#dde3ee] rounded-lg px-3.5 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none focus:border-primary w-full lg:max-w-[80%] @error('street_name') border-red-500 @enderror"/>
             <x-auth.field-error name="street_name"/>
         </div>
         <div>
             <label class="text-[14px] font-bold mb-1.5 block">{{ __('Building Number') }} <span class="text-red-500">*</span></label>
             <input type="text" name="building_number" value="{{ old('building_number', $address?->building_number) }}" required placeholder="{{ __('Enter Number') }}"
-                   class="h-[42px] border border-[#dde3ee] rounded-lg px-3.5 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none focus:border-primary w-full max-w-[80%] @error('building_number') border-red-500 @enderror"/>
+                   class="h-[42px] border border-[#dde3ee] rounded-lg px-3.5 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none focus:border-primary w-full lg:max-w-[80%] @error('building_number') border-red-500 @enderror"/>
             <x-auth.field-error name="building_number"/>
         </div>
         <div>
             <label class="text-[14px] font-bold mb-1.5 block">{{ __('Floor') }}</label>
             <input type="text" name="floor" value="{{ old('floor', $address?->floor) }}" placeholder="{{ __('Enter Floor') }}"
-                   class="h-[42px] border border-[#dde3ee] rounded-lg px-3.5 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none focus:border-primary w-full max-w-[80%] @error('floor') border-red-500 @enderror"/>
+                   class="h-[42px] border border-[#dde3ee] rounded-lg px-3.5 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none focus:border-primary w-full lg:max-w-[80%] @error('floor') border-red-500 @enderror"/>
             <x-auth.field-error name="floor"/>
         </div>
         <div>
             <label class="text-[14px] font-bold mb-1.5 block">{{ __('Flat') }}</label>
             <input type="text" name="flat" value="{{ old('flat', $address?->flat) }}" placeholder="{{ __('Enter Flat') }}"
-                   class="h-[42px] border border-[#dde3ee] rounded-lg px-3.5 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none focus:border-primary w-full max-w-[80%] @error('flat') border-red-500 @enderror"/>
+                   class="h-[42px] border border-[#dde3ee] rounded-lg px-3.5 text-[13px] text-primary placeholder-[#b0b8c9] focus:outline-none focus:border-primary w-full lg:max-w-[80%] @error('flat') border-red-500 @enderror"/>
             <x-auth.field-error name="flat"/>
         </div>
         <div class="mt-6">
-            <button type="submit" class="h-[46px] bg-[#20395D] text-white rounded-[10px] text-[15px] font-bold transition-colors w-full max-w-[80%]">{{ __('Save address') }}</button>
+            <button type="submit" class="h-[46px] bg-[#20395D] text-white rounded-[10px] text-[15px] font-bold transition-colors w-full lg:max-w-[80%]">{{ __('Save address') }}</button>
         </div>
     </form>
 </div>

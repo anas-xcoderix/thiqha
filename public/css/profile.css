@@ -5,14 +5,18 @@ body { font-family: 'DM Sans', sans-serif; }
 #panel-orders,
 #panel-requests,
 #panel-quotations,
-#panel-favourite { display: none; }
+#panel-favourite {
+    display: none;
+}
 
 #tab-edit-info:checked ~ * #panel-edit-info,
 #tab-addresses:checked ~ * #panel-addresses,
 #tab-orders:checked ~ * #panel-orders,
 #tab-requests:checked ~ * #panel-requests,
 #tab-quotations:checked ~ * #panel-quotations,
-#tab-favourite:checked ~ * #panel-favourite {  display: block !important; }
+#tab-favourite:checked ~ * #panel-favourite {
+    display: block !important;
+}
 
 #tab-edit-info:checked ~ * label[for="tab-edit-info"] span,
 #tab-addresses:checked ~ * label[for="tab-addresses"] span,
@@ -35,22 +39,54 @@ body { font-family: 'DM Sans', sans-serif; }
 }
 
 .nav-label svg path,
-.nav-label svg line { stroke: #AEC0DA; transition: stroke 0.2s; }
-.nav-label span { color: #555; font-size: 14px; transition: color 0.2s, font-weight 0.2s; }
+.nav-label svg line {
+    stroke: #AEC0DA;
+    transition: stroke 0.2s;
+}
+
+.nav-label span {
+    color: #555;
+    font-size: 14px;
+    transition: color 0.2s, font-weight 0.2s;
+}
+
 .nav-label:hover span { color: #20395D; }
 .nav-label:hover svg path { stroke: #20395D; }
+
+
+.subtab-content-1,
+.subtab-content-2 {
+    display: none;
+}
 
 #t1:checked ~ .subtab-content-1 { display: block; }
 #t2:checked ~ .subtab-content-2 { display: block; }
 
-#t1:checked ~ .subtab-nav .bar-1,
-#t2:checked ~ .subtab-nav .bar-2 {
+.bar-1,
+.bar-2 {
+    background-color: #e5e7eb;
+    transition: background-color 0.3s ease;
+}
+
+#t1:checked ~ .flex label[for="t1"] .bar-1 {
     background-color: #20395d;
 }
+
+#t2:checked ~ .flex label[for="t2"] .bar-2 {
+    background-color: #20395d;
+}
+
+#t1:checked ~ .flex label[for="t1"] p,
+#t2:checked ~ .flex label[for="t2"] p {
+    color: #20395d;
+    font-weight: 600;
+}
+
 
 .company-detail-panel {
     display: none;
 }
+
 .company-detail-panel.active {
     display: block;
 }
