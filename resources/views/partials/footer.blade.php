@@ -1,9 +1,9 @@
 
 
 
-<footer style="background-image: url('{{ asset('img/images/footer/footerBG.png') }}');">
-    <div class="px-4 pt-10 max-w-[95%] mx-auto ">
-        <div class="w-full flex flex-col lg:flex-row xl:justify-between gap-12 xl:gap-[40px] items-start">
+<footer class="objective-cover bg-contain" style="background-image: url('{{ asset('img/images/footer/footerBG.png') }}');">
+    <div class="px-4 pt-10 max-w-full mx-auto ">
+        <div class="w-full flex flex-col lg:flex-row justify-between gap-12 xl:gap-[40px] items-start">
 
             <div class="flex flex-col gap-8 w-full xl:w-auto items-center lg:items-start">
                 <img src="{{ asset('img/images/footer/footer-logo.png') }}" alt="THIQAH Logo" class="w-[240px] xl:w-[280px] 2xl:w-[380px] object-contain">
