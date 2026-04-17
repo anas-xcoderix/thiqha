@@ -73,7 +73,7 @@
     </section>
 </div>
 
-<div id="page-water" class="hidden bg-white p-6 max-w-[99%] md:max-w-[90%] mx-auto mt-[140px]">
+<div id="page-water" class="hidden bg-white p-6 main-container mx-auto mt-[140px]">
     <button onclick="showPage('page-main')" class="mb-6 flex items-center gap-2 text-[#21395D] font-semibold hover:opacity-70 transition-opacity">
         <i class='fas fa-arrow-left text-black text-[36px]'></i>
     </button>
@@ -320,7 +320,7 @@
     </div>
 </div>
 
-<div id="page-soil" class="hidden bg-white p-6 max-w-[99%] md:max-w-[90%] mx-auto mt-[140px]">
+<div id="page-soil" class="hidden bg-white p-6 main-container mx-auto mt-[140px]">
     <button onclick="showPage('page-main')" class="mb-6 flex items-center gap-2 text-[#21395D] font-semibold hover:opacity-70 transition-opacity">
         <i class='fas fa-arrow-left text-black text-[36px]'></i>
     </button>
@@ -564,7 +564,7 @@
     </div>
 </div>
 
-<div id="page-bricks" class="hidden bg-white p-6 max-w-[99%] md:max-w-[90%] mx-auto mt-[140px]">
+<div id="page-bricks" class="hidden bg-white p-6 main-container mx-auto mt-[140px]">
     <button onclick="showPage('page-main')" class="mb-6 flex items-center gap-2 text-[#21395D] font-semibold hover:opacity-70 transition-opacity">
         <i class='fas fa-arrow-left text-black text-[36px]'></i>
     </button>
@@ -815,7 +815,7 @@
     </div>
 </div>
 
-<div id="page-contracts" class="hidden bg-white p-6 max-w-[99%] md:max-w-[90%] mx-auto mt-[140px]">
+<div id="page-contracts" class="hidden bg-white p-6 main-container mx-auto mt-[140px]">
     <button onclick="showPage('page-main')" class="mb-6 flex items-center gap-2 text-[#21395D] font-semibold hover:opacity-70 transition-opacity">
         <i class='fas fa-arrow-left text-black text-[36px]'></i>
     </button>
@@ -1066,7 +1066,7 @@
     </div>
 </div>
 
-<div id="page-insurance" class="hidden bg-white p-6 max-w-[99%] md:max-w-[90%] mx-auto mt-[140px]">
+<div id="page-insurance" class="hidden bg-white p-6 main-container mx-auto mt-[140px]">
     <button onclick="showPage('page-main')" class="mb-6 flex items-center gap-2 text-[#21395D] font-semibold hover:opacity-70 transition-opacity">
         <i class='fas fa-arrow-left text-black text-[36px]'></i>
     </button>

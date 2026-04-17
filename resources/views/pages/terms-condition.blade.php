@@ -20,7 +20,7 @@
         </main>
     </section>
     <section>
-        <div class="w-full md:max-w-[96%] mx-auto px-6 py-12 flex flex-col lg:flex-row items-center gap-10">
+        <div class="main-container mx-auto py-12 flex flex-col lg:flex-row items-center gap-10">
 
             <div class="flex-1">
                 <h2 class="text-4xl font-bold mb-14">Terms & Condition</h2>

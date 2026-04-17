@@ -5,7 +5,7 @@
 @section('content')
 
     <!-- Header & Hero -->
-    <section class="main-container">
+    <section class="main-container bg-white">
         <main class="relative min-h-[521px] w-full rounded-[40px] overflow-hidden shadow-2xl flex flex-col">
 
             <div class="absolute inset-0 z-0">
@@ -38,7 +38,7 @@
     </section>
 
     <!-- About Us -->
-    <section class="main-container mx-auto px-4 py-12 md:py-20 font-sans">
+    <section class="main-container mx-auto px-4 py-12 md:py-20 font-sans bg-white">
         <h2 class="text-[40px] md:text-[56px] xl:text-[64px] font-bold text-black mb-10 tracking-tight">
             About Us
         </h2>
@@ -68,8 +68,8 @@
 
     <!-- Vision & Value -->
     <section
-        class="main-container mx-auto">
-        <div class="bg-[#F6F4F4] rounded-[20px] py-16 px-4 md:px-8 lg:px-16 font-sans overflow-hidden">
+        class="main-container mx-auto bg-white">
+        <div class="bg-[#FAF8F4] main-container rounded-[20px] py-16 px-4 md:px-8 lg:px-16 font-sans overflow-hidden">
             <div class="space-y-16 md:space-y-32">
                 <div class="relative flex flex-col md:block">
                     <div class="w-full rounded-[10px] overflow-hidden">
@@ -120,7 +120,7 @@
     </section>
 
     <!-- How it works? -->
-    <section class="main-container mx-auto px-4 py-20 font-sans">
+    <section class="main-container mx-auto px-4 py-20 font-sans bg-white">
 
         <h1 class="text-4xl md:text-5xl font-extrabold text-black text-center mb-24 tracking-tight">
             How it Works?
@@ -187,11 +187,11 @@
     </section>
 
     <!-- Contact Us -->
-    <section class="main-container mx-auto xl:h-[603px]">
-        <div class="font-sans bg-[#FAF8F4] rounded-[10px] overflow-hidden">
+    <section class="main-container mx-auto xl:h-[603px] bg-white">
+        <div class="font-sans bg-[#FAF8F4] main-container rounded-[10px] overflow-hidden">
             <div class="grid md:grid-cols-12 gap-8 md:gap-0 items-center">
 
-                <div class="md:col-span-12 lg:col-span-7 w-full lg:w-[433px] xl:w-[633px] lg:h-[354px] xl:h-[474px] bg-[#FFFFFF] rounded-[20px] p-6 md:p-8 lg:p-3 xl:p-5 shadow-[0_15px_40px_rgba(0,0,0,0.06)] border border-gray-100 lg:translate-x-[20px] xl:translate-x-[20px] my-6 md:my-10 mx-auto lg:mx-0">
+                <div class="md:col-span-12 lg:col-span-7 w-full lg:w-[433px] xl:w-[633px] bg-[#FFFFFF] rounded-[20px] p-6 md:p-8 lg:p-3 xl:p-5 shadow-[0_15px_40px_rgba(0,0,0,0.06)] border border-gray-100 lg:translate-x-[20px] xl:translate-x-[20px] my-6 md:my-10 mx-auto lg:mx-0">
 
                     <h2 class="text-[28px] md:text-[32px] lg:text-[24px] xl:text-[36px] font-bold text-black mb-4 tracking-tight">
                         Contact us
@@ -254,7 +254,7 @@
     </section>
 
     <!-- Our Team -->
-    <section class="max-w-[1228px] mx-auto px-4 py-12 md:py-20 font-sans overflow-hidden">
+    <section class="main-container mx-auto px-4 py-12 md:py-20 font-sans overflow-hidden bg-white">
         <h2 class="text-[32px] md:text-[48px] xl:text-[56px] font-bold text-[#1A1A1A] text-center mb-8 md:mb-16">
             Our Team
         </h2>

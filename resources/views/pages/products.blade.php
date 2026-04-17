@@ -16,7 +16,7 @@
 
     <x-page-heading-search heading="Products"/>
 
-    <section class="bg-[#FFFFFF] main-container w-full mx-auto flex xl:justify-center overflow-hidden">
+    <section class="main-container w-full mx-auto flex xl:justify-center overflow-hidden">
 
         <div class="flex items-center gap-3 md:gap-[31.71px] px-4 xl:px-0 pb-4 xl:pb-0 overflow-x-auto xl:overflow-visible no-scrollbar w-full xl:w-auto">
 

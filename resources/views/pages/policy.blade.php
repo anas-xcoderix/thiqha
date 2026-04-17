@@ -24,7 +24,7 @@
         </main>
     </section>
     <section>
-        <div class="w-full md:max-w-[96%] mx-auto px-6 py-12 flex flex-col lg:flex-row items-center gap-10">
+        <div class="main-container mx-auto py-12 flex flex-col lg:flex-row items-center gap-10">
 
             <div class="flex-1">
                 <h2 class="text-4xl font-bold mb-14">Our Privacy Policy</h2>
@@ -68,7 +68,7 @@
 
             <div class="flex flex-col items-center gap-6 pt-4">
                 <div class="relative">
-                    <img src="{{ asset('images/policy/side.png') }}" alt="" class="w-full max-w-[465px]">A
+                    <img src="{{ asset('images/policy/side.png') }}" alt="" class="w-full max-w-[465px]">
                 </div>
             </div>
         </div>
