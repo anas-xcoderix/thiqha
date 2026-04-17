@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
+use App\Http\Controllers\Admin\Partner\CategoryController as AdminPartnerCategoryController;
+use App\Http\Controllers\Admin\ProductCategoryController;
+use App\Http\Controllers\Partner\CategoryController as PartnerCategoryController;
 use App\Http\Controllers\Partner\DashboardController as PartnerDashboardController;
 use App\Http\Controllers\Partner\PartnerRegisterController;
 use App\Http\Controllers\User\AddtoCartController;
@@ -35,10 +38,18 @@ Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
 Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
+
+    Route::prefix('partner')->name('partner.')->group(function () {
+        Route::resource('categories', AdminPartnerCategoryController::class);
+    });
+
+    Route::resource('product-categories', ProductCategoryController::class)
+        ->parameters(['product-categories' => 'category']);
 });
 
 Route::middleware(['auth', 'role:partner'])->prefix('partner')->name('partner.')->group(function () {
     Route::get('/dashboard', [PartnerDashboardController::class, 'index'])->name('dashboard');
+    Route::resource('categories', PartnerCategoryController::class);
 });
 
 Route::middleware('auth')->group(function () {

@@ -1,6 +1,7 @@
 @php
     $nav = [
         ['route' => 'partner.dashboard', 'label' => __('Dashboard'), 'icon' => 'fa-gauge-high'],
+        ['route' => 'partner.categories.index', 'label' => __('Categories'), 'icon' => 'fa-tags'],
         ['route' => 'profile.index', 'label' => __('My profile'), 'icon' => 'fa-user'],
         ['route' => 'home.index', 'label' => __('Public site'), 'icon' => 'fa-house', 'external' => true],
     ];
@@ -27,7 +28,9 @@
                     ? false
                     : ($item['route'] === 'profile.index'
                         ? request()->routeIs('profile.index', 'profile.update')
-                        : request()->routeIs($item['route']));
+                        : ($item['route'] === 'partner.categories.index'
+                            ? request()->routeIs('partner.categories.*')
+                            : request()->routeIs($item['route'])));
             @endphp
             <a href="{{ route($item['route']) }}"
                class="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-colors {{ $isActive ? 'bg-white/15 text-white shadow-inner' : 'text-white/75 hover:bg-white/10 hover:text-white' }}">
