@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="mb-6 flex flex-wrap items-center justify-between gap-3">
-        <p class="text-sm text-gray-600">{{ __('Categories saved with type “service provider”.') }}</p>
+        <p class="text-sm text-gray-600"></p>
         <a href="{{ route('admin.partner.categories.create') }}" class="btn-leaf inline-flex items-center gap-2 bg-primary px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-navy">
             <i class="fa-solid fa-plus" aria-hidden="true"></i>
             {{ __('Add category') }}
@@ -21,7 +21,6 @@
                         <th class="px-5 py-3">{{ __('Logo') }}</th>
                         <th class="px-5 py-3">{{ __('Name (EN)') }}</th>
                         <th class="px-5 py-3">{{ __('Name (AR)') }}</th>
-                        <th class="px-5 py-3">{{ __('Type') }}</th>
                         <th class="px-5 py-3 text-right">{{ __('Actions') }}</th>
                     </tr>
                 </thead>
@@ -39,7 +38,6 @@
                             </td>
                             <td class="px-5 py-3 font-medium text-navy">{{ $category->name_en }}</td>
                             <td class="px-5 py-3" dir="rtl">{{ $category->name_ar }}</td>
-                            <td class="px-5 py-3"><span class="rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-semibold text-primary">{{ $category->type->label() }}</span></td>
                             <td class="px-5 py-3 text-right">
                                 <div class="flex flex-wrap justify-end gap-2">
                                     <a href="{{ route('admin.partner.categories.show', $category) }}" class="rounded-lg border border-gray-200 px-2.5 py-1.5 text-xs font-semibold text-navy hover:bg-cream">{{ __('View') }}</a>

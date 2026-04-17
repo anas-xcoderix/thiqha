@@ -41,19 +41,7 @@
 
     <section class="bg-[#FAF8F4] main-container w-full mx-auto flex xl:justify-center overflow-hidden">
 
-        <div class="flex items-center gap-3 md:gap-[31.71px] px-4 xl:px-0 pb-4 xl:pb-0 overflow-x-auto xl:overflow-visible no-scrollbar w-full xl:w-auto">
-
-            <x-category-filter-pill active="true" :image="asset('img/images/home/all.png')" image-alt="All" label="All"/>
-
-            <x-category-filter-pill :image="asset('img/images/home/construction.png')" image-alt="Construction" label="Construction"/>
-
-            <x-category-filter-pill inactive-md-width-class="md:w-[251px]" :image="asset('img/images/home/electricity.png')" image-alt="Electricity" label="Electricity"/>
-
-            <x-category-filter-pill inactive-md-width-class="md:w-[251px]" :image="asset('img/images/home/plumbing.png')" image-alt="Plumbing" label="Plumbing"/>
-
-            <x-category-filter-pill inactive-md-width-class="md:w-[251px]" :image="asset('img/images/home/carpentry.png')" image-alt="Carpentry" label="Carpentry"/>
-
-        </div>
+        @include('user.partials.category-pills-row', ['categories' => $serviceProviderCategories])
     </section>
 
     <section class="bg-[#FAF8F4] main-container w-full mx-auto font-sans flex flex-col mt-16 px-4 md:px-6 xl:px-0">
@@ -129,39 +117,32 @@
 
     <section class="bg-[#FAF8F4] main-container w-full mx-auto flex xl:justify-center overflow-hidden">
 
-        <div class="flex items-center gap-3 md:gap-[31.71px] px-4 xl:px-0 pb-4 xl:pb-0 overflow-x-auto xl:overflow-visible no-scrollbar w-full xl:w-auto">
-
-            <x-category-filter-pill active="true" :image="asset('img/images/home/all.png')" image-alt="All" label="All"/>
-
-            <x-category-filter-pill :image="asset('img/images/home/building.png')" image-alt="Construction" label="Building"/>
-
-            <x-category-filter-pill inactive-md-width-class="md:w-[251px]" :image="asset('img/images/home/electric.png')" image-alt="Electricity" label="Electrical"/>
-
-            <x-category-filter-pill inactive-md-width-class="md:w-[251px]" :image="asset('img/images/home/lighting.png')" image-alt="Plumbing" label="Lighting"/>
-
-            <x-category-filter-pill inactive-md-width-class="md:w-[251px]" :image="asset('img/images/home/plumbing.png')" image-alt="Plumbing" label="Plumbing"/>
-
-        </div>
+        @include('user.partials.category-pills-row', [
+            'categories' => $productCategories,
+            'filterGridId' => 'home-product-grid',
+        ])
     </section>
 
     <section class="bg-[#FAF8F4] w-full main-container mx-auto py-16 px-4">
 
-        <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-6 md:space-x-0 xl:gap-[23px] justify-items-center">
+        <div id="home-product-grid" class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-6 md:space-x-0 xl:gap-[23px] justify-items-center">
 
-            @foreach ([
-                'product1.png',
-                'product2.png',
-                'product3.png',
-                'product4.png',
-                'product5.png',
-                'product6.png',
-                'product7.png',
-                'product1.png',
-            ] as $index => $productImage)
+            @forelse ($homeProducts as $product)
+                @php
+                    $thumb = $product->images->first();
+                @endphp
                 <x-product-card
-                    :image="asset('img/images/home/' . $productImage)"
-                    :detail-href="route('products.show', $index + 1)"/>
-            @endforeach
+                    :filter-category-id="$product->category_id"
+                    :image="$thumb ? $thumb->url() : asset('img/images/home/product1.png')"
+                    :alt="$product->displayName()"
+                    :category="$product->category?->displayName() ?? ''"
+                    :title="$product->displayName()"
+                    :price="number_format($product->finalUnitPrice(), 2).' KWD'"
+                    :detail-href="route('products.show', $product)"
+                />
+            @empty
+                <p class="col-span-full text-center text-gray-500 py-8">{{ __('No products available yet.') }}</p>
+            @endforelse
 
         </div>
 

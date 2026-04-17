@@ -1,12 +1,6 @@
 @php
     /** @var \App\Models\Category|null $category */
 @endphp
-
-<div class="rounded-xl border border-primary/15 bg-primary/5 px-4 py-3 text-sm text-navy">
-    <span class="font-semibold">{{ __('Type') }}:</span>
-    {{ \App\Enums\CategoryType::ServiceProvider->label() }}
-</div>
-
 <div>
     <label for="name_en" class="block text-sm font-medium text-navy">{{ __('Name (EN)') }}</label>
     <input type="text" name="name_en" id="name_en" value="{{ old('name_en', $category?->name_en) }}"

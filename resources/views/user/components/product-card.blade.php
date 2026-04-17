@@ -6,12 +6,13 @@
     'price' => '100 KD',
     'detailHref' => null,
     'wrapperClass' => '',
+    'filterCategoryId' => null,
 ])
 
 <div @class([
     $wrapperClass,
     'bg-white rounded-[20px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col group',
-])>
+]) @if($filterCategoryId !== null) data-product-card data-product-category="{{ $filterCategoryId }}" @endif>
 
     <div class="relative w-full h-[200px] xl:h-[220px] overflow-hidden">
         @if($detailHref)

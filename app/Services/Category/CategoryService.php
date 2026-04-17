@@ -4,6 +4,7 @@ namespace App\Services\Category;
 
 use App\Enums\CategoryType;
 use App\Models\Category;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Storage;
@@ -17,6 +18,17 @@ class CategoryService
             ->latest('id')
             ->paginate($perPage)
             ->withQueryString();
+    }
+
+    /**
+     * @return Collection<int, Category>
+     */
+    public function productCategoriesForSelect(): Collection
+    {
+        return Category::query()
+            ->where('type', CategoryType::Product)
+            ->orderBy('name_en')
+            ->get(['id', 'name_en', 'name_ar']);
     }
 
     /**

@@ -22,19 +22,7 @@
 
     <section class="bg-[#FAF8F4] main-container w-full mx-auto flex xl:justify-center overflow-hidden">
 
-        <div class="flex items-center gap-3 md:gap-[31.71px] px-4 xl:px-0 pb-4 xl:pb-0 overflow-x-auto xl:overflow-visible no-scrollbar w-full xl:w-auto">
-
-            <x-category-filter-pill active="true" :image="asset('img/images/home/all.png')" image-alt="All" label="All"/>
-
-            <x-category-filter-pill :image="asset('img/images/home/construction.png')" image-alt="Construction" label="Construction"/>
-
-            <x-category-filter-pill inactive-md-width-class="md:w-[251px]" :image="asset('img/images/home/electricity.png')" image-alt="Electricity" label="Electricity"/>
-
-            <x-category-filter-pill inactive-md-width-class="md:w-[251px]" :image="asset('img/images/home/plumbing.png')" image-alt="Plumbing" label="Plumbing"/>
-
-            <x-category-filter-pill inactive-md-width-class="md:w-[251px]" :image="asset('img/images/home/carpentry.png')" image-alt="Carpentry" label="Carpentry"/>
-
-        </div>
+        @include('user.partials.category-pills-row', ['categories' => $serviceProviderCategories])
     </section>
 
     <section class="bg-[#FAF8F4] main-container w-full mx-auto font-sans flex flex-col mt-16 px-4 md:px-6">

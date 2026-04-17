@@ -2,11 +2,6 @@
     /** @var \App\Models\Category|null $category */
 @endphp
 
-<div class="rounded-xl border border-gold/30 bg-gold/10 px-4 py-3 text-sm text-navy">
-    <span class="font-semibold">{{ __('Type') }}:</span>
-    {{ \App\Enums\CategoryType::Product->label() }}
-    <span class="text-gray-600">— {{ __('Applied automatically for this section.') }}</span>
-</div>
 
 <div>
     <label for="name_en" class="block text-sm font-medium text-navy">{{ __('Name (EN)') }}</label>

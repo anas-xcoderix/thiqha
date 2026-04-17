@@ -1,5 +1,6 @@
 @php
     $partnerNavOpen = request()->routeIs('admin.partner.categories.*');
+    $productNavOpen = request()->routeIs('admin.product-categories.*', 'admin.products.*', 'admin.inventory.*');
 @endphp
 
 <aside id="admin-sidebar"
@@ -44,14 +45,6 @@
             </div>
         </details>
 
-        @php
-            $prodCatActive = request()->routeIs('admin.product-categories.*');
-        @endphp
-        <a href="{{ route('admin.product-categories.index') }}"
-           class="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-colors {{ $prodCatActive ? 'bg-white/15 text-white shadow-inner' : 'text-white/75 hover:bg-white/10 hover:text-white' }}">
-            <span class="flex w-8 justify-center text-gold/90"><i class="fa-solid fa-box" aria-hidden="true"></i></span>
-            {{ __('Product categories') }}
-        </a>
 
         @php
             $thiqahServicesActive = request()->routeIs('admin.services.*');
@@ -62,11 +55,36 @@
             {{ __('Thiqah services') }}
         </a>
 
-        <a href="{{ route('home.index') }}"
-           class="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-white/75 transition-colors hover:bg-white/10 hover:text-white">
-            <span class="flex w-8 justify-center text-gold/90"><i class="fa-solid fa-house" aria-hidden="true"></i></span>
-            {{ __('Public site') }}
-        </a>
+        <details class="group rounded-xl {{ $productNavOpen ? 'bg-white/10' : '' }}" @if($productNavOpen) open @endif>
+            <summary class="flex cursor-pointer list-none items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-white/75 outline-none ring-white/0 transition-colors marker:content-none hover:bg-white/10 hover:text-white [&::-webkit-details-marker]:hidden">
+                <span class="flex w-8 justify-center text-gold/90"><i class="fa-solid fa-box" aria-hidden="true"></i></span>
+                <span class="flex-1 text-left">{{ __('Product') }}</span>
+                <i class="fa-solid fa-chevron-down text-xs text-white/50 transition-transform group-open:rotate-180" aria-hidden="true"></i>
+            </summary>
+            <div class="mt-1 space-y-0.5 border-l border-white/10 pl-4 ml-5 py-1">
+                @php
+                    $productCatActive = request()->routeIs('admin.product-categories.*');
+                    $productsActive = request()->routeIs('admin.products.*');
+                    $inventoryActive = request()->routeIs('admin.inventory.*');
+                @endphp
+                <a href="{{ route('admin.product-categories.index') }}"
+                   class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-colors {{ $productCatActive ? 'bg-white/15 text-white' : 'text-white/70 hover:bg-white/10 hover:text-white' }}">
+                    <i class="fa-solid fa-tags w-5 text-center text-gold/80" aria-hidden="true"></i>
+                    {{ __('Category') }}
+                </a>
+                <a href="{{ route('admin.products.index') }}"
+                   class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-colors {{ $productsActive ? 'bg-white/15 text-white' : 'text-white/70 hover:bg-white/10 hover:text-white' }}">
+                    <i class="fa-solid fa-cube w-5 text-center text-gold/80" aria-hidden="true"></i>
+                    {{ __('Products') }}
+                </a>
+                <a href="{{ route('admin.inventory.index') }}"
+                   class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-colors {{ $inventoryActive ? 'bg-white/15 text-white' : 'text-white/70 hover:bg-white/10 hover:text-white' }}">
+                    <i class="fa-solid fa-warehouse w-5 text-center text-gold/80" aria-hidden="true"></i>
+                    {{ __('Inventory') }}
+                </a>
+            </div>
+        </details>
+
     </nav>
 
     <div class="border-t border-white/10 p-4">
