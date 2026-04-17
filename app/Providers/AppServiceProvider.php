@@ -5,6 +5,7 @@ namespace App\Providers;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -26,5 +27,6 @@ class AppServiceProvider extends ServiceProvider
         Blade::anonymousComponentPath(resource_path('views/user/components'));
         Blade::anonymousComponentPath(resource_path('views/admin/components'));
         Blade::anonymousComponentPath(resource_path('views/partner/components'));
+        Schema::defaultStringLength(191);
     }
 }

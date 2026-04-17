@@ -1,9 +1,19 @@
-
 function showPage(pageId) {
-    const pages = ['page-main', 'page-water', 'page-soil', 'page-bricks', 'page-contracts', 'page-insurance'];
-    pages.forEach(id => {
+    const pages = window.__thiqahServicePageIds || [
+        'page-main',
+        'page-water-tank',
+        'page-soil',
+        'page-bricks',
+        'page-contracts',
+        'page-insurance',
+    ];
+    const resolvedId = document.getElementById(pageId) ? pageId : 'page-main';
+    pages.forEach((id) => {
         const el = document.getElementById(id);
-        if (id === pageId) {
+        if (!el) {
+            return;
+        }
+        if (id === resolvedId) {
             el.classList.remove('hidden');
         } else {
             el.classList.add('hidden');

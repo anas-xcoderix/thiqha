@@ -36,44 +36,24 @@
             <div class="flex flex-col">
                 <h2 class="font-bold text-black text-3xl mb-10">Thiqah Services</h2>
                 <div class="flex flex-wrap justify-center w-full gap-14">
-
-                    <x-thiqah-service-card onclick="showPage('page-water')" :wrapper-class="$servicesCardWrap"
-                        :purple-icon-glow="false"
-                        :icon="asset('images/thiqah-services/water-tank.png')"
-                        icon-alt="Water Tanker"
-                        title="Water Tank"/>
-
-                    <x-thiqah-service-card onclick="showPage('page-soil')" :wrapper-class="$servicesCardWrap"
-                        :purple-icon-glow="false"
-                        :icon="asset('images/thiqah-services/soil.png')"
-                        icon-alt="Soil"
-                        title="Soil"/>
-
-                    <x-thiqah-service-card onclick="showPage('page-bricks')" :wrapper-class="$servicesCardWrap"
-                        :purple-icon-glow="false"
-                        :icon="asset('images/thiqah-services/bricks.png')"
-                        icon-alt="Bricks"
-                        title="Bricks"/>
-
-                    <x-thiqah-service-card onclick="showPage('page-contracts')" :wrapper-class="$servicesCardWrap"
-                        :purple-icon-glow="false"
-                        :icon="asset('images/thiqah-services/contracts.png')"
-                        icon-alt="Contracts"
-                        title="Contracts"/>
-
-                    <x-thiqah-service-card onclick="showPage('page-insurance')" :wrapper-class="$servicesCardWrap"
-                        :purple-icon-glow="false"
-                        :icon="asset('images/thiqah-services/insurance.png')"
-                        icon-alt="Insurance"
-                        title="Insurance"/>
-
+                    @forelse ($services as $service)
+                        <x-thiqah-service-card
+                            onclick="showPage('page-{{ $service->slug }}')"
+                            :wrapper-class="$servicesCardWrap"
+                            :purple-icon-glow="false"
+                            :icon="$service->iconForDisplay()"
+                            :icon-alt="$service->name_en"
+                            :title="$service->name_en"/>
+                    @empty
+                        <p class="w-full py-8 text-center text-gray-500">{{ __('No services available.') }}</p>
+                    @endforelse
                 </div>
             </div>
         </div>
     </section>
 </div>
 
-<div id="page-water" class="hidden bg-white p-6 main-container mx-auto mt-[140px]">
+<div id="page-water-tank" class="hidden bg-white p-6 main-container mx-auto mt-[140px]">
     <button onclick="showPage('page-main')" class="mb-6 flex items-center gap-2 text-[#21395D] font-semibold hover:opacity-70 transition-opacity">
         <i class='fas fa-arrow-left text-black text-[36px]'></i>
     </button>
@@ -1309,5 +1289,11 @@
 @endsection
 
 @push('scripts')
+    <script>
+        window.__thiqahServicePageIds = @json(array_merge(
+            ['page-main'],
+            $services->map(fn ($service) => 'page-'.$service->slug)->values()->all()
+        ));
+    </script>
     <script src="{{ asset('js/services.js') }}"></script>
 @endpush

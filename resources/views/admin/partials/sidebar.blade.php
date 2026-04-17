@@ -53,6 +53,15 @@
             {{ __('Product categories') }}
         </a>
 
+        @php
+            $thiqahServicesActive = request()->routeIs('admin.services.*');
+        @endphp
+        <a href="{{ route('admin.services.index') }}"
+           class="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-colors {{ $thiqahServicesActive ? 'bg-white/15 text-white shadow-inner' : 'text-white/75 hover:bg-white/10 hover:text-white' }}">
+            <span class="flex w-8 justify-center text-gold/90"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span>
+            {{ __('Thiqah services') }}
+        </a>
+
         <a href="{{ route('home.index') }}"
            class="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-white/75 transition-colors hover:bg-white/10 hover:text-white">
             <span class="flex w-8 justify-center text-gold/90"><i class="fa-solid fa-house" aria-hidden="true"></i></span>

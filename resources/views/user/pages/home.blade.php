@@ -24,25 +24,13 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 gap-8 xl:gap-[43px] justify-items-center">
 
-            <x-thiqah-service-card
-                :icon="asset('img/images/home/water-tank.png')"
-                title="Water Tanker"/>
-
-            <x-thiqah-service-card
-                :icon="asset('img/images/home/soil.png')"
-                title="Soil"/>
-
-            <x-thiqah-service-card
-                :icon="asset('img/images/home/bricks.png')"
-                title="Bricks"/>
-
-            <x-thiqah-service-card
-                :icon="asset('img/images/home/contracts.png')"
-                title="Contracts"/>
-
-            <x-thiqah-service-card
-                :icon="asset('img/images/home/insurance.png')"
-                title="Insurance"/>
+            @forelse ($thiqahServices as $svc)
+                <x-thiqah-service-card
+                    :icon="$svc->iconForDisplay()"
+                    :title="$svc->name_en"/>
+            @empty
+                <p class="col-span-full text-center text-sm text-gray-500">{{ __('No services configured yet.') }}</p>
+            @endforelse
 
             <x-services-view-all-card href="{{ route('services.index') }}"/>
 

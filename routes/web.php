@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\Partner\CategoryController as AdminPartnerCategoryController;
 use App\Http\Controllers\Admin\ProductCategoryController;
+use App\Http\Controllers\Admin\ServiceController as AdminServiceController;
 use App\Http\Controllers\Partner\CategoryController as PartnerCategoryController;
 use App\Http\Controllers\Partner\DashboardController as PartnerDashboardController;
 use App\Http\Controllers\Partner\PartnerRegisterController;
@@ -45,6 +46,8 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
 
     Route::resource('product-categories', ProductCategoryController::class)
         ->parameters(['product-categories' => 'category']);
+
+    Route::resource('services', AdminServiceController::class);
 });
 
 Route::middleware(['auth', 'role:partner'])->prefix('partner')->name('partner.')->group(function () {
